@@ -29,9 +29,11 @@ jobs:
           pip install requests
       
       - name: Fetch PxWeb data
-        run: python scripts/fetch_pxweb.py
+        id: fetch
+        run: python scripts/fetch_pxweb.py --all
       
       - name: Process raw data
+        if: contains(steps.fetch.outputs.changes_detected, 'true')
         run: python scripts/process_raw.py
       
       - name: Configure Git
@@ -52,6 +54,6 @@ jobs:
       - name: Commit and push changes
         if: steps.changes.outputs.has_changes == 'true'
         run: |
-          git add data/raw/ data/processed/
+          git add data/raw/ data/processed/ data/.fetch_manifest.json
           git commit -m "chore: update pension system data [automated]"
           git push

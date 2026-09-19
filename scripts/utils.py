@@ -1,0 +1,18 @@
+import json
+from pathlib import Path
+from typing import Any
+
+
+def load_json(path: Path) -> Any:
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_json(path: Path, data: Any, trailing_newline: bool = False) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp_file = path.with_suffix(path.suffix + ".tmp")
+    with open(temp_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        if trailing_newline:
+            f.write("\n")
+    temp_file.replace(path)

@@ -2,3 +2,4 @@
 development/
 data/raw/*.tmp.json
 venv/
+__pycache__/

@@ -1,0 +1,54 @@
+{
+  "population": {
+    "hash": "f3645db6ba253919928cd42ace76468717d3c883f23cb1b95160f89373086cd0",
+    "fetched_at": "2026-09-19T17:09:08.577696+00:00"
+  },
+  "fertility": {
+    "hash": "fcf84117decae2625ae4ddb0190f5712c40ab3da786a39178382cf6c629d1b04",
+    "fetched_at": "2026-09-19T17:09:08.691928+00:00"
+  },
+  "deaths": {
+    "hash": "728e2900901ef8d54e8a1084ca4a748b87d4b86742dfd31d5e52492fb1261052",
+    "fetched_at": "2026-09-19T17:09:08.813057+00:00"
+  },
+  "migration": {
+    "hash": "63f87f310397a7db37658087d35f14fece079fa4b71af4784b5add0671ed7b44",
+    "fetched_at": "2026-09-19T17:09:08.942238+00:00"
+  },
+  "employment": {
+    "hash": "4f9619b990ce69620b0eca637a02a7e9c712dd5e53d7588ab7ebf379b09f1e2c",
+    "fetched_at": "2026-09-19T17:09:09.079500+00:00"
+  },
+  "earnings": {
+    "hash": "c2db7e1c0df83fb7d824fcd80618d1df8e4f420d19c82fe4cf06ec654e79f7f2",
+    "fetched_at": "2026-09-19T17:09:09.202428+00:00"
+  },
+  "gdp": {
+    "hash": "4b8e9a6fed16b3fab66fd49a9ef532b3808839a21eb8027b58ad30a533a3cf45",
+    "fetched_at": "2026-09-19T17:09:09.439506+00:00"
+  },
+  "average_pension": {
+    "hash": "4cc6283f2959fa32d1de931506658d1098c557ec0fd1a18be5031a2b66f6ace2",
+    "fetched_at": "2026-09-19T17:09:09.606427+00:00"
+  },
+  "pension_expenditure": {
+    "hash": "02f0ef034a53bef0c54aaa2450747f17ab7b9c6b5c14d8020d368da1ac58e77d",
+    "fetched_at": "2026-09-19T17:09:09.697146+00:00"
+  },
+  "pension_assets": {
+    "hash": "f6d791a517c64ce57be13082c355d5abeb72898bc52af1aadd3784751426aa23",
+    "fetched_at": "2026-09-19T17:09:09.800607+00:00"
+  },
+  "premium_income": {
+    "hash": "e13815ad0d02ecd4070d600cb296b79c45c510540f0ed60c5496ab37dd44e19d",
+    "fetched_at": "2026-09-19T17:09:09.916374+00:00"
+  },
+  "investment_return": {
+    "hash": "86240817e3c8385753b84b8e422f9381042bd14b544925353ddd4bd45c8d2f3b",
+    "fetched_at": "2026-09-19T17:09:10.043915+00:00"
+  },
+  "pension_cash_flows": {
+    "hash": "67e4374aad038926edc5153f8812fa44f58efbf4a45b51818171c6c6336fe57b",
+    "fetched_at": "2026-09-19T17:09:10.148856+00:00"
+  }
+}

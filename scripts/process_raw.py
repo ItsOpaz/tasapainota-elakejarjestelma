@@ -1,33 +1,10 @@
-#!/usr/bin/env python3
-"""
-Process raw JSON-stat data from PxWeb API into clean JSON series.
-
-Reads:
-    data/raw/<source_id>.json
-    data/sources.json
-    providers.json
-
-Writes:
-    data/<source_id>.json
-    data/metadata.json
-
-The source configuration may use either:
-    - actual JSON-stat dimension IDs, or
-    - human-readable PxWeb dimension labels.
-
-The processor resolves human-readable dimension names to the
-actual JSON-stat IDs using the metadata contained in the raw file.
-"""
-
 import json
 import sys
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, Optional
 
+from utils import load_json, save_json
 
-# ---------------------------------------------------------------------------
-# Paths
-# ---------------------------------------------------------------------------
 
 RAW_DIR = Path("data/raw")
 OUTPUT_DIR = Path("data/processed")
@@ -36,1271 +13,412 @@ PROVIDERS_PATH = Path("data/providers.json")
 METADATA_PATH = OUTPUT_DIR / "metadata.json"
 
 
-# ---------------------------------------------------------------------------
-# JSON helpers
-# ---------------------------------------------------------------------------
-
-def load_json(path: Path) -> Any:
-    with path.open("r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-def save_json(path: Path, data: Any) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(
-            data,
-            f,
-            ensure_ascii=False,
-            indent=2,
-        )
-        f.write("\n")
-
-
-# ---------------------------------------------------------------------------
-# JSON-stat dimension helpers
-# ---------------------------------------------------------------------------
-
-def build_dimension_info(
-    stat: Dict[str, Any],
-) -> Dict[str, Dict[str, Any]]:
-    """
-    Build a lookup for JSON-stat dimensions.
-
-    Returns something like:
-
-    {
-        "timeperiod_y": {
-            "id": "timeperiod_y",
-            "label": "Vuosi",
-            "labels": [...]
-        }
-    }
-
-    Both the actual dimension ID and the human-readable label can
-    subsequently be used in sources.json.
-    """
-
-    result: Dict[str, Dict[str, Any]] = {}
-
-    dimensions = stat.get("dimension", {})
-
-    for dimension_id, dimension in dimensions.items():
-        result[dimension_id] = {
-            "id": dimension_id,
-            "label": dimension.get("label", dimension_id),
-        }
-
-    return result
-
-
-def resolve_dimension(
-    configured_dimension: str,
-    stat: Dict[str, Any],
-) -> str:
-    """
-    Resolve a configured dimension name to the actual JSON-stat ID.
-
-    Accepts either:
-
-        "timeperiod_y"
-
-    or:
-
-        "Vuosi"
-
-    If the configured value is already an ID, it is returned unchanged.
-    """
-
-    dimensions = stat.get("dimension", {})
-
-    # Already an actual JSON-stat dimension ID.
-    if configured_dimension in dimensions:
-        return configured_dimension
-
-    # Try human-readable dimension label.
-    for dimension_id, dimension in dimensions.items():
-        label = dimension.get("label")
-
-        if label == configured_dimension:
-            return dimension_id
-
-    available = []
-
-    for dimension_id, dimension in dimensions.items():
-        label = dimension.get("label", dimension_id)
-        available.append(
-            f"{dimension_id} ({label})"
-        )
-
-    raise ValueError(
-        f"Could not resolve configured dimension "
-        f"'{configured_dimension}'. "
-        f"Available dimensions: {', '.join(available)}"
-    )
-
-
-def resolve_dimension_config(
-    config: Dict[str, Any],
-    stat: Dict[str, Any],
-) -> Dict[str, str]:
-    """
-    Resolve all configured dimension names.
-
-    Example:
-
-        {
-            "Vuosi": "year",
-            "Ikä": "age"
-        }
-
-    becomes:
-
-        {
-            "timeperiod_y": "year",
-            "ikaryhma_10_20180101": "age"
-        }
-    """
-
-    resolved: Dict[str, str] = {}
-
-    for configured_name, target_name in config.items():
-        actual_id = resolve_dimension(
-            configured_name,
-            stat,
-        )
-
-        resolved[actual_id] = target_name
-
-    return resolved
-
-
-# ---------------------------------------------------------------------------
-# JSON-stat conversion
-# ---------------------------------------------------------------------------
-
-def build_dimension_mapping(
-    stat: Dict[str, Any],
-) -> Dict[str, List[Any]]:
-    """
-    Build:
-
-        dimension ID -> ordered list of category labels
-    """
-
-    mapping: Dict[str, List[Any]] = {}
-
-    dimensions = stat.get("dimension", {})
-
-    for dimension_id, dimension in dimensions.items():
-        category = dimension.get("category", {})
-
-        index = category.get("index", {})
-        labels = category.get("label", {})
-
-        if isinstance(index, list):
-            ordered_codes = index
+def build_dimension_mapping(stat: Dict) -> Dict:
+    mapping = {}
+    for dim_id, dim in stat.get("dimension", {}).items():
+        cat = dim.get("category", {})
+        idx = cat.get("index", {})
+        labels = cat.get("label", {})
+        
+        if isinstance(idx, list):
+            codes = idx
         else:
-            ordered_codes = [
-                code
-                for code, _ in sorted(
-                    index.items(),
-                    key=lambda item: item[1],
-                )
-            ]
-
-        mapping[dimension_id] = [
-            labels.get(code, code)
-            for code in ordered_codes
-        ]
-
+            codes = [c for c, _ in sorted(idx.items(), key=lambda x: x[1])]
+        
+        mapping[dim_id] = [labels.get(c, c) for c in codes]
+    
     return mapping
 
 
-def jsonstat_to_observations(
-    stat: Dict[str, Any],
-) -> List[Dict[str, Any]]:
-    """
-    Convert JSON-stat into flat observations.
-
-    Example:
-
-        {
-            "timeperiod_y": "2025",
-            "ikaryhma_10_20180101": "25-29",
-            "value": 12345
-        }
-    """
-
-    dimension_mapping = build_dimension_mapping(stat)
-
-    dimension_order = stat.get("id", [])
+def jsonstat_to_observations(stat: Dict) -> list:
+    mapping = build_dimension_mapping(stat)
+    dims = stat.get("id", [])
     sizes = stat.get("size", [])
     values = stat.get("value", [])
-
-    if not dimension_order:
-        raise ValueError(
-            "JSON-stat response has no dimensions"
-        )
-
-    if not sizes:
-        raise ValueError(
-            "JSON-stat response has no dimension sizes"
-        )
-
-    if not isinstance(values, list):
-        raise ValueError(
-            "JSON-stat response has no value array"
-        )
-
-    expected_values = 1
-
-    for size in sizes:
-        expected_values *= size
-
-    if len(values) != expected_values:
-        raise ValueError(
-            "Mismatch between JSON-stat dimensions and values: "
-            f"expected {expected_values}, got {len(values)}"
-        )
-
-    observations: List[Dict[str, Any]] = []
-
-    for flat_index, value in enumerate(values):
-
-        coordinates = []
-        remainder = flat_index
-
-        # Last dimension changes fastest in JSON-stat.
-        for size in reversed(sizes):
-            coordinates.append(remainder % size)
-            remainder //= size
-
-        coordinates.reverse()
-
-        observation: Dict[str, Any] = {}
-
-        for dimension_index, dimension_id in enumerate(
-            dimension_order
-        ):
-            category_index = coordinates[dimension_index]
-
-            categories = dimension_mapping.get(
-                dimension_id
-            )
-
-            if categories is None:
-                raise ValueError(
-                    f"No category mapping found for "
-                    f"dimension '{dimension_id}'"
-                )
-
-            if category_index >= len(categories):
-                raise ValueError(
-                    f"Category index {category_index} out of "
-                    f"range for dimension '{dimension_id}'"
-                )
-
-            observation[dimension_id] = (
-                categories[category_index]
-            )
-
-        observation["value"] = value
-
-        observations.append(observation)
-
+    
+    if not dims or not sizes or not isinstance(values, list):
+        raise ValueError("Invalid JSON-stat structure")
+    
+    expected = 1
+    for sz in sizes:
+        expected *= sz
+    
+    if len(values) != expected:
+        raise ValueError(f"Size mismatch: expected {expected}, got {len(values)}")
+    
+    observations = []
+    for flat_idx, val in enumerate(values):
+        coords = []
+        rem = flat_idx
+        for sz in reversed(sizes):
+            coords.append(rem % sz)
+            rem //= sz
+        coords.reverse()
+        
+        obs = {}
+        for dim_idx, dim_id in enumerate(dims):
+            cat_idx = coords[dim_idx]
+            cats = mapping.get(dim_id)
+            if not cats or cat_idx >= len(cats):
+                raise ValueError(f"Invalid category index for {dim_id}")
+            obs[dim_id] = cats[cat_idx]
+        
+        obs["value"] = val
+        observations.append(obs)
+    
     return observations
 
 
-# ---------------------------------------------------------------------------
-# Filters
-# ---------------------------------------------------------------------------
-
-def resolve_filters(
-    filters: Dict[str, Any],
-    stat: Dict[str, Any],
-) -> Dict[str, Any]:
-    """
-    Resolve filter dimension names from human-readable labels
-    to actual JSON-stat IDs.
-    """
-
-    resolved: Dict[str, Any] = {}
-
-    for configured_dimension, filter_config in filters.items():
-
-        actual_dimension = resolve_dimension(
-            configured_dimension,
-            stat,
-        )
-
-        resolved[actual_dimension] = filter_config
-
-    return resolved
-
-
-def observation_passes_filters(
-    observation: Dict[str, Any],
-    filters: Dict[str, Any],
-) -> bool:
-
-    for dimension, filter_config in filters.items():
-
-        value = observation.get(dimension)
-
-        if not isinstance(filter_config, dict):
-            raise ValueError(
-                f"Filter for '{dimension}' must be an object"
-            )
-
-        include = filter_config.get("include")
-        exclude = filter_config.get("exclude")
-
-        if include is not None:
-            if value not in include:
-                return False
-
-        if exclude is not None:
-            if value in exclude:
-                return False
-
-    return True
-
-
-# ---------------------------------------------------------------------------
-# Value transformations
-# ---------------------------------------------------------------------------
-
-def transform_value(
-    value: Any,
-    transforms: List[Any],
-) -> Any:
-
-    if value is None:
-        return None
-
-    result = value
-
-    for transform in transforms:
-
-        if isinstance(transform, str):
-            transform_type = transform
-            config = {}
-
-        elif isinstance(transform, dict):
-            transform_type = transform.get("type")
-            config = transform
-
-        else:
-            raise ValueError(
-                f"Invalid value transformation: "
-                f"{transform!r}"
-            )
-
-        if transform_type == "multiply_12":
-            result *= 12
-
-        elif transform_type == "divide_12":
-            result /= 12
-
-        elif transform_type == "absolute":
-            result = abs(result)
-
-        elif transform_type == "multiply":
-            factor = config.get("factor")
-
-            if factor is None:
-                raise ValueError(
-                    "multiply transformation requires 'factor'"
-                )
-
-            result *= factor
-
-        elif transform_type == "divide":
-            factor = config.get("factor")
-
-            if factor is None:
-                raise ValueError(
-                    "divide transformation requires 'factor'"
-                )
-
-            if factor == 0:
-                raise ValueError(
-                    "divide transformation cannot use factor 0"
-                )
-
-            result /= factor
-
-        elif transform_type == "add":
-            amount = config.get("amount")
-
-            if amount is None:
-                raise ValueError(
-                    "add transformation requires 'amount'"
-                )
-
-            result += amount
-
-        elif transform_type == "subtract":
-            amount = config.get("amount")
-
-            if amount is None:
-                raise ValueError(
-                    "subtract transformation requires 'amount'"
-                )
-
-            result -= amount
-
-        else:
-            raise ValueError(
-                f"Unknown value transformation: "
-                f"{transform_type}"
-            )
-
-    return result
-
-
-# ---------------------------------------------------------------------------
-# Generic transformation
-# ---------------------------------------------------------------------------
-
-def apply_generic_transform(
-    observations: List[Dict[str, Any]],
-    output_config: Dict[str, Any],
-    stat: Dict[str, Any],
-) -> List[Dict[str, Any]]:
-
-    dimensions = output_config.get(
-        "dimensions",
-        {},
-    )
-
-    fixed = output_config.get(
-        "fixed",
-        {},
-    )
-
-    filters = output_config.get(
-        "filters",
-        {},
-    )
-
-    transforms_config = output_config.get(
-        "transforms",
-        {},
-    )
-
-    value_transforms = transforms_config.get(
-        "value",
-        [],
-    )
-
-    resolved_dimensions = resolve_dimension_config(
-        dimensions,
-        stat,
-    )
-
-    resolved_filters = resolve_filters(
-        filters,
-        stat,
-    )
-
-    result: List[Dict[str, Any]] = []
-
-    for observation in observations:
-
-        if not observation_passes_filters(
-            observation,
-            resolved_filters,
-        ):
-            continue
-
-        output: Dict[str, Any] = {}
-
-        # ---------------------------------------------------------------
-        # Dimension mapping
-        # ---------------------------------------------------------------
-
-        for source_dimension, target_dimension in (
-            resolved_dimensions.items()
-        ):
-
-            if source_dimension not in observation:
-                raise ValueError(
-                    f"Resolved dimension "
-                    f"'{source_dimension}' not present "
-                    f"in observation"
-                )
-
-            value = observation[
-                source_dimension
-            ]
-
-            # Generic year conversion.
-            if target_dimension == "year":
-                year, marker = parse_year(value)
-
-                output["year"] = year
-
-                if marker:
-                    output["yearStatus"] = "provisional"
-
-            output[target_dimension] = value
-
-        # ---------------------------------------------------------------
-        # Fixed dimensions
-        # ---------------------------------------------------------------
-
-        output.update(fixed)
-
-        # ---------------------------------------------------------------
-        # Value
-        # ---------------------------------------------------------------
-
-        value = observation.get("value")
-
-        if (
-            value is not None
-            and value_transforms
-        ):
-            value = transform_value(
-                value,
-                value_transforms,
-            )
-
-        output["value"] = value
-
-        result.append(output)
-
-    return result
-
-
-def parse_year(value: Any) -> tuple[int, str | None]:
-    """
-    Parse PxWeb year labels such as:
-
-        2025
-        2025*
-        2024*
-
-    Returns:
-
-        (numeric_year, original_marker)
-
-    Examples:
-
-        "2025"  -> (2025, None)
-        "2025*" -> (2025, "*")
-    """
-
+def parse_year(value: Any) -> tuple:
     if isinstance(value, int):
         return value, None
-
+    
     if not isinstance(value, str):
-        raise ValueError(
-            f"Invalid year value: {value!r}"
-        )
-
+        raise ValueError(f"Invalid year: {value}")
+    
     value = value.strip()
-
     marker = None
-
     if value.endswith("*"):
         marker = "*"
         value = value[:-1]
-
+    
     try:
-        year = int(value)
-    except ValueError as exc:
-        raise ValueError(
-            f"Could not parse year '{value}'"
-        ) from exc
+        return int(value), marker
+    except ValueError:
+        raise ValueError(f"Cannot parse year: {value}")
 
-    return year, marker
 
-# ---------------------------------------------------------------------------
-# Derived transformations
-# ---------------------------------------------------------------------------
+def resolve_dimension(dim_name: str, stat: Dict) -> str:
+    dims = stat.get("dimension", {})
+    
+    if dim_name in dims:
+        return dim_name
+    
+    for dim_id, dim in dims.items():
+        if dim.get("label") == dim_name:
+            return dim_id
+    
+    raise ValueError(f"Unknown dimension: {dim_name}")
 
-def apply_difference_transform(
-    observations: List[Dict[str, Any]],
-    config: Dict[str, Any],
-    stat: Dict[str, Any],
-) -> List[Dict[str, Any]]:
-    """
-    Calculate:
 
-        positive - negative
+def resolve_dimension_config(config: Dict, stat: Dict) -> Dict:
+    resolved = {}
+    for cfg_name, target in config.items():
+        actual_id = resolve_dimension(cfg_name, stat)
+        resolved[actual_id] = target
+    return resolved
 
-    grouped by every dimension except the selected
-    transformation dimension.
-    """
 
-    configured_dimension = config.get(
-        "dimension"
-    )
+def resolve_filters(filters: Dict, stat: Dict) -> Dict:
+    resolved = {}
+    for cfg_dim, filter_cfg in filters.items():
+        actual_dim = resolve_dimension(cfg_dim, stat)
+        resolved[actual_dim] = filter_cfg
+    return resolved
 
-    positive = config.get(
-        "positive"
-    )
 
-    negative = config.get(
-        "negative"
-    )
+def obs_passes_filters(obs: Dict, filters: Dict) -> bool:
+    for dim, filt in filters.items():
+        if not isinstance(filt, dict):
+            raise ValueError(f"Filter must be dict, not {type(filt)}")
+        
+        val = obs.get(dim)
+        include = filt.get("include")
+        exclude = filt.get("exclude")
+        
+        if include is not None and val not in include:
+            return False
+        if exclude is not None and val in exclude:
+            return False
+    
+    return True
 
-    if not configured_dimension:
-        raise ValueError(
-            "difference transformation requires "
-            "'dimension'"
-        )
 
-    if positive is None:
-        raise ValueError(
-            "difference transformation requires "
-            "'positive'"
-        )
-
-    if negative is None:
-        raise ValueError(
-            "difference transformation requires "
-            "'negative'"
-        )
-
-    dimension = resolve_dimension(
-        configured_dimension,
-        stat,
-    )
-
-    grouped: Dict[Any, Dict[str, Any]] = {}
-
-    for observation in observations:
-
-        if dimension not in observation:
-            raise ValueError(
-                f"Difference dimension '{dimension}' "
-                f"not found in observation"
-            )
-
-        key = tuple(
-            (key, value)
-            for key, value in observation.items()
-            if key not in (
-                "value",
-                dimension,
-            )
-        )
-
-        if key not in grouped:
-            grouped[key] = {
-                "dimensions": {
-                    key_name: key_value
-                    for key_name, key_value in key
-                },
-                "positive": None,
-                "negative": None,
-            }
-
-        category = observation[
-            dimension
-        ]
-
-        value = observation.get(
-            "value"
-        )
-
-        if category == positive:
-            grouped[key]["positive"] = value
-
-        elif category == negative:
-            grouped[key]["negative"] = value
-
-    result: List[Dict[str, Any]] = []
-
-    for group in grouped.values():
-
-        positive_value = group[
-            "positive"
-        ]
-
-        negative_value = group[
-            "negative"
-        ]
-
-        # Never silently interpret missing data as zero.
-        if (
-            positive_value is None
-            or negative_value is None
-        ):
-            continue
-
-        output = dict(
-            group["dimensions"]
-        )
-
-        output["value"] = (
-            positive_value
-            - negative_value
-        )
-
-        result.append(output)
-
+def transform_value(value: Any, transforms: list) -> Any:
+    if value is None:
+        return None
+    
+    result = value
+    for tr in transforms:
+        if isinstance(tr, str):
+            t_type, cfg = tr, {}
+        elif isinstance(tr, dict):
+            t_type, cfg = tr.get("type"), tr
+        else:
+            raise ValueError(f"Invalid transform: {tr}")
+        
+        if t_type == "multiply_12":
+            result *= 12
+        elif t_type == "divide_12":
+            result /= 12
+        elif t_type == "absolute":
+            result = abs(result)
+        elif t_type == "multiply":
+            result *= cfg.get("factor", 1)
+        elif t_type == "divide":
+            factor = cfg.get("factor")
+            if factor == 0:
+                raise ValueError("Cannot divide by 0")
+            result /= factor
+        elif t_type == "add":
+            result += cfg.get("amount", 0)
+        elif t_type == "subtract":
+            result -= cfg.get("amount", 0)
+        else:
+            raise ValueError(f"Unknown transform: {t_type}")
+    
     return result
 
 
-def apply_transformations(
-    observations: List[Dict[str, Any]],
-    output_config: Dict[str, Any],
-    stat: Dict[str, Any],
-) -> List[Dict[str, Any]]:
+def apply_generic_transform(observations: list, out_cfg: Dict, stat: Dict) -> list:
+    dims_cfg = out_cfg.get("dimensions", {})
+    fixed = out_cfg.get("fixed", {})
+    filters = out_cfg.get("filters", {})
+    val_transforms = out_cfg.get("transforms", {}).get("value", [])
+    
+    resolved_dims = resolve_dimension_config(dims_cfg, stat)
+    resolved_filters = resolve_filters(filters, stat)
+    
+    result = []
+    for obs in observations:
+        if not obs_passes_filters(obs, resolved_filters):
+            continue
+        
+        output = {}
+        for src_dim, tgt_dim in resolved_dims.items():
+            if src_dim not in obs:
+                raise ValueError(f"Dimension {src_dim} not in observation")
+            
+            val = obs[src_dim]
+            if tgt_dim == "year":
+                year, marker = parse_year(val)
+                output["year"] = year
+                if marker:
+                    output["yearStatus"] = "provisional"
+            output[tgt_dim] = val
+        
+        output.update(fixed)
+        
+        val = obs.get("value")
+        if val is not None and val_transforms:
+            val = transform_value(val, val_transforms)
+        output["value"] = val
+        
+        result.append(output)
+    
+    return result
 
-    derived_transform = output_config.get(
-        "transform"
-    )
 
-    if derived_transform:
+def apply_difference_transform(observations: list, cfg: Dict, stat: Dict) -> list:
+    dim_name = cfg.get("dimension")
+    positive = cfg.get("positive")
+    negative = cfg.get("negative")
+    
+    if not all([dim_name, positive is not None, negative is not None]):
+        raise ValueError("difference requires dimension, positive, negative")
+    
+    dim = resolve_dimension(dim_name, stat)
+    grouped = {}
+    
+    for obs in observations:
+        if dim not in obs:
+            raise ValueError(f"Dimension {dim} not in obs")
+        
+        key = tuple((k, v) for k, v in obs.items() if k not in ("value", dim))
+        
+        if key not in grouped:
+            grouped[key] = {"dims": dict(key), "pos": None, "neg": None}
+        
+        cat = obs[dim]
+        val = obs.get("value")
+        
+        if cat == positive:
+            grouped[key]["pos"] = val
+        elif cat == negative:
+            grouped[key]["neg"] = val
+    
+    result = []
+    for g in grouped.values():
+        if g["pos"] is None or g["neg"] is None:
+            continue
+        out = dict(g["dims"])
+        out["value"] = g["pos"] - g["neg"]
+        result.append(out)
+    
+    return result
 
-        transform_type = (
-            derived_transform.get("type")
-        )
 
-        if transform_type == "difference":
-
-            observations = apply_difference_transform(
-                observations,
-                derived_transform,
-                stat,
-            )
-
+def apply_transformations(observations: list, out_cfg: Dict, stat: Dict) -> list:
+    derived = out_cfg.get("transform")
+    
+    if derived:
+        t_type = derived.get("type")
+        if t_type == "difference":
+            observations = apply_difference_transform(observations, derived, stat)
         else:
-            raise ValueError(
-                f"Unknown derived transformation: "
-                f"{transform_type}"
-            )
-
-    return apply_generic_transform(
-        observations,
-        output_config,
-        stat,
-    )
+            raise ValueError(f"Unknown transform: {t_type}")
+    
+    return apply_generic_transform(observations, out_cfg, stat)
 
 
-# ---------------------------------------------------------------------------
-# Metadata
-# ---------------------------------------------------------------------------
-
-def get_provider_config(
-    providers: Dict[str, Any],
-    provider_key: str,
-) -> Dict[str, Any]:
-
-    provider = providers.get(
-        provider_key
-    )
-
-    if provider is None:
-        raise ValueError(
-            f"Provider '{provider_key}' "
-            f"not found in providers.json"
-        )
-
-    return provider
-
-
-def build_series_metadata(
-    source_id: str,
-    source: Dict[str, Any],
-    provider: Dict[str, Any],
-    raw_data: Dict[str, Any],
-    stat: Dict[str, Any],
-) -> Dict[str, Any]:
-
-    provenance = raw_data.get(
-        "provenance",
-        {}
-    )
-
-    provider_name = provider.get(
-        "name",
-        provider.get(
-            "shortName",
-            source.get(
-                "provider",
-                "",
-            ),
-        ),
-    )
-
-    licence = source.get(
-        "licence",
-        provider.get(
-            "licence",
-            "",
-        ),
-    )
-
-    attribution = source.get(
-        "attribution",
-        provider.get(
-            "attribution",
-            provider_name,
-        ),
-    )
-
-    source_url = provenance.get(
-        "metadata_url"
-    )
-
-    if not source_url:
-        source_url = source.get(
-            "url",
-            "",
-        )
-
-    fetched_at = provenance.get(
-        "fetched_at"
-    )
-
-    retrieved = None
-
-    if fetched_at:
-        retrieved = fetched_at.split(
-            "T",
-            1,
-        )[0]
-
-    output_config = source.get(
-        "output",
-        {},
-    )
-
-    name = output_config.get(
-        "name",
-        stat.get(
-            "title",
-            source.get(
-                "description",
-                source_id,
-            ),
-        ),
-    )
-
-    unit = output_config.get(
-        "unit",
-        "",
-    )
-
-    series_type = output_config.get(
-        "seriesType",
-        "observed",
-    )
-
+def build_series_metadata(source_id: str, source: Dict, provider: Dict, 
+                         raw: Dict, stat: Dict) -> Dict:
+    prov = raw.get("provenance", {})
+    prov_name = provider.get("name", provider.get("shortName", ""))
+    licence = source.get("licence", provider.get("licence", ""))
+    attrib = source.get("attribution", provider.get("attribution", prov_name))
+    url = prov.get("metadata_url") or source.get("url", "")
+    fetched = prov.get("fetched_at", "").split("T")[0] if prov.get("fetched_at") else None
+    
+    out_cfg = source.get("output", {})
+    name = out_cfg.get("name", stat.get("title", source.get("description", source_id)))
+    unit = out_cfg.get("unit", "")
+    series_type = out_cfg.get("seriesType", "observed")
+    
     return {
         "id": source_id,
         "name": name,
         "unit": unit,
-        "source": provider_name,
-        "sourceUrl": source_url,
+        "source": prov_name,
+        "sourceUrl": url,
         "license": licence,
-        "attribution": attribution,
-        "retrieved": retrieved,
+        "attribution": attrib,
+        "retrieved": fetched,
         "seriesType": series_type,
     }
 
 
-# ---------------------------------------------------------------------------
-# Source processing
-# ---------------------------------------------------------------------------
-
-def process_source(
-    source_id: str,
-    source: Dict[str, Any],
-    providers: Dict[str, Any],
-) -> str:
-
-    print(
-        f"Processing source: {source_id}"
-    )
-
-    raw_path = (
-        RAW_DIR
-        / f"{source_id}.json"
-    )
-
+def process_source(source_id: str, source: Dict, providers: Dict) -> str:
+    print(f"Processing: {source_id}")
+    
+    raw_path = RAW_DIR / f"{source_id}.json"
     if not raw_path.exists():
-        print(
-            f"  [ERROR] Raw file not found: "
-            f"{raw_path}"
-        )
+        print(f"  [ERROR] Raw file not found\n")
         return "failed"
-
-    provider_key = source.get(
-        "provider"
-    )
-
+    
+    provider_key = source.get("provider")
     if not provider_key:
-        print(
-            "  [ERROR] Source has no provider"
-        )
+        print(f"  [ERROR] No provider\n")
         return "failed"
-
+    
+    provider = providers.get(provider_key)
+    if not provider:
+        print(f"  [ERROR] Provider '{provider_key}' not found\n")
+        return "failed"
+    
     try:
-        provider = get_provider_config(
-            providers,
-            provider_key,
-        )
-
-    except ValueError as exc:
-        print(
-            f"  [ERROR] {exc}"
-        )
+        raw = load_json(raw_path)
+    except Exception as e:
+        print(f"  [ERROR] Load failed: {e}\n")
         return "failed"
-
-    try:
-        raw_data = load_json(
-            raw_path
-        )
-
-    except Exception as exc:
-        print(
-            f"  [ERROR] Could not read raw "
-            f"file: {exc}"
-        )
-        return "failed"
-
-    stat = raw_data.get(
-        "data"
-    )
-
+    
+    stat = raw.get("data")
     if not isinstance(stat, dict):
-        print(
-            "  [ERROR] Raw file does not "
-            "contain a valid 'data' object"
-        )
+        print(f"  [ERROR] Invalid data object\n")
         return "failed"
-
-    output_config = source.get(
-        "output"
-    )
-
-    if not isinstance(
-        output_config,
-        dict,
-    ):
-        print(
-            "  [ERROR] Source has no "
-            "'output' configuration"
-        )
+    
+    out_cfg = source.get("output")
+    if not isinstance(out_cfg, dict):
+        print(f"  [ERROR] No output config\n")
         return "failed"
-
-    # ---------------------------------------------------------------
-    # Optional source disabling
-    # ---------------------------------------------------------------
-
-    if output_config.get(
-        "enabled",
-        True,
-    ) is False:
-
-        print(
-            "  [SKIP] Output disabled "
-            "for this source"
-        )
-
+    
+    if not out_cfg.get("enabled", True):
+        print(f"  [SKIP] Disabled\n")
         return "skipped"
-
-    # ---------------------------------------------------------------
-    # JSON-stat conversion
-    # ---------------------------------------------------------------
-
+    
     try:
-        observations = (
-            jsonstat_to_observations(
-                stat
-            )
-        )
-
-    except Exception as exc:
-        print(
-            f"  [ERROR] JSON-stat "
-            f"conversion failed: {exc}"
-        )
+        observations = jsonstat_to_observations(stat)
+    except Exception as e:
+        print(f"  [ERROR] JSON-stat: {e}\n")
         return "failed"
-
-    print(
-        f"  JSON-stat observations: "
-        f"{len(observations)}"
-    )
-
-    # ---------------------------------------------------------------
-    # Transformations
-    # ---------------------------------------------------------------
-
+    
+    print(f"  Observations: {len(observations)}")
+    
     try:
-        transformed = (
-            apply_transformations(
-                observations,
-                output_config,
-                stat,
-            )
-        )
-
-    except Exception as exc:
-        print(
-            f"  [ERROR] Transformation "
-            f"failed: {exc}"
-        )
+        transformed = apply_transformations(observations, out_cfg, stat)
+    except Exception as e:
+        print(f"  [ERROR] Transform: {e}\n")
         return "failed"
-
+    
     if not transformed:
-        print(
-            "  [ERROR] No observations "
-            "after transformation"
-        )
+        print(f"  [ERROR] No observations after transform\n")
         return "failed"
-
-    print(
-        f"  Processed observations: "
-        f"{len(transformed)}"
-    )
-
-    # ---------------------------------------------------------------
-    # Metadata
-    # ---------------------------------------------------------------
-
+    
+    print(f"  Processed: {len(transformed)}")
+    
     try:
-        metadata = build_series_metadata(
-            source_id,
-            source,
-            provider,
-            raw_data,
-            stat,
-        )
-
-    except Exception as exc:
-        print(
-            f"  [ERROR] Metadata creation "
-            f"failed: {exc}"
-        )
+        metadata = build_series_metadata(source_id, source, provider, raw, stat)
+    except Exception as e:
+        print(f"  [ERROR] Metadata: {e}\n")
         return "failed"
-
-    # ---------------------------------------------------------------
-    # Final output
-    # ---------------------------------------------------------------
-
+    
     series = dict(metadata)
-
     series["values"] = transformed
-
-    output_path = (
-        OUTPUT_DIR
-        / f"{source_id}.json"
-    )
-
+    
+    out_path = OUTPUT_DIR / f"{source_id}.json"
     try:
-        save_json(
-            output_path,
-            series,
-        )
-
-    except Exception as exc:
-        print(
-            f"  [ERROR] Could not write "
-            f"{output_path}: {exc}"
-        )
+        save_json(out_path, series, trailing_newline=True)
+    except Exception as e:
+        print(f"  [ERROR] Write failed: {e}\n")
         return "failed"
-
-    print(
-        f"  [OK] Written to "
-        f"{output_path}"
-    )
-
+    
+    print(f"  [OK] Saved\n")
     return "success"
 
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
-
-def main() -> None:
-
-    if not SOURCES_PATH.exists():
-        print(
-            f"[ERROR] Sources file not "
-            f"found: {SOURCES_PATH}"
-        )
+def main():
+    if not SOURCES_PATH.exists() or not PROVIDERS_PATH.exists():
+        print("[ERROR] Missing sources.json or providers.json")
         sys.exit(1)
-
-    if not PROVIDERS_PATH.exists():
-        print(
-            f"[ERROR] Providers file not "
-            f"found: {PROVIDERS_PATH}"
-        )
+    
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    
+    prov_cfg = load_json(PROVIDERS_PATH)
+    providers = prov_cfg.get("providers", prov_cfg)
+    
+    src_cfg = load_json(SOURCES_PATH)
+    sources = src_cfg.get("sources", {})
+    
+    if not isinstance(sources, dict):
+        print("[ERROR] sources.json must contain 'sources' object")
         sys.exit(1)
-
-    OUTPUT_DIR.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    # ---------------------------------------------------------------
-    # Providers
-    # ---------------------------------------------------------------
-
-    providers_config = load_json(
-        PROVIDERS_PATH
-    )
-
-    if "providers" in providers_config:
-        providers = (
-            providers_config["providers"]
-        )
-    else:
-        providers = providers_config
-
-    # ---------------------------------------------------------------
-    # Sources
-    # ---------------------------------------------------------------
-
-    sources_config = load_json(
-        SOURCES_PATH
-    )
-
-    sources = sources_config.get(
-        "sources",
-        {},
-    )
-
-    if not isinstance(
-        sources,
-        dict,
-    ):
-        print(
-            "[ERROR] sources.json must "
-            "contain 'sources' as an object"
-        )
-        sys.exit(1)
-
-    print(
-        f"Processing {len(sources)} "
-        f"configured sources..."
-    )
-
-    print()
-
-    all_metadata: List[
-        Dict[str, Any]
-    ] = []
-
-    failed_sources: List[str] = []
-
-    skipped_sources: List[str] = []
-
-    # ---------------------------------------------------------------
-    # Process
-    # ---------------------------------------------------------------
-
-    for source_id, source in (
-        sources.items()
-    ):
-
-        status = process_source(
-            source_id,
-            source,
-            providers,
-        )
-
+    
+    print(f"Processing {len(sources)} sources...\n")
+    
+    metadata = []
+    failed = []
+    skipped = []
+    
+    for source_id, source in sources.items():
+        status = process_source(source_id, source, providers)
+        
         if status == "success":
-
-            # Read the metadata back from
-            # the generated series file.
-            output_path = (
-                OUTPUT_DIR
-                / f"{source_id}.json"
-            )
-
-            generated = load_json(
-                output_path
-            )
-
-            metadata = {
-                key: value
-                for key, value
-                in generated.items()
-                if key != "values"
-            }
-
-            all_metadata.append(
-                metadata
-            )
-
+            out_path = OUTPUT_DIR / f"{source_id}.json"
+            generated = load_json(out_path)
+            meta = {k: v for k, v in generated.items() if k != "values"}
+            metadata.append(meta)
         elif status == "skipped":
-
-            skipped_sources.append(
-                source_id
-            )
-
+            skipped.append(source_id)
         else:
-
-            failed_sources.append(
-                source_id
-            )
-
-        print()
-
-    # ---------------------------------------------------------------
-    # metadata.json
-    # ---------------------------------------------------------------
-
+            failed.append(source_id)
+    
     try:
-        save_json(
-            METADATA_PATH,
-            all_metadata,
-        )
-
-    except Exception as exc:
-        print(
-            f"[ERROR] Could not write "
-            f"{METADATA_PATH}: {exc}"
-        )
+        save_json(METADATA_PATH, metadata, trailing_newline=True)
+    except Exception as e:
+        print(f"[ERROR] Write metadata: {e}")
         sys.exit(1)
-
-    print(
-        f"[OK] Written metadata to "
-        f"{METADATA_PATH}"
-    )
-
-    print()
-
-    print(
-        f"Successful: "
-        f"{len(all_metadata)} / "
-        f"{len(sources)}"
-    )
-
-    if skipped_sources:
-        print(
-            "Skipped: "
-            + ", ".join(
-                skipped_sources
-            )
-        )
-
-    if failed_sources:
-
-        print(
-            "Failed sources: "
-            + ", ".join(
-                failed_sources
-            )
-        )
-
+    
+    print(f"[OK] Metadata: {METADATA_PATH}\n")
+    print(f"Success: {len(metadata)}/{len(sources)}")
+    
+    if skipped:
+        print(f"Skipped: {', '.join(skipped)}")
+    
+    if failed:
+        print(f"Failed: {', '.join(failed)}")
         sys.exit(1)
-
-    print(
-        "All enabled sources processed "
-        "successfully."
-    )
+    
+    print("All sources processed.")
 
 
 if __name__ == "__main__":
