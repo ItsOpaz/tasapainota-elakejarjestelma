@@ -1,0 +1,57 @@
+name: Daily Data Update
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC (approximately 4 AM Finnish summer time, 5 AM Finnish winter time)
+    - cron: '0 2 * * *'
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+      
+      - name: Fetch PxWeb data
+        run: python scripts/fetch_pxweb.py
+      
+      - name: Process raw data
+        run: python scripts/process_raw.py
+      
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+      
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff-index --quiet HEAD --; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            git status
+          fi
+      
+      - name: Commit and push changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git add data/raw/ data/processed/
+          git commit -m "chore: update pension system data [automated]"
+          git push

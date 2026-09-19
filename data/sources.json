@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "population": {
+      "provider": "statfin",
+      "description": "Population by age and sex",
+      "table": {
+        "path": [
+          "vaerak",
+          "11re.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*",
+        "Sukupuoli": [
+          "Yhteensä"
+        ],
+        "Ikä": "*"
+      },
+      "output": {
+        "name": "Population by age",
+        "dimensions": {
+          "Vuosi": "year",
+          "Ikä": "age"
+        },
+        "fixed": {
+          "sex": "combined"
+        },
+        "filters": {
+          "Ikä": {
+            "exclude": [
+              "SSS"
+            ]
+          }
+        },
+        "unit": "persons",
+        "seriesType": "observed"
+      }
+    },
+    "fertility": {
+      "provider": "statfin",
+      "description": "Age-specific fertility rates",
+      "table": {
+        "path": [
+          "synt",
+          "12ds.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*",
+        "Äidin ikä": "*",
+        "Tiedot": "*"
+      },
+      "output": {
+        "name": "Age-specific fertility rates",
+        "dimensions": {
+          "Vuosi": "year",
+          "Äidin ikä": "ageGroup",
+          "Tiedot": "measure"
+        },
+        "unit": "births per woman per year",
+        "seriesType": "observed"
+      }
+    },
+    "deaths": {
+      "provider": "statfin",
+      "description": "Deaths by age and sex",
+      "table": {
+        "path": [
+          "kuol",
+          "12ag.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*",
+        "Sukupuoli": [
+          "Yhteensä"
+        ],
+        "Ikä": "*"
+      },
+      "output": {
+        "name": "Deaths by age",
+        "dimensions": {
+          "Vuosi": "year",
+          "Ikä": "age"
+        },
+        "fixed": {
+          "sex": "combined"
+        },
+        "filters": {
+          "Ikä": {
+            "exclude": [
+              "SSS"
+            ]
+          }
+        },
+        "unit": "deaths",
+        "seriesType": "observed"
+      }
+    },
+    "migration": {
+      "provider": "statfin",
+      "description": "Immigration and emigration by age and sex",
+      "table": {
+        "path": [
+          "muutl",
+          "11a7.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*",
+        "Sukupuoli": [
+          "Yhteensä"
+        ],
+        "Ikä": "*",
+        "Tiedot": "*",
+        "Alue": [
+          "KOKO MAA"
+        ]
+      },
+      "output": {
+        "name": "Migration by age",
+        "dimensions": {
+          "Vuosi": "year",
+          "Ikä": "ageGroup",
+          "Sukupuoli": "sex",
+          "Tiedot": "measure"
+        },
+        "filters": {
+          "Ikä": {
+            "exclude": [
+              "SSS"
+            ]
+          }
+        },
+        "unit": "persons",
+        "seriesType": "observed"
+      }
+    },
+    "employment": {
+      "provider": "statfin",
+      "description": "Employed persons by age and sex",
+      "table": {
+        "path": [
+          "tyti",
+          "13aw.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*",
+        "Sukupuoli": [
+          "Yhteensä"
+        ],
+        "Ikäluokka": "*",
+        "Osa-aikatyö": [
+          "Yhteensä"
+        ],
+        "Tiedot": "*"
+      },
+      "output": {
+        "name": "Employment by age",
+        "dimensions": {
+          "Vuosi": "year",
+          "Ikäluokka": "ageGroup",
+          "Tiedot": "measure"
+        },
+        "fixed": {
+          "sex": "combined"
+        },
+        "unit": "persons",
+        "seriesType": "observed"
+      }
+    },
+    "earnings": {
+      "provider": "statfin",
+      "description": "Average monthly earnings of full-time wage and salary earners",
+      "table": {
+        "path": [
+          "ati",
+          "14uw.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*"
+      },
+      "output": {
+        "name": "Average annual earnings",
+        "dimensions": {
+          "Vuosi": "year"
+        },
+        "transforms": {
+          "value": [
+            "multiply_12"
+          ]
+        },
+        "unit": "euros per year",
+        "seriesType": "observed"
+      }
+    },
+    "gdp": {
+      "provider": "statfin",
+      "description": "Gross domestic product and national income",
+      "table": {
+        "path": [
+          "ntp",
+          "15a9.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*"
+      },
+      "output": {
+        "name": "Gross domestic product",
+        "dimensions": {
+          "Vuosi": "year"
+        },
+        "unit": "million euros",
+        "seriesType": "observed"
+      }
+    },
+    "average_pension": {
+      "provider": "etk",
+      "description": "Average earnings-related pension",
+      "table": {
+        "path": [
+          "120tyoelakkeensaajat",
+          "30tyoelakkeensaajien_elake",
+          "elsael_1t00_aikas.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*",
+        "Asuinalue": [
+          "Suomessa ja ulkomailla asuvat yhteensä"
+        ],
+        "Eläke-etuudet": [
+          "Omaan työuraan perustuvan eläkkeen saajat, työeläke"
+        ],
+        "5-vuotisikäluokat": [
+          "Kaikki ikäluokat"
+        ],
+        "Sukupuoli": [
+          "Molemmat sukupuolet"
+        ],
+        "Tiedot": [
+          "Keskieläke, euroa/kk"
+        ]
+      },
+      "output": {
+        "name": "Average earnings-related pension",
+        "dimensions": {
+          "Vuosi": "year"
+        },
+        "unit": "euros per month",
+        "seriesType": "observed"
+      }
+    },
+    "pension_expenditure": {
+      "provider": "etk",
+      "description": "Earnings-related pension expenditure",
+      "table": {
+        "path": [
+          "140elakemenot",
+          "emeno01_koko.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*",
+        "Tiedot": [
+          "Työeläkemenot"
+        ]
+      },
+      "output": {
+        "name": "Earnings-related pension expenditure",
+        "dimensions": {
+          "Vuosi": "year"
+        },
+        "unit": "million euros",
+        "seriesType": "observed"
+      }
+    },
+    "pension_assets": {
+      "provider": "etk",
+      "description": "Earnings-related pension assets",
+      "table": {
+        "path": [
+          "180tyoelakkeiden_rahoitus",
+          "20tilinpaatoslukuja",
+          "tp08_elakevarat.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*",
+        "Varat": [
+          "Eläkevarat"
+        ],
+        "Eläkelaki (Vastuulaitos)": [
+          "Yhteensä"
+        ]
+      },
+      "output": {
+        "name": "Earnings-related pension assets",
+        "dimensions": {
+          "Vuosi": "year"
+        },
+        "unit": "million euros",
+        "seriesType": "observed"
+      }
+    },
+    "premium_income": {
+      "provider": "etk",
+      "description": "Total earnings-related pension premium income",
+      "table": {
+        "path": [
+          "180tyoelakkeiden_rahoitus",
+          "20tilinpaatoslukuja",
+          "tp03_maksutulo.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*",
+        "Maksutulo": [
+          "Maksutulo yhteensä"
+        ],
+        "Eläkelaki (Vastuulaitos)": [
+          "Yhteensä"
+        ]
+      },
+      "output": {
+        "name": "Earnings-related pension premium income",
+        "dimensions": {
+          "Vuosi": "year"
+        },
+        "unit": "million euros",
+        "seriesType": "observed"
+      }
+    },
+    "investment_return": {
+      "provider": "etk",
+      "description": "Historical earnings-related pension investment return",
+      "table": {
+        "path": [
+          "180tyoelakkeiden_rahoitus",
+          "20tilinpaatoslukuja",
+          "tp04_sijoitustuotot.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*",
+        "Sijoitustuotto": [
+          "Tuottoprosentti sitoutuneelle pääomalle, %"
+        ],
+        "Eläkelaki (Vastuulaitos)": [
+          "Yhteensä"
+        ]
+      },
+      "output": {
+        "name": "Historical earnings-related pension investment return",
+        "dimensions": {
+          "Vuosi": "year"
+        },
+        "unit": "percent",
+        "seriesType": "observed"
+      }
+    },
+    "pension_cash_flows": {
+      "provider": "etk",
+      "description": "Earnings-related pension system assets and cash flows",
+      "table": {
+        "path": [
+          "180tyoelakkeiden_rahoitus",
+          "10rahavirrat",
+          "rahavirrat01_kaikki.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*",
+        "Rahavirta": "*",
+        "Eläkelaki (Vastuulaitos)": [
+          "Laitokset yhteensä"
+        ]
+      },
+      "output": {
+        "name": "Earnings-related pension system assets and cash flows",
+        "dimensions": {
+          "Vuosi": "year",
+          "Rahavirta": "cashFlow"
+        },
+        "unit": "million euros",
+        "seriesType": "observed"
+      }
+    }
+  }
+}

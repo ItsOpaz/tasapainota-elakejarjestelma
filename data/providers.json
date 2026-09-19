@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "providers": {
+    "statfin": {
+      "name": "Statistics Finland",
+      "shortName": "Statistics Finland",
+      "type": "pxweb",
+      "licence": "CC BY 4.0",
+      "attribution": "Statistics Finland",
+      "api": {
+        "baseUrl": "https://pxdata.stat.fi/PxWeb/api/v1",
+        "language": "fi",
+        "database": "StatFin"
+      },
+      "web": {
+        "baseUrl": "https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin"
+      }
+    },
+    "etk": {
+      "name": "Finnish Centre for Pensions",
+      "shortName": "ETK",
+      "type": "pxweb",
+      "licence": "CC BY 4.0",
+      "attribution": "Eläketurvakeskus (ETK)",
+      "api": {
+        "baseUrl": "https://tilastot.etk.fi/api/v1",
+        "language": "fi",
+        "database": "ETK"
+      },
+      "web": {
+        "baseUrl": "https://tilastot.etk.fi/pxweb/fi/ETK"
+      }
+    }
+  }
+}

@@ -6,9 +6,14 @@ This document defines the external data used by the pension-system simulation.
 
 The application should prefer authoritative Finnish statistical sources and retain sufficient metadata to make every important input traceable.
 
+See also:
+- `docs/DATA_SOURCES.md` for the verified source map
+- `data/sources.json` for machine-readable source inventory
+- `DATA-LICENSES.md` for licence information
+
 ---
 
-# 2. Data principles
+## 2. Data principles
 
 The project follows these principles:
 
@@ -25,7 +30,7 @@ The project follows these principles:
 
 ---
 
-# 3. Primary sources
+## 3. Primary sources
 
 Potential primary sources include:
 
@@ -39,48 +44,50 @@ The exact source for each variable must be recorded in the dataset metadata.
 
 ---
 
-# 4. Data directory
+## 4. Data directory
 
 The initial data structure is:
 
 ```text
 data/
-├── current.json
-├── historical.json
-├── projections.json
-└── metadata.json
+├── sources.json        # machine-readable source inventory
+├── metadata.json       # provenance for each series
+└── [series files]      # e.g., population_by_age.json, fertility_rates.json, etc.
 ```
 
 This structure may evolve as the number of datasets grows.
 
 ---
 
-# 5. Data record format
+## 5. Data record format
 
 Every data series should contain metadata similar to:
 
 ```json
 {
-  "id": "tyel_contribution_rate",
-  "name": "TyEL contribution rate",
-  "unit": "%",
-  "source": "Eläketurvakeskus",
-  "sourceUrl": "https://...",
-  "license": "...",
+  "id": "population_by_age_sex",
+  "name": "Population according to age (1-year) and sex",
+  "unit": "persons",
+  "source": "Statistics Finland",
+  "sourceUrl": "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/vaerak/statfin_vaerak_pxt_11re.px",
+  "license": "CC BY 4.0",
   "retrieved": "YYYY-MM-DD",
   "seriesType": "observed",
   "values": [
     {
-      "year": 2026,
-      "value": 24.4
+      "year": 2025,
+      "age": 0,
+      "value": 55432
     }
   ]
 }
 ```
 
+Note: The exact structure may vary by series (e.g., fertility rates have age groups, mortality has death counts that need conversion to rates).
+
 ---
 
-# 6. Series types
+## 6. Series types
 
 Each series must be classified as one of:
 
@@ -109,51 +116,38 @@ A value calculated from other data.
 
 ---
 
-# 7. Initial datasets
+## 7. Initial datasets
 
-The initial implementation should investigate the availability of the following data.
+The initial implementation uses the following verified data sources (see `docs/DATA_SOURCES.md` for details):
 
-## Demography
+### Demography
 
-* total population
-* population by age
-* births
-* deaths
-* migration
-* fertility
-* life expectancy
+* population by age (1-year) and sex (Statistics Finland table 11re)
+* age-specific fertility (5-year) rates (Statistics Finland table 12ds)
+* deaths by age (1-year) and sex (Statistics Finland table 12ag)
+* immigration and emigration by age (5-year), sex and area (Statistics Finland table 11a7)
 
-## Labour market
+### Labour market
 
-* employment
-* employment rate
-* unemployment
-* labour force
-* average earnings
-* wage bill
+* employed persons and employees in part-time or full-time work by sex and age (Statistics Finland table 13aw)
+* average monthly earnings of full-time wage and salary earners by sector (Statistics Finland table 14uw)
 
-## Economy
+### Economy
 
-* GDP
-* GDP growth
-* inflation
-* wage growth
-* investment returns
+* gross domestic product and national income (Statistics Finland table 15a9)
 
-## Pension system
+### Pension system
 
-* pension expenditure
-* pension recipients
-* pension assets
-* pension contributions
-* contribution rates
-* average pensions
-* pension expenditure / GDP
-* relevant pension-system projections
+* total expenditure on pensions (ETK statistical database)
+* pension recipient counts (ETK pension recipient statistical database)
+* average pension of earnings-related pension recipients (ETK statistical database)
+* pension assets (ETK time-series database)
+* premium income (contributions) (ETK time-series database)
+* historical investment return on pension assets (ETK time-series database)
 
 ---
 
-# 8. Historical data
+## 8. Historical data
 
 Historical data should be retained where practical.
 
@@ -163,7 +157,7 @@ Historical data should not automatically be treated as a forecast.
 
 ---
 
-# 9. Projection data
+## 9. Projection data
 
 Official projections should be stored separately from observed data.
 
@@ -174,40 +168,45 @@ historical.json
     1990–2025
 
 projections.json
-    2026–2090
+    2026–2095
 ```
 
 The actual years depend on the source.
 
+For the baseline long-term assumption, document ETK 2026 long-term projection assumptions:
+- Investment return: 3.18% real return annually in 2026-2035 and 3.75% from 2036 onward.
+- Mortality: ETK 2026 long-term projection assumptions used as baseline reference for future mortality.
+
+These are baseline/reference assumptions, not immutable model truth.
+
+Long-term reference:
+ETK 2026 long-term projections span 70 years.
+Statistics Finland population projection 2024 is also a reference source.
+
+Do not simply copy an official projection into the simulator; use it as a calibration/reference scenario.
+
 ---
 
-# 10. Data transformations
+## 10. Data transformations
 
 If source data is transformed, the transformation must be documented.
 
 Examples:
 
 ```text
-EUR → EUR billion
+death counts → death rates (probability) by dividing by population
+monthly earnings → annual earnings (×12)
+aggregate over areas → national total
+net migration = immigration - emigration
 ```
 
-or:
-
-```text
-population groups → working-age population
-```
-
-or:
-
-```text
-monthly value → annual value
-```
+If the historical net-migration profile is noisy, the smoothing/normalization method must be documented explicitly.
 
 A transformation should never overwrite the original source without documentation.
 
 ---
 
-# 11. Update process
+## 11. Update process
 
 The preferred architecture is:
 
@@ -231,7 +230,7 @@ This makes the application robust when embedded on third-party websites.
 
 ---
 
-# 12. Data validation
+## 12. Data validation
 
 Before data is committed, automated checks should verify:
 
@@ -246,7 +245,7 @@ Before data is committed, automated checks should verify:
 
 ---
 
-# 13. Provenance
+## 13. Provenance
 
 For every important series, the project should be able to answer:
 
@@ -258,7 +257,7 @@ and:
 
 ---
 
-# 14. Licensing
+## 14. Licensing
 
 The project source code is licensed under the project's software licence.
 
@@ -272,7 +271,7 @@ for the dataset-specific licence information.
 
 ---
 
-# 15. Data quality
+## 15. Data quality
 
 External data may be revised by its publisher.
 

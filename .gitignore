@@ -1,2 +1,4 @@
 .claude/
 development/
+data/raw/*.tmp.json
+venv/
