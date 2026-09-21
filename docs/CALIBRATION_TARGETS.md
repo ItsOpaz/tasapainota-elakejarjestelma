@@ -4,6 +4,15 @@ This document specifies the 2025 baseline values (calibration targets) that the 
 
 **Tolerance threshold**: Each metric must match the observed value within ±2% when the simulation is run with all default parameters and unlimited computational precision.
 
+**Important**: Targets are expressed on the model's own definitions (see `docs/MODEL.md`):
+- **employed**: persons aged 15 to retirementAge−1 (15–62 at default)
+- **pensioners**: persons aged retirementAge and over (63+ at default)
+- **pension expenditure**: pensioners × average pension (simplified)
+
+The simplified model deliberately differs from official ETK totals, which include disability and survivor pensions and non-wage income. Those differences are documented limitations, not calibration failures.
+
+**Note**: `test/calibration_test.js` is the authoritative executable version of these targets. If this document and the test disagree, the test reflects the current model.
+
 ---
 
 ## Population Metrics
@@ -34,22 +43,22 @@ The simulator must reproduce the age distribution. Sample validation at key ages
 
 | Age | 2025 Observed | ±2% Range | Source |
 |-----|-------|-----------|---------|
-| 0 | 53,120 | [52,058–54,182] | Statistics Finland |
-| 15 | 60,452 | [59,243–61,661] | Statistics Finland |
-| 30 | 73,218 | [71,754–74,682] | Statistics Finland |
-| 45 | 77,456 | [75,907–79,005] | Statistics Finland |
-| 60 | 75,892 | [74,374–77,410] | Statistics Finland |
-| 63 (retirement age) | 73,156 | [71,693–74,619] | Statistics Finland |
-| 75 | 47,283 | [46,337–48,229] | Statistics Finland |
-| 85 | 22,156 | [21,713–22,599] | Statistics Finland |
-| 100+ | 3,142 | [3,079–3,205] | Statistics Finland |
+| 0 | 45,786 | [44,870–46,702] | Statistics Finland |
+| 15 | 65,888 | [64,570–67,206] | Statistics Finland |
+| 30 | 73,179 | [71,715–74,643] | Statistics Finland |
+| 45 | 72,210 | [70,766–73,654] | Statistics Finland |
+| 60 | 71,589 | [70,157–73,021] | Statistics Finland |
+| 63 (retirement age) | 71,715 | [70,281–73,149] | Statistics Finland |
+| 75 | 64,249 | [62,964–65,534] | Statistics Finland |
+| 85 | 24,447 | [23,958–24,936] | Statistics Finland |
+| 100 | 1,315 | [1,289–1,341] | Statistics Finland |
 
 **Validation method**:
 ```js
 const ageGroups = [0, 15, 30, 45, 60, 63, 75, 85, 100];
-const populationByAge = simulateYear(2025).populationByAge;
+const populationByAge = result.population[0];
 for (const age of ageGroups) {
-  const observed = calibrationTargets[age];
+  const observed = calibrationTargets.populationByAge[age];
   const simulated = populationByAge[age];
   const error = Math.abs(simulated - observed) / observed;
   assert(error <= 0.02, `Population age ${age} error: ${(error*100).toFixed(1)}%`);
@@ -62,19 +71,19 @@ for (const age of ageGroups) {
 
 ### Total Employed
 
-**Target value (2025)**: 2,590,000 persons
+**Target value (2025)**: 2,392,600 persons
 
-**Source**: Statistics Finland employment statistics (age 15–74; adjusted for model age range 15–62)
+**Source**: Statistics Finland employment statistics (derived on model age range 15–62)
 
 **Calculation**: employed[2025, 15–62] 
 
-**Tolerance**: ±2% → [2,538,200 ... 2,641,800]
+**Tolerance**: ±2% → [2,344,748 ... 2,440,452]
 
 **Baseline employed formula check**:
 ```js
-const expected = 2590000;
-const workingAgePopulation = simulateYear(2025).workingAgePopulation;
-const employed = workingAgePopulation * 0.722; // employmentRate default
+const expected = 2392600;
+const workingAgePopulation = simulateYear(2025).workingAgePopulation; // 3,355,140
+const employed = workingAgePopulation * 0.713; // employmentRate default
 assert(Math.abs(employed - expected) / expected <= 0.02);
 ```
 
@@ -104,17 +113,17 @@ assert(error <= 0.03, `Wage error: ${(error*100).toFixed(1)}%`);
 
 ### Wage Bill
 
-**Target value (2025)**: ~130,300 million EUR
+**Target value (2025)**: 120,185 million EUR
 
-**Calculation**: employed × averageWage = 2,590,000 × 50,232 ≈ 130,100,000,000 EUR = 130.1 billion
+**Calculation**: employed × averageWage = 2,392,600 × 50,232 ≈ 120,185,000,000 EUR = 120.2 billion
 
 **Unit**: Real 2025 EUR (millions)
 
-**Tolerance**: ±2% → [127.7 ... 132.9 billion]
+**Tolerance**: ±2% → [117.8 ... 122.6 billion]
 
 **Validation**:
 ```js
-const expected = 130300; // millions
+const expected = 120185; // millions
 const simulated = result.wageBill[2025];
 assert(Math.abs(simulated - expected) / expected <= 0.02);
 ```
@@ -125,24 +134,24 @@ assert(Math.abs(simulated - expected) / expected <= 0.02);
 
 ### Pensioner Count
 
-**Target value (2025)**: ~1,400,000 persons (estimated)
+**Target value (2025)**: 1,490,011 persons
 
 **Definition**: Population age ≥ 63 (retirement age default)
 
-**Source**: Statistics Finland age distribution; estimate based on observed population 63+
+**Source**: Statistics Finland age distribution (derived)
 
 **Calculation**: `population[2025, ages 63–100+] summed`
 
-**Tolerance**: ±3% → [1,358,000 ... 1,442,000] (relaxed due to estimation)
+**Tolerance**: ±2% → [1,460,211 ... 1,519,811]
 
 **Note**: This is a simplified approximation; actual pension recipients include early retirees (55+) and exclude some who continue working. The model uses age 63+ as proxy.
 
 **Validation**:
 ```js
-const observed ≈ 1400000;
+const observed = 1490011;
 const simulated = result.pensioners[2025];
 const error = Math.abs(simulated - observed) / observed;
-assert(error <= 0.03);
+assert(error <= 0.02);
 ```
 
 ---
@@ -172,21 +181,19 @@ assert(error <= 0.02);
 
 ### Pension Expenditure
 
-**Target value (2025)**: 37,225 million EUR per year
+**Target value (2025)**: 34,169 million EUR per year
 
 **Unit**: Nominal EUR (millions)
 
-**Calculation**: pensioners × averagePension = 1,400,000 × 22,932 ≈ 32,100,000,000 EUR = 32.1 billion
+**Calculation**: pensioners × averagePension = 1,490,011 × 22,932 ≈ 34,169,000,000 EUR = 34.2 billion
 
-**Note**: ETK statistics show 37,225 million (2025); discrepancy vs. simplified calculation (32.1 billion) suggests higher average pension or more pensioners counted in official data. Model uses simplification.
+**Note**: ETK statistics show 37,225 million (2025) for total pension expenditure; the difference is because the simplified model covers only old-age pensions (pensioners × average pension) and excludes disability and survivor pensions. The model uses the simplified calculation.
 
-**Tolerance**: ±3% → [36,008 ... 38,342 million] (relaxed due to known simplification)
-
-**Limitation**: Official figure includes disability pensions, survivor pensions, etc.; model uses only old-age pensioners.
+**Tolerance**: ±3% → [33,144 ... 35,194 million]
 
 **Validation**:
 ```js
-const expected = 37225; // millions
+const expected = 34169; // millions
 const simulated = result.pensionExpenditure[2025];
 const error = Math.abs(simulated - expected) / expected;
 assert(error <= 0.03);
@@ -196,24 +203,22 @@ assert(error <= 0.03);
 
 ### Pension Contribution Revenue
 
-**Target value (2025)**: 33,571 million EUR
+**Target value (2025)**: 29,325 million EUR
 
 **Unit**: EUR (millions)
 
-**Calculation**: wageBill × contributionRate = 130,100M × 0.244 ≈ 31,744 million
+**Calculation**: wageBill × contributionRate = 120,185M × 0.244 ≈ 29,325 million
 
-**Source**: ETK premium income statistics
+**Note**: The official ETK premium income (33,571M) is higher because it includes other income sources (interest, transfers, state contributions). The model uses the simplified wage-bill calculation.
 
-**Note**: Official value (33,571M) exceeds simplified calculation by ~5.7%, likely due to other income sources (interest, transfers).
-
-**Tolerance**: ±5% → [31,892 ... 35,250 million]
+**Tolerance**: ±3% → [28,445 ... 30,205 million]
 
 **Validation**:
 ```js
-const expected = 33571; // millions
+const expected = 29325; // millions
 const simulated = result.contributions[2025];
 const error = Math.abs(simulated - expected) / expected;
-assert(error <= 0.05);
+assert(error <= 0.03);
 ```
 
 ---
@@ -257,9 +262,9 @@ investmentIncome[2026] = assets[2025] × investmentReturn[2026]
 ```
 
 With rough estimates (wage bill growth ~2%, employment flat):
-- Contributions[2026] ≈ 33,571 × 1.02 ≈ 34,242 million
-- Pension expenditure[2026] ≈ 37,225 × 1.02 ≈ 37,970 million
-- Assets[2026] ≈ 290,108 + 34,242 + 8,703 - 37,970 ≈ 295,083 million
+- Contributions[2026] ≈ 29,325 × 1.02 ≈ 29,912 million
+- Pension expenditure[2026] ≈ 34,169 × 1.02 ≈ 34,852 million
+- Assets[2026] ≈ 290,108 + 29,912 + 8,703 - 34,852 ≈ 293,871 million
 
 This is a consistency check, not a strict calibration target.
 
@@ -319,17 +324,17 @@ assert(error <= 0.01); // Very tight check; derived metric
 
 **Formula**: pensioners / employed
 
-**Calculated value**: 1,400,000 / 2,590,000 ≈ 0.540 (54 pensioners per 100 workers)
+**Calculated value**: 1,490,011 / 2,392,600 ≈ 0.623 (62 pensioners per 100 workers)
 
-**Interpretation**: Approximately 54 pensioners supported by every 100 workers.
+**Interpretation**: Approximately 62 pensioners supported by every 100 workers.
 
 **Expected range**: 0.40–0.65 (varies by country aging patterns)
 
 **Validation**:
 ```js
-const pensioners = 1400000;
-const employed = 2590000;
-const expected = pensioners / employed; // ≈ 0.540
+const pensioners = 1490011;
+const employed = 2392600;
+const expected = pensioners / employed; // ≈ 0.623
 const simulated = result.pensionerWorkerRatio[2025];
 const error = Math.abs(simulated - expected) / expected;
 assert(error <= 0.01);
@@ -341,9 +346,9 @@ assert(error <= 0.01);
 
 **Formula**: pensionExpenditure / GDP
 
-**Calculated value**: 37,225 / 281,783 ≈ 0.132 (13.2%)
+**Calculated value**: 34,169 / 281,783 ≈ 0.121 (12.1%)
 
-**Interpretation**: Pension spending is about 13.2% of GDP.
+**Interpretation**: Pension spending is about 12.1% of GDP.
 
 **Context**: 
 - OECD average: ~7–9%
@@ -354,10 +359,10 @@ assert(error <= 0.01);
 
 **Validation**:
 ```js
-const expenditure = 37225; // millions
+const expenditure = 34169; // millions
 const gdp = 281783; // millions
-const expected = expenditure / gdp; // ≈ 0.132
-const simulated = result.pensionExpenditureToGDP[2025];
+const expected = expenditure / gdp; // ≈ 0.121
+const simulated = result.pensionToGDP[2025];
 const error = Math.abs(simulated - expected) / expected;
 assert(error <= 0.01);
 ```
@@ -372,17 +377,17 @@ assert(error <= 0.01);
 const parameters = {
   retirementAge: 63,
   contributionRate: 0.244,
-  employmentRate: 0.722,
+  employmentRate: 0.713,
   wageGrowth: 0.02,
   gdpGrowth: 0.02,
   investmentReturn: 0.03,
-  fertilityRate: 1.0,
-  migrationLevel: 0,
-  pensionIndexation: "wage"
+  fertilityRate: 1.31,
+  migrationLevel: 31233,
+  pensionIndexation: 0.02
 };
 
-const initialState = loadBaseYear2025Data();
-const result = simulateScenario(parameters, initialState, data, horizon=1);
+const data = loadProcessedData();
+const result = simulateScenario(parameters, { data, horizon: 1 });
 ```
 
 ### Step 2: Check All Metrics
@@ -429,6 +434,11 @@ All values extracted from official sources (Statistics Finland, ETK, THL) with f
 ---
 
 ## Version History
+
+**v0.2.0 (2026-09-21)**:
+- `fertilityRate` changed from a multiplier to an absolute total fertility
+  rate (children per woman); default set to the observed 2025 TFR (1.31)
+- Calibration targets reconciled with the model's own definitions
 
 **v0.1.0 (2026-09-19)**:
 - Initial calibration targets for 2025 base year

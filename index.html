@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasapainota Suomen eläkejärjestelmä</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0"></script>
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Tasapainota Suomen eläkejärjestelmä</h1>
+      <p>Havainnollistava simulaatio eläkejärjestelmän pitkän aikavälin kehityksestä.</p>
+    </header>
+
+    <p id="error" class="error-message" role="alert"></p>
+
+    <!-- Controls Panel -->
+    <section class="controls-panel" aria-labelledby="controlsHeading">
+      <h2 id="controlsHeading">Säätimet</h2>
+
+      <div class="control-group">
+        <div class="control-header">
+          <label for="retirementAge">Eläkeikä</label>
+          <span class="control-value"><span id="retirementAgeValue">63</span> <span class="unit">vuotta</span></span>
+        </div>
+        <input type="range" id="retirementAge" min="60" max="75" step="1" value="63">
+        <div class="control-scale"><span>60</span><span>75</span></div>
+      </div>
+
+      <div class="control-group">
+        <div class="control-header">
+          <label for="contributionRate">Eläkemaksu</label>
+          <span class="control-value"><span id="contributionRateValue">24.4</span> <span class="unit">% palkkasummasta</span></span>
+        </div>
+        <input type="range" id="contributionRate" min="15" max="30" step="0.1" value="24.4">
+        <div class="control-scale"><span>15</span><span>30</span></div>
+      </div>
+
+      <div class="control-group">
+        <div class="control-header">
+          <label for="employmentRate">Työllisyysaste</label>
+          <span class="control-value"><span id="employmentRateValue">71.3</span> <span class="unit">% työikäisistä</span></span>
+        </div>
+        <input type="range" id="employmentRate" min="50" max="90" step="0.1" value="71.3">
+        <div class="control-scale"><span>50</span><span>90</span></div>
+      </div>
+
+      <div class="control-group">
+        <div class="control-header">
+          <label for="wageGrowth">Palkkojen kasvu</label>
+          <span class="control-value"><span id="wageGrowthValue">2.0</span> <span class="unit">% / vuosi</span></span>
+        </div>
+        <input type="range" id="wageGrowth" min="-2" max="5" step="0.1" value="2">
+        <div class="control-scale"><span>−2</span><span>5</span></div>
+      </div>
+
+      <div class="control-group">
+        <div class="control-header">
+          <label for="gdpGrowth">BKT:n kasvu</label>
+          <span class="control-value"><span id="gdpGrowthValue">2.0</span> <span class="unit">% / vuosi</span></span>
+        </div>
+        <input type="range" id="gdpGrowth" min="-2" max="5" step="0.1" value="2">
+        <div class="control-scale"><span>−2</span><span>5</span></div>
+      </div>
+
+      <div class="control-group">
+        <div class="control-header">
+          <label for="investmentReturn">Sijoitustuotto</label>
+          <span class="control-value"><span id="investmentReturnValue">3.0</span> <span class="unit">% / vuosi (reaalinen)</span></span>
+        </div>
+        <input type="range" id="investmentReturn" min="0" max="10" step="0.1" value="3">
+        <div class="control-scale"><span>0</span><span>10</span></div>
+      </div>
+
+      <div class="control-group">
+        <div class="control-header">
+          <label for="fertilityRate">Syntyvyys</label>
+          <span class="control-value"><span id="fertilityRateValue">1.31</span> <span class="unit">lasta / naista</span></span>
+        </div>
+        <input type="range" id="fertilityRate" min="0.5" max="2.5" step="0.01" value="1.31">
+        <div class="control-scale"><span>0.5</span><span>2.5</span></div>
+      </div>
+
+      <div class="control-group">
+        <div class="control-header">
+          <label for="migrationLevel">Nettomaahanmuutto</label>
+          <span class="control-value"><span id="migrationLevelValue">31233</span> <span class="unit">henkilöä / vuosi</span></span>
+        </div>
+        <input type="range" id="migrationLevel" min="-10000" max="50000" step="1000" value="31233">
+        <div class="control-scale"><span>−10 000</span><span>50 000</span></div>
+      </div>
+
+      <div class="control-group">
+        <div class="control-header">
+          <label for="pensionIndexation">Eläkkeiden indeksointi</label>
+          <span class="control-value"><span id="pensionIndexationValue">2.0</span> <span class="unit">% / vuosi</span></span>
+        </div>
+        <input type="range" id="pensionIndexation" min="-2" max="5" step="0.1" value="2">
+        <div class="control-scale"><span>−2</span><span>5</span></div>
+      </div>
+
+      <button type="button" id="reset" class="reset-button">Palauta oletusarvot</button>
+    </section>
+
+    <!-- Results Panel -->
+    <section class="results-panel" aria-labelledby="resultsHeading">
+      <h2 id="resultsHeading">Tulokset (perusvuosi 2025)</h2>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <h3>Väestö</h3>
+          <div class="metric-value" id="metricPopulation">—</div>
+          <small>asukasta</small>
+        </div>
+        <div class="metric-card">
+          <h3>Työlliset</h3>
+          <div class="metric-value" id="metricEmployed">—</div>
+          <small>henkilöä</small>
+        </div>
+        <div class="metric-card">
+          <h3>Eläkeläiset</h3>
+          <div class="metric-value" id="metricPensioners">—</div>
+          <small>henkilöä</small>
+        </div>
+        <div class="metric-card">
+          <h3>Keskimääräinen eläke</h3>
+          <div class="metric-value" id="metricAvgPension">—</div>
+          <small>€ / vuosi</small>
+        </div>
+        <div class="metric-card">
+          <h3>Eläkemeno</h3>
+          <div class="metric-value" id="metricExpenditure">—</div>
+          <small>milj. € / vuosi</small>
+        </div>
+        <div class="metric-card">
+          <h3>Eläkevarat</h3>
+          <div class="metric-value" id="metricAssets">—</div>
+          <small>milj. €</small>
+        </div>
+      </div>
+
+      <div class="chart-controls">
+        <label for="metricSelect">Näytettävä mittari</label>
+        <select id="metricSelect">
+          <option value="pensionToGDP">Eläkemeno / BKT</option>
+          <option value="contributionRate">Eläkemaksutaso</option>
+          <option value="pensionAssets">Eläkevarat</option>
+          <option value="replacementRate">Eläketaso suhteessa palkkoihin</option>
+          <option value="pensionerWorkerRatio">Eläkeläiset / työlliset</option>
+        </select>
+      </div>
+
+      <div class="chart-wrapper">
+        <canvas id="chart" role="img"
+          aria-label="Viivakaavio, joka vertaa perusskenaariota ja omaa skenaariota valitun mittarin osalta vuosina 2025–2095."></canvas>
+      </div>
+    </section>
+
+    <footer class="app-footer">
+      <p>
+        Simulaattori on havainnollistava työkalu, ei virallinen eläke-ennuste.
+        Laskentamalli on tarkoituksella yksinkertaistettu.
+      </p>
+    </footer>
+  </div>
+
+  <script src="src/model.js"></script>
+  <script src="src/data.js"></script>
+  <script src="src/simulation.js"></script>
+  <script src="src/charts.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

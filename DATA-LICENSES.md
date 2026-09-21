@@ -15,6 +15,8 @@
 | Pension assets | Finnish Centre for Pensions (ETK) | CC BY 4.0 | ETK time-series database | Use the actual pension assets and premium income series for calibration. Keep PAYG/funded-system simplifications explicitly documented. |
 | Premium income (contributions) | Finnish Centre for Pensions (ETK) | CC BY 4.0 | ETK time-series database |  |
 | Historical investment return on pension assets | Finnish Centre for Pensions (ETK) | CC BY 4.0 | ETK time-series database | For the baseline long-term assumption, document ETK 2026 long-term projection assumptions: 3.18% real return annually in 2026-2035 and 3.75% from 2036 onward. These are baseline/reference assumptions, not immutable model truth. |
+| Employment rate by origin | Statistics Finland (Kototietokanta) | CC BY 4.0 | Kotoutumisen indikaattorit, table 117e | Employment rate by origin, time in country and age. Used to model the employment gap between foreign-background and Finnish-background populations. |
+| Income level by origin | Statistics Finland | CC BY 4.0 | Table 14ya | Disposable income by origin and age. Used as an approximation of the wage gap between foreign-background and Finnish-background populations; it is income, not wages, and is documented as an approximation. |
 
 ## Attribution requirements
 

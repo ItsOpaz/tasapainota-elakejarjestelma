@@ -68,7 +68,7 @@ This document defines the 9 user parameters in the pension-system simulation. Ea
 
 **Unit**: Fraction (0.0–1.0); displayed as percentage
 
-**Default value**: 0.722 (72.2% in 2025)
+**Default value**: 0.713 (71.3% in 2025)
 
 **Valid range**: 0.50–0.90 (50%–90%)
 
@@ -87,7 +87,7 @@ This document defines the 9 user parameters in the pension-system simulation. Ea
 - High unemployment in specific age groups not captured (aggregate rate assumption)
 - Employment changes are exogenous (unemployment not modeled as behavioral response to policy)
 
-**Data source**: Statistics Finland employment statistics; 2025 observed rate ≈ 72.2% (age 15–74; adjusted for age 15–62 in model)
+**Data source**: Statistics Finland employment statistics; 2025 observed rate = 71.3% (employed persons aged 15–62 divided by population aged 15–62)
 
 **Note**: Employment participation before age 15 and after retirement age is not included in the calculation.
 
@@ -186,20 +186,24 @@ This document defines the 9 user parameters in the pension-system simulation. Ea
 
 ### 7. Fertility Rate (`fertilityRate`)
 
-**Definition**: Multiplier applied to observed 2025 age-specific fertility rates.
+**Definition**: Total fertility rate — the average number of children a woman would have over her lifetime at current age-specific rates.
 
-**Unit**: Dimensionless multiplier (1.0 = observed, 0.8 = 20% lower, 1.2 = 20% higher)
+**Unit**: Children per woman
 
-**Default value**: 1.0 (no change from observed)
+**Default value**: 1.31 (observed 2025 total fertility rate)
 
-**Valid range**: 0.5–1.5 (50% of observed to 150% of observed)
+**Valid range**: 0.5–2.5 (children per woman)
 
 **Internal representation**: Decimal
 
+**Note**: This is an absolute rate, not a multiplier. Internally the engine scales
+the observed 2025 age-specific fertility profile so that its sum equals this
+value. Replacement-level fertility is about 2.1 children per woman.
+
 **Effects**:
-- **Direct effect on births**: births[t] = Σ(femalePopulation × (fertilityRate × baseRate[age]))
+- **Direct effect on births**: births[t] = Σ(femalePopulation × scaledRate[age])
 - **Affects population growth**: Higher fertility → more births → larger future population
-- **Affects working-age population**: Directly inflates future employed population (20+ years later)
+- **Affects working-age population**: Directly inflates future employed population (15–20 years later)
 - **Long-term effects on pensioner-to-worker ratio**: High fertility reduces aging pressure
 - **Effects on wage bill and contributions**: More future workers → higher wage bill
 - **No direct effect on**: Employment rates, wages, contribution rates, investment returns, retirement age
@@ -207,13 +211,15 @@ This document defines the 9 user parameters in the pension-system simulation. Ea
 **Interaction effects**:
 - Fertility changes affect population only after 15+ year lag (cohort needs to reach working age)
 - Very low fertility (0.5) accelerates aging; combined with high retirement age may create acute worker shortage
-- High fertility (1.5) slows aging but increases education and public spending demands (not modeled)
+- High fertility (2.5) slows aging but increases education and public spending demands (not modeled)
 
 **Scenario examples**:
-- Finnish fertility rate (2025) ≈ 1.38 children per woman; rate of 0.5 multiplier → ~0.69 (very low, risk of severe aging)
-- Rate of 1.5 multiplier → ~2.07 (high fertility, slows aging)
+- Finland 2025 (observed): 1.31 children per woman (default)
+- 0.5 → very low; severe population decline in the long run
+- 2.1 → approximately replacement level; long-run population stabilisation
+- 2.5 → high fertility; population growth
 
-**Data source**: Statistics Finland fertility statistics; Finnish rate 2025 ≈ 1.38 children per woman; base rates by age from THL (birth data)
+**Data source**: Statistics Finland age-specific fertility rates (table 12ds); the default is the sum of the observed 2025 age-specific rates
 
 ---
 
@@ -223,14 +229,14 @@ This document defines the 9 user parameters in the pension-system simulation. Ea
 
 **Unit**: Persons per year; can be positive (immigration) or negative (emigration)
 
-**Default value**: 0 (no net migration change from observed)
+**Default value**: 31,233 (observed 2025 net migration)
 
 **Valid range**: -10,000 to +50,000 persons per year
 
 **Internal representation**: Integer
 
 **Effects**:
-- **Direct effect on population size**: netMigration[t] is added to age distribution each year
+- **Direct effect on population size**: net migration is added to the age distribution each year
 - **Affects total population**: More migration → larger population
 - **Affects working-age population**: Migration profile (by age) determines distribution
 - **Affects wage bill**: More working-age migrants → higher employment and wages
@@ -238,36 +244,40 @@ This document defines the 9 user parameters in the pension-system simulation. Ea
 - **No direct effect on**: Employment rates, wages, contribution rates, fertility, investment returns
 
 **Interaction effects**:
-- Migration is applied proportionally across all age groups (simplified; actual migration skews young adult)
-- Large negative migration (emigration) can partially offset high natural population aging
+- Migration follows the observed 2025 age profile (skewed toward young adults)
+- Large negative migration (emigration) can partially offset natural population aging
 - Migration provides flexibility to adjust population without fertility or mortality changes
+- **Assumption not yet modelled**: migrants are currently assumed to be employed
+  at the same rate and to earn the same average wage as the native-born
+  population from their first year. This overstates the contribution base
+  migration generates. See `docs/ASSUMPTIONS.md` §4.
 
 **Scenario examples**:
-- Finnish observed migration (2025) ≈ +10,000 persons/year; default 0 means no additional/reduced migration
-- +30,000/year scenario → rapid population growth, eases aging pressure
+- Finnish observed net migration (2025) = +31,233 persons/year (default)
+- +50,000/year scenario → faster population growth, eases aging pressure
 - -10,000/year scenario → population decline, increases pensioner pressure
 
-**Data source**: Statistics Finland international migration statistics; 2015–2025 data shows variable flows (+8k to +20k annually depending on year)
+**Data source**: Statistics Finland international migration statistics; 2025 net migration = +31,233 persons
 
 ---
 
 ### 9. Pension Indexation (`pensionIndexation`)
 
-**Definition**: Rule for how average pension grows annually.
+**Definition**: Annual rate at which the average pension grows.
 
-**Unit**: Categorical (version 0.1: simplistic; future versions may allow weighted combinations)
+**Unit**: Annual decimal rate (e.g., 0.02 = 2% per year)
 
-**Default value**: "wage" (pension growth = wage growth)
+**Default value**: 0.02 (2% annual indexation)
 
-**Valid options** (v0.1): 
-- `"wage"`: Pension growth = wageGrowth (default)
-- `"price"`: Pension growth = priceInflation (if available)
-- `"fixed"`: Pension growth = fixed rate (e.g., 2%)
+**Valid range**: -0.02 to +0.05 (-2% to +5% per year)
 
-**Note**: v0.1 uses simplified uniform indexation rule. Future versions may allow: `"combined": {wageWeight: 0.8, priceWeight: 0.2}`
+**Internal representation**: Decimal
+
+**Note**: v0.1 uses a single annual indexation rate. Future versions may allow a
+weighted combination of wage and price indices.
 
 **Effects**:
-- **Direct effect on average pension**: averagePension[t] = averagePension[t-1] × (1 + indexationGrowth)
+- **Direct effect on average pension**: averagePension[t] = averagePension[t-1] × (1 + pensionIndexation)
 - **Affects pension expenditure**: As pensions grow, expenditure increases proportionally
 - **Affects replacement rate**:
   - If indexation = wage growth: replacement rate stays constant
@@ -277,8 +287,8 @@ This document defines the 9 user parameters in the pension-system simulation. Ea
 - **No direct effect on**: Employment, wages, contribution rates, investment returns, population
 
 **Finnish policy context**:
-- Official Finnish pension index (2024–2025) ≈ 1.83% (weighted combination of wage and price indices)
-- Law specifies: 80% wage index + 20% price index (approximate; actual weights may vary)
+- The official Finnish pension index is a weighted combination of wage and price indices (approximately 80% wage + 20% price).
+- v0.1 simplifies this to a single annual rate; this is a documented limitation.
 
 **Interaction effects**:
 - If indexation < wage growth and retirement age increases, pensioners may have lower living standards than under baseline
@@ -294,13 +304,13 @@ This document defines the 9 user parameters in the pension-system simulation. Ea
 |-----------|---------|-----|-----|------|----------------|
 | Retirement Age | 63 | 60 | 75 | years | Employed, pensioners, expenditure, ratio |
 | Contribution Rate | 24.4% | 15% | 30% | % | Contributions, assets, revenue |
-| Employment Rate | 72.2% | 50% | 90% | % | Employed, wage bill, ratio |
+| Employment Rate | 71.3% | 50% | 90% | % | Employed, wage bill, ratio |
 | Wage Growth | 2.0% | -2% | 5% | %/year | Wages, wage bill, contributions, replacement |
 | GDP Growth | 2.0% | -2% | 5% | %/year | GDP, pension/GDP ratio |
 | Investment Return | 3.0% | 0% | 10% | %/year | Assets, investment income |
-| Fertility Rate | 1.0 | 0.5 | 1.5 | multiplier | Future population, workers (delayed) |
-| Migration Level | 0 | -10k | +50k | persons/yr | Population size, age distribution |
-| Pension Indexation | wage | wage/price/fixed | — | rule | Average pension, expenditure, replacement |
+| Fertility Rate | 1.31 | 0.5 | 2.5 | children/woman | Future population, workers (delayed) |
+| Migration Level | 31,233 | -10k | +50k | persons/yr | Population size, age distribution |
+| Pension Indexation | 2.0% | -2% | 5% | %/year | Average pension, expenditure, replacement |
 
 ---
 
@@ -313,14 +323,14 @@ Before running simulation, validate all parameters:
 ```js
 const errors = validateParameters({
   retirementAge: 63,
-  contributionRate: 24.4,
-  employmentRate: 72.2,
-  wageGrowth: 2.0,
-  gdpGrowth: 2.0,
-  investmentReturn: 3.0,
-  fertilityRate: 1.0,
-  migrationLevel: 0,
-  pensionIndexation: "wage"
+  contributionRate: 0.244,
+  employmentRate: 0.713,
+  wageGrowth: 0.02,
+  gdpGrowth: 0.02,
+  investmentReturn: 0.03,
+  fertilityRate: 1.31,
+  migrationLevel: 31233,
+  pensionIndexation: 0.02
 });
 
 if (errors.length > 0) {

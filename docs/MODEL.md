@@ -1,6 +1,6 @@
 # Simulation Model
 
-**MODEL_VERSION**: 0.1.0
+**MODEL_VERSION**: 0.2.0
 **Base Year**: 2025
 **Simulation Horizon**: 2025–2095 (70 years)
 
@@ -98,12 +98,16 @@ births[t] = Σ(females[t, age] × fertilityRate[t, age])
 Where:
 - `females[t, age]` = female population at age in year t
 - `fertilityRate[t, age]` = fertility rate for age group (births per woman per year)
-- Default `fertilityRate[t, age]` = observed 2025 rates (multiplied by fertilityMultiplier parameter)
+- Default `fertilityRate[t, age]` = observed 2025 rates, scaled to match the
+  total fertility rate given by the `fertilityRate` parameter
 
 **Notes**:
 - The model assumes sex ratio at birth ≈ 1.05 males per female.
 - Fertility rates are sourced from Statistics Finland fertility data (ages 15–49).
-- User parameter: `fertilityRate` (multiplier: 0.5–1.5, default 1.0 = observed 2025)
+- User parameter: `fertilityRate` (total fertility rate in children per woman,
+  range 0.5–2.5, default 1.31 = observed 2025)
+- The parameter is an absolute TFR, not a multiplier. The engine scales the
+  observed age-specific profile so that its sum equals the parameter value.
 
 **Data source**: Statistics Finland fertility rates (THL birth data)
 
@@ -148,13 +152,22 @@ netMigration[t, age] =
 ```
 
 Where:
-- `migrationProfile[age]` = age distribution of net migration (normalized)
-- `migrationLevel[t]` = total net migration level (persons per year)
-- User parameter: `migrationLevel` (adjustment factor: -10,000 to +50,000, default observed 2025)
+- `migrationProfile[age]` = age distribution of net migration (normalized to sum to 1)
+- `migrationLevel` = total net migration level (persons per year)
+- User parameter: `migrationLevel` (range -10,000 to +50,000, default observed 2025 = 31,233)
 
 **Notes**:
-- Migration is applied to all age groups proportionally.
+- The profile is normalized, then scaled by `migrationLevel`, so the parameter
+  directly controls the total annual net migration while the profile controls
+  the age pattern.
 - Negative `migrationLevel` represents net emigration.
+- **Labour-market treatment**: migrants are treated identically to the rest of
+  the population. They face the same `employmentRate` and earn the same
+  `avgWage` as everyone else from their first year. The model therefore assumes
+  immediate full labour-market integration. This is a documented simplification
+  (see `docs/ASSUMPTIONS.md` §4 and §28.1) and does not yet satisfy
+  `docs/SPEC.md` §7.6, which requires the employment effect to be mediated
+  rather than treating every migrant as immediately employed.
 
 **Data source**: Statistics Finland international migration data (2015–2025)
 
@@ -175,7 +188,7 @@ Where:
 - The minimum age (15) represents the minimum legal working age
 - Population aged `retirementAge` and above is NOT included in working-age population
 
-**2025 baseline**: Population age 15–62 (retirementAge=63) ≈ 2,871,000 persons
+**2025 baseline**: Population age 15–62 (retirementAge=63) = 3,355,140 persons
 
 ---
 
@@ -191,14 +204,16 @@ employed[t] =
 
 Where:
 - `employmentRate[t]` = ratio of employed to working-age population (0.0–1.0)
-- User parameter: `employmentRate` (default observed 2025 value ≈ 0.72, range 0.50–0.90)
+- User parameter: `employmentRate` (default observed 2025 value = 0.713, range 0.50–0.90)
 
 **Notes**:
 - The model uses an aggregate employment rate; does not distinguish by occupation or skill.
 - Age-specific employment data is available from Statistics Finland but used for validation only.
 - Unemployment is implicit in the employment rate.
+- The 0.713 rate is derived as employed persons aged 15–62 divided by the
+  population aged 15–62, consistent with §7.
 
-**2025 baseline**: Total employed = 2,590,000 persons (employmentRate ≈ 0.722)
+**2025 baseline**: Total employed (15–62) = 2,392,600 persons (employmentRate = 0.713)
 
 **Data source**: Statistics Finland employment statistics (ages 15–74)
 
@@ -242,7 +257,7 @@ wageBill[t] =
 
 This is one of the main drivers of pension contribution revenue.
 
-**2025 baseline**: Wage bill ≈ 130,300,000,000 EUR (130.3 billion)
+**2025 baseline**: Wage bill = 120,185 million EUR (120.2 billion)
 
 ---
 
@@ -266,7 +281,7 @@ Where:
 - The default 24.4% reflects the 2025 Finnish statutory rate.
 - User input is as a percentage (e.g., 24.4) which is converted to fraction (0.244) internally.
 
-**2025 baseline**: Contribution revenue ≈ 33,571 million EUR
+**2025 baseline**: Contribution revenue = 29,325 million EUR (simplified model)
 
 **Data source**: ETK contribution statistics; Finnish pension system law
 
@@ -290,7 +305,7 @@ This is intentionally simplified.
 - The discrepancy is noted in documentation and accepted as a model limitation.
 - A detailed pension-stock model may be introduced in future versions.
 
-**2025 baseline**: Pensioners (age ≥ 63) ≈ 1,400,000 persons
+**2025 baseline**: Pensioners (age ≥ 63) = 1,490,011 persons
 
 ---
 
@@ -311,7 +326,7 @@ Where:
 
 The average pension evolves according to pension indexation rules (see § 14).
 
-**2025 baseline**: Pension expenditure ≈ 37,225 million EUR per year
+**2025 baseline**: Pension expenditure = 34,169 million EUR per year (simplified model)
 
 **Data source**: ETK pension statistics; official pension expenditure data
 
@@ -319,34 +334,29 @@ The average pension evolves according to pension indexation rules (see § 14).
 
 # 14. Pension indexation and growth
 
-Pensions are indexed annually according to a weighted rule.
+Pensions are indexed annually by a single indexation rate.
 
 ```
 averagePension[t] = 
     averagePension[t-1] 
-    × (1 + pensionGrowth[t])
-
-pensionGrowth[t] = 
-    wageInflation[t] × ww 
-    + priceInflation[t] × pw
-
-where ww + pw = 1.0
+    × (1 + pensionIndexation[t])
 ```
 
 Where:
-- `wageInflation[t]` = nominal wage growth rate (typically exogenous or derived from wageGrowth scenario)
-- `priceInflation[t]` = price inflation rate (exogenous scenario input or derived)
-- `ww`, `pw` = weights for wage and price components
-- User parameter: `pensionIndexation` (default Finnish rule: weighted combination, range 0.0–1.0 for weights)
+- `pensionIndexation[t]` = annual rate at which the average pension grows
+- User parameter: `pensionIndexation` (default 0.02 = 2%, range -0.02 to +0.05)
 
 **Notes**:
-- The Finnish pension index typically uses a weighted formula (e.g., 80% wage, 20% price).
-- For v0.1, a simplified uniform indexation is used (default: index at wage growth rate).
-- Future versions may allow separate wage and price indexation scenarios.
+- The Finnish pension index is in reality a weighted formula (wage and price
+  components). For v0.1 this is simplified to a single annual rate, documented
+  as a limitation (§28.1).
+- Because wages grow at `wageGrowth` and pensions at `pensionIndexation`, the
+  replacement rate changes over time whenever the two rates differ.
+- The default 0.02 reflects the approximate level of the Finnish pension index.
 
 **Default formula (v0.1)**: 
 ```
-averagePension[t] = averagePension[t-1] × (1 + wageGrowth[t])
+averagePension[t] = averagePension[t-1] × (1 + pensionIndexation[t])
 ```
 
 ---
@@ -523,21 +533,31 @@ nominal[t] = real[t] × (1 + inflationRate)^(t - 2025)
 
 ### 20.1 Base-year targets (2025)
 
-The baseline scenario is calibrated to match observed 2025 values:
+The baseline scenario is calibrated to match observed 2025 values, expressed on
+the model's own definitions (see §7, §8, §12). Values marked "derived" are
+computed from source data rather than taken directly from an official total.
 
 | Metric | 2025 Baseline | Source |
 |--------|---------------|--------|
 | Total population | 5,652,881 | Statistics Finland |
-| Working-age (15–62) | ~2,871,000 | Derived from age distribution |
-| Employed | 2,590,000 | Statistics Finland (age 15–74) |
+| Working-age (15–62) | 3,355,140 | Derived from age distribution |
+| Employed (15–62) | 2,392,600 | Statistics Finland (derived on model age range) |
+| Employment rate (15–62) | 0.713 | Derived (employed / working-age) |
 | Average wage | 50,232 EUR/year | Statistics Finland earnings data |
-| Wage bill | ~130.3 billion EUR | Derived (employed × avg wage) |
-| Contribution revenue | 33,571 million EUR | ETK premium income |
-| Pensioners (age 63+) | ~1,400,000 | Derived from age distribution |
-| Average pension | 1,911 EUR/month | Average Pension data |
-| Pension expenditure | 37,225 million EUR | ETK expenditure statistics |
+| Wage bill | 120,185 million EUR | Derived (employed × avg wage) |
+| Contribution revenue | 29,325 million EUR | Derived (wage bill × 24.4%) |
+| Pensioners (age 63+) | 1,490,011 | Derived from age distribution |
+| Average pension | 1,911 EUR/month (22,932 EUR/year) | ETK average pension |
+| Pension expenditure | 34,169 million EUR | Derived (pensioners × avg pension) |
 | Pension assets | 290,108 million EUR | ETK asset statistics |
 | GDP | 281,783 million EUR | Statistics Finland national accounts |
+
+**Note on official totals**: Official ETK figures for total pension expenditure
+(37,225 million EUR) and premium income (33,571 million EUR) differ from the
+simplified model values above. The official figures include disability and
+survivor pensions and non-wage income, which the simplified model does not
+represent. This difference is a documented limitation (§28.1), not a calibration
+error.
 
 ### 20.2 Default parameters
 
@@ -545,13 +565,13 @@ The baseline scenario is calibrated to match observed 2025 values:
 |-----------|---------|-------|------|
 | Retirement Age | 63 | 60–75 | years |
 | Contribution Rate | 24.4% | 15%–30% | percent |
-| Employment Rate | 0.722 | 0.50–0.90 | fraction |
+| Employment Rate | 0.713 | 0.50–0.90 | fraction |
 | Wage Growth | 0.02 | -0.02–0.05 | annual rate |
 | GDP Growth | 0.02 | -0.02–0.05 | annual rate |
 | Investment Return | 0.03 | 0.0–0.10 | annual rate |
-| Fertility Rate | 1.0 | 0.5–1.5 | multiplier |
-| Migration Level | 0 | -10,000–+50,000 | persons/year |
-| Pension Indexation | wage | {wage, price, combined} | rule |
+| Fertility Rate | 1.31 | 0.5–2.5 | children/woman |
+| Migration Level | 31,233 | -10,000–+50,000 | persons/year |
+| Pension Indexation | 0.02 | -0.02–0.05 | annual rate |
 
 ### 20.3 Calibration tolerance
 
@@ -561,43 +581,7 @@ If assets become negative, the model should represent this explicitly rather tha
 
 ---
 
-# 26. Model limitations
-
-The following limitations are expected in the first version:
-
-* simplified demographic behaviour
-* simplified labour-market behaviour
-* simplified pension accrual
-* simplified pensioner definition
-* simplified pension financing
-* simplified investment returns
-* no individual-level pension histories
-* no detailed taxation model
-* no complete legal representation of the Finnish pension system
-
-These limitations should be visible to users.
-
----
-
-# 27. Model evolution
-
-Future versions may introduce:
-
-* age-specific employment
-* age-specific mortality
-* sex-specific demographic assumptions
-* more detailed pension accrual
-* separate pension schemes
-* more detailed pension fund mechanics
-* stochastic investment returns
-* uncertainty ranges
-* multiple official projection scenarios
-
-Such changes should be documented as model-version changes rather than silently changing the meaning of existing outputs.
-
----
-
-# 21. Scenario isolation
+# 22. Scenario isolation
 
 Each parameter is independent within the model.
 
@@ -612,7 +596,7 @@ Changing one parameter **must NOT** silently change another.
 
 ---
 
-# 22. Parameter validation and boundary conditions
+# 23. Parameter validation and boundary conditions
 
 The model must safely handle extreme parameter values.
 
@@ -624,13 +608,13 @@ The model must safely handle extreme parameter values.
 | Wage growth | -0.02 | 0.05 | Allow negative (wage decline) |
 | GDP growth | -0.02 | 0.05 | Allow negative (recession) |
 | Investment return | 0.00 | 0.10 | Non-negative; 0.0 means no return |
-| Fertility rate | 0.5 | 1.5 | Multiplier on base rates |
+| Fertility rate | 0.5 | 2.5 | Total fertility rate (children/woman) |
 | Migration | -10,000 | +50,000 | Allow negative (emigration) |
-| Pension indexation | 0.0 | 1.0 | Weights (if combined rule) |
+| Pension indexation | -0.02 | 0.05 | Annual rate; may be negative |
 
 ---
 
-# 23. Numerical stability requirements
+# 24. Numerical stability requirements
 
 Every simulation year `t`, the model must validate:
 
@@ -668,7 +652,7 @@ Suggestion: Lower investmentReturn to realistic range (0.0–0.10)
 
 ---
 
-# 24. Precision and rounding
+# 25. Precision and rounding
 
 ### Internal precision
 - All calculations performed at machine double precision (64-bit float)
@@ -682,7 +666,7 @@ Suggestion: Lower investmentReturn to realistic range (0.0–0.10)
 
 ---
 
-# 25. Cross-reference to supporting documentation
+# 26. Cross-reference to supporting documentation
 
 - **ASSUMPTIONS.md**: Detailed assumptions for each data series and parameter defaults
 - **DATA.md**: Data schema, provenance, and sources
@@ -692,12 +676,59 @@ Suggestion: Lower investmentReturn to realistic range (0.0–0.10)
 
 ---
 
-# 26. Model version and implementation
+# 27. Model version and implementation
 
-**MODEL_VERSION**: 0.1.0
+**MODEL_VERSION**: 0.2.0
 **Implementation target**: JavaScript (src/model.js, src/simulation.js)
 **Language for code identifiers**: English
 **Language for UI display**: Finnish
+
+## 27.1 Version history
+
+- **0.2.0** — `fertilityRate` changed from a dimensionless multiplier on the
+  observed age profile to an absolute total fertility rate (children per woman).
+  Default changed from 1.0 (multiplier) to 1.31 (observed 2025 TFR). The birth
+  calculation is unchanged in substance; only the parameter's meaning and unit
+  changed, so existing shared scenarios using the old value will differ.
+- **0.1.0** — First implementation.
+
+---
+
+# 28. Model limitations and evolution
+
+## 28.1 Limitations of v0.2.0
+
+The following limitations are expected in the first version:
+
+* simplified demographic behaviour
+* simplified labour-market behaviour
+* simplified pension accrual
+* simplified pensioner definition
+* simplified pension financing
+* simplified investment returns
+* no individual-level pension histories
+* no detailed taxation model
+* no complete legal representation of the Finnish pension system
+* **migration is treated as fully integrated into the labour market on arrival**
+  (same employment rate and same average wage as the native-born population)
+
+These limitations should be visible to users.
+
+## 28.2 Evolution
+
+Future versions may introduce:
+
+* age-specific employment
+* age-specific mortality improvements over time
+* sex-specific demographic assumptions
+* more detailed pension accrual
+* separate pension schemes
+* more detailed pension fund mechanics
+* stochastic investment returns
+* uncertainty ranges
+* multiple official projection scenarios
+
+Such changes should be documented as model-version changes rather than silently changing the meaning of existing outputs.
 
 Key functions to implement:
 - `simulateScenario(parameters, initialState, data)` → Result object with yearly arrays
@@ -707,4 +738,4 @@ Key functions to implement:
 
 ---
 
-END OF MODEL SPECIFICATION (v0.1.0)
+END OF MODEL SPECIFICATION (v0.2.0)

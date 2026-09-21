@@ -223,4 +223,43 @@ This document lists the authoritative Finnish data sources used in the pension-s
 These decisions will be specified in the model specification (docs/MODEL.md) in Phase C.
 
 ---
+
+## Employment rate by origin (added 2026-09-21)
+
+- **Provider**: Statistics Finland (Kototietokanta / Kotoutumisen indikaattorit)
+- **Dataset/Table**: Table 117e
+- **Description**: "Työllisyysaste (Rek) muuttujina Alue, Syntyperä ja taustamaa, Maassaoloaika, Ikä, Sukupuoli, Vuosi ja Tiedot", 1995-2024
+- **Used**: Whole country, both sexes combined, by origin, time in country and age group
+- **Unit**: percent
+- **Frequency**: annual
+- **Historical period**: 1995-2024
+- **Series type**: observed
+- **Model use**: Quantifies the employment gap between foreign-background and
+  Finnish-background populations, and how employment rises with time spent in
+  Finland. Used to parameterise the migrant employment factor.
+- **Source URL**: https://kototietokanta.stat.fi/PXWeb/api/v1/fi/Kotoutumisenindikaattorit/tyoll/117e.px
+- **Licence**: CC BY 4.0
+- **Notes**: The table distinguishes "Suomalaistaustaiset ja Suomessa syntyneet
+  ulkomaalaistaustaiset" from "Ulkomaille syntyneet ulkomaalaistaustaiset
+  yhteensä". The latter is the relevant group for migration modelling. Time in
+  country is only defined for the foreign-born group.
+
+## Income level by origin (added 2026-09-21)
+
+- **Provider**: Statistics Finland
+- **Dataset/Table**: Table 14ya
+- **Description**: "Asuntoväestön tulotaso syntyperän, iän ja tulokymmenyksen mukaan", 1995-2024
+- **Used**: Whole country, by origin and age group
+- **Unit**: euros (disposable income per consumption unit, mean)
+- **Frequency**: annual
+- **Historical period**: 1995-2024
+- **Series type**: observed
+- **Model use**: Approximates the wage gap between foreign-background and
+  Finnish-background populations.
+- **Source URL**: https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/tjt/14ya.px
+- **Licence**: CC BY 4.0
+- **Notes**: This is **disposable income**, not wages. It is used only as a
+  documented approximation of the wage gap; the two are not the same concept.
+
+---
 *This document is based on verified Phase A research using current primary sources from Statistics Finland and the Finnish Centre for Pensions (ETK). No alternative datasets were invented.*

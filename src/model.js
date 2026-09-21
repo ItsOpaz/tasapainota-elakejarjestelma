@@ -5,9 +5,36 @@
  * All functions are pure and deterministic
  * All values in real 2025 EUR (constant prices)
  * 
- * MODEL_VERSION: 0.1.0
+ * MODEL_VERSION: 0.2.0
  * Reference: docs/MODEL.md
  */
+
+// ============================================================================
+// MODEL CONSTANTS
+// ============================================================================
+
+/**
+ * Model version. Bump when a change alters the meaning of existing results.
+ * See docs/MODEL.md §27 for the version history.
+ * @type {string}
+ */
+const MODEL_VERSION = '0.2.0';
+
+/**
+ * Share of the population that is female.
+ * The population data is combined for both sexes, so births are estimated by
+ * applying age-specific fertility rates to this share of each cohort.
+ * Finnish sex ratio at birth is approximately 1.05 males per female, giving a
+ * female share of about 0.488 (see docs/MODEL.md §4).
+ * @type {number}
+ */
+const FEMALE_SHARE = 0.488;
+
+/**
+ * Minimum legal working age used in the model.
+ * @type {number}
+ */
+const MIN_WORKING_AGE = 15;
 
 // ============================================================================
 // PARAMETERS VALIDATION
@@ -51,14 +78,19 @@ function validateParameters(params) {
     errors.push(`investmentReturn must be 0.00-0.10, got ${params.investmentReturn}`);
   }
 
-  // Fertility multiplier: 0.5x to 1.5x
-  if (params.fertilityRate < 0.5 || params.fertilityRate > 1.5) {
-    errors.push(`fertilityRate must be 0.5-1.5, got ${params.fertilityRate}`);
+  // Total fertility rate: 0.5 to 2.5 children per woman
+  if (params.fertilityRate < 0.5 || params.fertilityRate > 2.5) {
+    errors.push(`fertilityRate must be 0.5-2.5, got ${params.fertilityRate}`);
   }
 
   // Migration level: -10k to +50k per year
   if (params.migrationLevel < -10000 || params.migrationLevel > 50000) {
     errors.push(`migrationLevel must be -10000 to 50000, got ${params.migrationLevel}`);
+  }
+
+  // Pension indexation: -2% to +5% per year
+  if (params.pensionIndexation < -0.02 || params.pensionIndexation > 0.05) {
+    errors.push(`pensionIndexation must be -0.02 to 0.05, got ${params.pensionIndexation}`);
   }
 
   return {
@@ -72,38 +104,57 @@ function validateParameters(params) {
 // ============================================================================
 
 /**
- * Age the population by one year
- * @param {array} population - Population array by age [0..100+]
- * @returns {array} Aged population
+ * Age the population by one year, applying mortality and adding births.
+ *
+ * For each age:
+ *   survivors = population[age] * (1 - mortalityRate[age])
+ *   population[t+1, age+1] = survivors
+ *   population[t+1, 0] = births
+ *
+ * Ages 100+ are aggregated into index 100 (docs/MODEL.md §3.1).
+ *
+ * @param {array} population - Population by age [0..100+]
+ * @param {object} mortalityRates - Probability of death by age
+ * @param {number} births - Number of births to add at age 0
+ * @returns {array} Population after one year
  */
-function agePopulation(population) {
+function agePopulation(population, mortalityRates, births) {
   const aged = new Array(101).fill(0);
 
-  // Move each age group up by 1
+  // Survivors move up one year
   for (let age = 0; age < 100; age++) {
-    aged[age + 1] = population[age];
+    const rate = (mortalityRates && mortalityRates[age]) || 0;
+    const survivors = (population[age] || 0) * (1 - rate);
+    aged[age + 1] += survivors;
   }
 
-  // Aggregate ages 100+
-  aged[100] = (aged[100] || 0) + (population[100] || 0);
+  // Age 100+ survivors stay in the top group
+  const rate100 = (mortalityRates && mortalityRates[100]) || 0;
+  aged[100] += (population[100] || 0) * (1 - rate100);
+
+  // Births enter at age 0
+  aged[0] = births || 0;
 
   return aged;
 }
 
 /**
  * Calculate number of births from fertility rates
- * @param {array} femalePopulation - Female population aged 15-49
- * @param {object} fertilityRates - Fertility rates by age
- * @param {number} fertilityMultiplier - Fertility adjustment (0.5 to 1.5)
+ * @param {array} population - Population by age (both sexes combined)
+ * @param {object} fertilityRates - Fertility rates by age (births per woman per year)
+ * @param {number} fertilityScale - Scale factor applied to the age profile
+ *   (simulation.js converts the absolute TFR parameter to this factor)
  * @returns {number} Number of births
+ *
+ * The population series is combined for both sexes, so the female population
+ * is approximated using FEMALE_SHARE (see docs/MODEL.md §4).
  */
-function calculateBirths(femalePopulation, fertilityRates, fertilityMultiplier) {
+function calculateBirths(population, fertilityRates, fertilityScale) {
   let births = 0;
 
   for (let age = 15; age <= 49; age++) {
-    const rate = (fertilityRates[age] || 0) * fertilityMultiplier;
-    // Assume approximately 50% of population is female
-    const femaleAtAge = (femalePopulation[age] || 0) / 2;
+    const rate = (fertilityRates[age] || 0) * fertilityScale;
+    const femaleAtAge = (population[age] || 0) * FEMALE_SHARE;
     births += femaleAtAge * rate;
   }
 
@@ -129,19 +180,35 @@ function calculateDeaths(population, mortalityRates) {
 }
 
 /**
- * Apply net migration to population
+ * Apply net migration to the population.
+ *
+ * The migration profile gives the age distribution of net migration. It is
+ * normalized to sum to 1 and then scaled by migrationLevel (total net
+ * migration in persons per year), so that migrationLevel directly controls
+ * the overall level while the profile controls the age pattern.
+ *
  * @param {array} population - Population by age
- * @param {object} migration - Net migration by age
- * @param {number} migrationLevel - Total migration adjustment (-10k to +50k)
+ * @param {object} migration - Net migration by age (age distribution)
+ * @param {number} migrationLevel - Total net migration in persons per year
  * @returns {array} Population after migration
  */
 function applyMigration(population, migration, migrationLevel) {
   const result = [...population];
 
-  // Apply per-age migration patterns, scaled by total level
+  // Normalize the profile so it sums to 1
+  let profileTotal = 0;
   for (let age = 0; age <= 100; age++) {
-    const ageFlow = migration[age] || 0;
-    result[age] = Math.max(0, (result[age] || 0) + Math.round(ageFlow * (migrationLevel / 10000)));
+    profileTotal += migration[age] || 0;
+  }
+
+  if (profileTotal === 0 || !migrationLevel) {
+    return result; // No migration
+  }
+
+  for (let age = 0; age <= 100; age++) {
+    const share = (migration[age] || 0) / profileTotal;
+    const flow = share * migrationLevel;
+    result[age] = Math.max(0, (result[age] || 0) + flow);
   }
 
   return result;
@@ -152,23 +219,21 @@ function applyMigration(population, migration, migrationLevel) {
 // ============================================================================
 
 /**
- * Calculate number of people in working age (15-67, or parameterized retirement age)
+ * Calculate the working-age population.
+ * Working age is defined as MIN_WORKING_AGE to retirementAge - 1
+ * (see docs/MODEL.md §7).
  * @param {array} population - Population by age
- * @param {number} retirementAge - Effective retirement age (63)
- * @returns {object} { workingAge: count, workable: count }
+ * @param {number} retirementAge - Effective retirement age (e.g. 63)
+ * @returns {number} Working-age population count
  */
 function calculateWorkingAge(population, retirementAge) {
   let workingAge = 0;
-  let workable = 0; // Includes those still potentially employed after retirementAge
 
-  for (let age = 15; age <= 100; age++) {
+  for (let age = MIN_WORKING_AGE; age < retirementAge; age++) {
     workingAge += population[age] || 0;
-    if (age <= retirementAge) {
-      workable += population[age] || 0;
-    }
   }
 
-  return { workingAge, workable };
+  return workingAge;
 }
 
 /**
@@ -184,13 +249,11 @@ function calculateEmployed(workingAgePopulation, employmentRate) {
 /**
  * Calculate total wages paid to employees
  * @param {number} employed - Number of employed people
- * @param {number} avgWage - Average wage (EUR per year)
- * @param {number} wageGrowth - Wage growth rate (multiplier)
+ * @param {number} avgWage - Average wage (EUR per year, already adjusted for growth)
  * @returns {number} Total wage bill in EUR
  */
-function calculateWageBill(employed, avgWage, wageGrowth) {
-  const adjustedWage = avgWage * (1 + wageGrowth);
-  return Math.round(employed * adjustedWage);
+function calculateWageBill(employed, avgWage) {
+  return Math.round(employed * avgWage);
 }
 
 /**
@@ -286,15 +349,19 @@ function calculatePensionerWorkerRatio(pensioners, employed) {
  * @param {number} expenditure - Pension expenditure during year (EUR)
  * @param {number} investmentReturn - Investment return rate (0.03 = 3%)
  * @returns {number} Assets at end of year
+ *
+ * Formula (docs/MODEL.md §15):
+ *   assets[t] = assets[t-1] + contributions[t] + investmentIncome[t] - expenditure[t]
+ *   investmentIncome[t] = assets[t-1] * investmentReturn[t]
+ *
+ * Negative assets are preserved rather than clamped, so that an unsustainable
+ * funding path is visible (docs/MODEL.md §20.3).
  */
 function updatePensionAssets(assetsStart, contributions, expenditure, investmentReturn) {
-  // Simple annual calculation:
-  // Assets_end = (Assets_start + Contributions - Expenditure) * (1 + Return)
-  
-  const netFlow = assetsStart + contributions - expenditure;
-  const assetsEnd = netFlow * (1 + investmentReturn);
-  
-  return Math.max(0, Math.round(assetsEnd));
+  const investmentIncome = assetsStart * investmentReturn;
+  const assetsEnd = assetsStart + contributions + investmentIncome - expenditure;
+
+  return Math.round(assetsEnd);
 }
 
 /**
@@ -418,7 +485,10 @@ function validateYearResults(yearData) {
 // EXPORTS
 // ============================================================================
 
-module.exports = {
+const MODEL_EXPORTS = {
+  MODEL_VERSION,
+  FEMALE_SHARE,
+  MIN_WORKING_AGE,
   validateParameters,
   agePopulation,
   calculateBirths,
@@ -441,3 +511,13 @@ module.exports = {
   calculateDerivedMetrics,
   validateYearResults
 };
+
+// Node.js
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = MODEL_EXPORTS;
+}
+
+// Browser
+if (typeof window !== 'undefined') {
+  window.PensionModel = MODEL_EXPORTS;
+}

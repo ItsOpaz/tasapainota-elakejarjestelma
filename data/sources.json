@@ -212,7 +212,21 @@
       "output": {
         "name": "Gross domestic product",
         "dimensions": {
-          "Vuosi": "year"
+          "Vuosi": "year",
+          "Taloustoimi": "measure",
+          "Tiedot": "priceBasis"
+        },
+        "filters": {
+          "Taloustoimi": {
+            "include": [
+              "B1GMH Bruttokansantuote markkinahintaan"
+            ]
+          },
+          "Tiedot": {
+            "include": [
+              "Käyvin hinnoin, miljoonaa euroa"
+            ]
+          }
         },
         "unit": "million euros",
         "seriesType": "observed"
@@ -387,6 +401,128 @@
           "Rahavirta": "cashFlow"
         },
         "unit": "million euros",
+        "seriesType": "observed"
+      }
+    },
+    "population_by_origin": {
+      "provider": "statfin",
+      "description": "Population by origin, age and sex",
+      "table": {
+        "path": [
+          "vaerak",
+          "11rs.px"
+        ]
+      },
+      "query": {
+        "Syntyperä": [
+          "Suomalaistaustaiset yhteensä",
+          "Ulkomaalaistaustaiset yhteensä"
+        ],
+        "Taustamaa": [
+          "YHTEENSÄ"
+        ],
+        "Kieli": [
+          "Yhteensä"
+        ],
+        "Vuosi": "*",
+        "Ikä": "*",
+        "Sukupuoli": [
+          "Yhteensä"
+        ],
+        "Tiedot": [
+          "Väestö 31.12."
+        ]
+      },
+      "output": {
+        "name": "Population by origin and age",
+        "dimensions": {
+          "Vuosi": "year",
+          "Ikä": "age",
+          "Syntyperä": "origin"
+        },
+        "fixed": {
+          "sex": "combined"
+        },
+        "filters": {
+          "Ikä": {
+            "exclude": [
+              "SSS"
+            ]
+          }
+        },
+        "unit": "persons",
+        "seriesType": "observed"
+      }
+    },
+    "employment_by_origin": {
+      "provider": "kototietokanta",
+      "description": "Employment rate by origin, time in country and age",
+      "table": {
+        "path": [
+          "tyoll",
+          "117e.px"
+        ]
+      },
+      "query": {
+        "Vuosi": "*",
+        "Alue": [
+          "KOKO MAA"
+        ],
+        "Syntyperä ja taustamaa": "*",
+        "Maassaoloaika (vain ulkomailla syntyneet ulkomaalaistaustaiset)": "*",
+        "Ikä": "*",
+        "Sukupuoli": [
+          "Yhteensä"
+        ],
+        "Tiedot": [
+          "Työllisyysaste"
+        ]
+      },
+      "output": {
+        "name": "Employment rate by origin",
+        "dimensions": {
+          "Vuosi": "year",
+          "Syntyperä ja taustamaa": "origin",
+          "Maassaoloaika (vain ulkomailla syntyneet ulkomaalaistaustaiset)": "timeInCountry",
+          "Ikä": "ageGroup",
+          "Tiedot": "measure"
+        },
+        "fixed": {
+          "sex": "combined"
+        },
+        "unit": "percent",
+        "seriesType": "observed"
+      }
+    },
+    "income_by_origin": {
+      "provider": "statfin",
+      "description": "Household population income level by origin and age",
+      "table": {
+        "path": [
+          "tjt",
+          "14ya.px"
+        ]
+      },
+      "query": {
+        "Syntyperä": "*",
+        "Vuosi": "*",
+        "Henkilön ikä": "*",
+        "Tulokymmenys tai fraktiiliryhmä": [
+          "Yhteensä"
+        ],
+        "Tiedot": [
+          "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo"
+        ]
+      },
+      "output": {
+        "name": "Income level by origin",
+        "dimensions": {
+          "Syntyperä": "origin",
+          "Vuosi": "year",
+          "Henkilön ikä": "ageGroup",
+          "Tiedot": "measure"
+        },
+        "unit": "euros",
         "seriesType": "observed"
       }
     }

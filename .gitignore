@@ -1,5 +1,7 @@
 .claude/
+.vscode/
 development/
 data/raw/*.tmp.json
 venv/
 __pycache__/
+test_out.txt

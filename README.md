@@ -77,7 +77,11 @@ eläkevarat
 
 Mallin yksityiskohtainen määrittely löytyy tiedostosta:
 
-`SPEC.md`
+`docs/MODEL.md`
+
+Käyttäjän säädettävissä olevat parametrit on dokumentoitu tiedostossa
+`docs/PARAMETERS.md` ja kalibrointitavoitteet tiedostossa
+`docs/CALIBRATION_TARGETS.md`.
 
 ## Teknologia
 
@@ -121,34 +125,57 @@ Projektissa pyritään:
 
 ## Projektin rakenne
 
-Suunniteltu rakenne:
-
 ```text
 .
 ├── index.html
 ├── style.css
 ├── app.js
-├── SPEC.md
 ├── README.md
 ├── LICENSE
-│
-├── data/
-│   ├── current.json
-│   ├── historical.json
-│   └── projections.json
+├── DATA-LICENSES.md
 │
 ├── src/
-│   ├── model.js
-│   ├── simulation.js
-│   ├── charts.js
-│   └── ui.js
+│   ├── model.js         ← laskentafunktiot (puhdas, deterministinen)
+│   ├── simulation.js    ← vuosittainen simulaatiosilmukka
+│   ├── data.js          ← datan lataus
+│   └── charts.js        ← Chart.js-kuvaajat
+│
+├── data/
+│   ├── sources.json     ← koneluettava lähdeluettelo
+│   └── processed/       ← prosessoidut JSON-aikasarjat
 │
 ├── scripts/
-│   └── update-data.js
+│   ├── fetch_pxweb.py   ← datan nouto
+│   └── process_raw.py   ← datan prosessointi
 │
-└── .github/
-    └── workflows/
-        └── update-data.yml
+├── test/
+│   └── calibration_test.js
+│
+└── docs/
+    ├── MODEL.md
+    ├── PARAMETERS.md
+    ├── CALIBRATION_TARGETS.md
+    ├── ASSUMPTIONS.md
+    ├── DATA.md
+    ├── DATA_SOURCES.md
+    └── SPEC.md
+```
+
+## Kehitysympäristö
+
+Sovellus toimii staattisina tiedostoina. Käynnistä paikallinen palvelin
+projektin juuresta:
+
+```bash
+python -m http.server
+```
+
+Avaa sen jälkeen selaimessa `http://localhost:8000/`.
+
+Kalibrointitestit ajetaan Nodella:
+
+```bash
+node test/calibration_test.js
 ```
 
 ## Osallistuminen

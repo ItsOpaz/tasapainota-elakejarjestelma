@@ -1,0 +1,370 @@
+/*
+ * style.css - Tyylit Suomen eläkejärjestelmä -simulaatiolle
+ * Design: Simple, playful, Finnish, slightly nostalgic, hand-made
+ * Mobile-first responsive design
+ * No frameworks - vanilla CSS only
+ */
+
+/* CSS Variables */
+:root {
+  --primary-color: #2b1b0e;
+  --secondary-color: #3e2723;
+  --accent-color: #8b5a2b;
+  --background-color: #fdf6ec;
+  --surface-color: #e8e4dc;
+  --text-color: #2c2c2c;
+  --text-secondary: #6b6b6b;
+  --success-color: #4a7c59;
+  --warning-color: #c46a3a;
+  --error-color: #a73d3d;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Noto Sans Finnish';
+  src: local('Noto Sans Finnish'), local('Noto Sans S');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: local('Karla'), local('Karla');
+  font-weight: 400;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans Finnish', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* App Container */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-family: 'Karla', sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.app-header p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* URL Panel */
+.url-panel {
+  background: var(--surface-color);
+  border: 1px solid #d4c8c0;
+  border-radius: 0;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.url-panel h2 {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-family: 'Karla', sans-serif;
+}
+
+.url-panel p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* Controls Panel */
+.controls-panel {
+  background: white;
+  border: 1px solid #d4c8c0;
+  border-radius: 0;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.controls-panel h2 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Control Group */
+.control-group {
+  margin-bottom: 1.4rem;
+}
+
+/* Header row: name on the left, current value on the right */
+.control-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.control-header label {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Range Input */
+.control-value {
+  font-family: 'Karla', sans-serif;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.control-value .unit {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Min/max labels under each slider */
+.control-scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+/* Range input base */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: var(--surface-color);
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+  transition: transform 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Control Group Small inputs */
+.small-input input {
+  width: 80px;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  border: 1px solid #d4c8c0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Results Panel */
+.results-panel {
+  background: white;
+  border: 1px solid #d4c8c0;
+  border-radius: 0;
+  padding: 1.5rem;
+}
+
+.results-panel h2 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Metrics Grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  background: var(--surface-color);
+  border: 1px solid #d4c8c0;
+  border-radius: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.metric-card h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.2rem;
+  font-family: 'Karla', sans-serif;
+}
+
+.metric-value .unit {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: normal;
+}
+
+/* Charts Grid */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Focus states */
+input:focus,
+button:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Reduced opacity for inactive elements */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error-message {
+  color: var(--error-color);
+  background: #fbeaea;
+  border: 1px solid var(--error-color);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.error-message:empty {
+  display: none;
+}
+
+/* Chart controls */
+.chart-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.chart-controls label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.chart-controls select {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  border: 1px solid #d4c8c0;
+  background: white;
+  color: var(--text-color);
+}
+
+/* Chart wrapper keeps a stable height for Chart.js */
+.chart-wrapper {
+  position: relative;
+  height: 420px;
+}
+
+@media (max-width: 480px) {
+  .chart-wrapper {
+    height: 300px;
+  }
+}
+
+/* Reset button */
+.reset-button {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: white;
+  background: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background: var(--secondary-color);
+}
+
+/* Footer */
+.app-footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}

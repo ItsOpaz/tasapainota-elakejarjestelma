@@ -30,6 +30,21 @@
       "web": {
         "baseUrl": "https://tilastot.etk.fi/pxweb/fi/ETK"
       }
+    },
+    "kototietokanta": {
+      "name": "Statistics Finland (Kototietokanta)",
+      "shortName": "Kototietokanta",
+      "type": "pxweb",
+      "licence": "CC BY 4.0",
+      "attribution": "Tilastokeskus, Kotoutumisen indikaattorit",
+      "api": {
+        "baseUrl": "https://kototietokanta.stat.fi/PXWeb/api/v1",
+        "language": "fi",
+        "database": "Kotoutumisenindikaattorit"
+      },
+      "web": {
+        "baseUrl": "https://kototietokanta.stat.fi/PXWeb/pxweb/fi/Kotoutumisenindikaattorit"
+      }
     }
   }
 }
