@@ -1,0 +1,1741 @@
+{
+  "id": "fertility",
+  "name": "Age-specific fertility rates",
+  "unit": "births per woman per year",
+  "source": "Statistics Finland",
+  "sourceUrl": "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/synt/12ds.px",
+  "license": "CC BY 4.0",
+  "attribution": "Statistics Finland",
+  "retrieved": "2026-09-19",
+  "seriesType": "observed",
+  "values": [
+    {
+      "year": "1990",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 52.1
+    },
+    {
+      "year": "1990",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 12.4
+    },
+    {
+      "year": "1990",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 71.6
+    },
+    {
+      "year": "1990",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 133.4
+    },
+    {
+      "year": "1990",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 94.3
+    },
+    {
+      "year": "1990",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 37.1
+    },
+    {
+      "year": "1990",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 7.9
+    },
+    {
+      "year": "1990",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.4
+    },
+    {
+      "year": "1991",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 51.8
+    },
+    {
+      "year": "1991",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 12.2
+    },
+    {
+      "year": "1991",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 72.4
+    },
+    {
+      "year": "1991",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 133.3
+    },
+    {
+      "year": "1991",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 96.7
+    },
+    {
+      "year": "1991",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 37
+    },
+    {
+      "year": "1991",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 7.3
+    },
+    {
+      "year": "1991",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.4
+    },
+    {
+      "year": "1992",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 52.7
+    },
+    {
+      "year": "1992",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 11.7
+    },
+    {
+      "year": "1992",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 73.5
+    },
+    {
+      "year": "1992",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 137.6
+    },
+    {
+      "year": "1992",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 100.2
+    },
+    {
+      "year": "1992",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 38.6
+    },
+    {
+      "year": "1992",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 7.7
+    },
+    {
+      "year": "1992",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.5
+    },
+    {
+      "year": "1993",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 50.9
+    },
+    {
+      "year": "1993",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 10.5
+    },
+    {
+      "year": "1993",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 71.8
+    },
+    {
+      "year": "1993",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 134.4
+    },
+    {
+      "year": "1993",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 100.5
+    },
+    {
+      "year": "1993",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 38.2
+    },
+    {
+      "year": "1993",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 7.5
+    },
+    {
+      "year": "1993",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.4
+    },
+    {
+      "year": "1994",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 51.2
+    },
+    {
+      "year": "1994",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 10.1
+    },
+    {
+      "year": "1994",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 71.2
+    },
+    {
+      "year": "1994",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 135.3
+    },
+    {
+      "year": "1994",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 104.5
+    },
+    {
+      "year": "1994",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 40.6
+    },
+    {
+      "year": "1994",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 7.7
+    },
+    {
+      "year": "1994",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.4
+    },
+    {
+      "year": "1995",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 49.7
+    },
+    {
+      "year": "1995",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 9.8
+    },
+    {
+      "year": "1995",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 66.3
+    },
+    {
+      "year": "1995",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 130.2
+    },
+    {
+      "year": "1995",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 105
+    },
+    {
+      "year": "1995",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 41.5
+    },
+    {
+      "year": "1995",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 8.3
+    },
+    {
+      "year": "1995",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.4
+    },
+    {
+      "year": "1996",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 48.2
+    },
+    {
+      "year": "1996",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 9.8
+    },
+    {
+      "year": "1996",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 63.7
+    },
+    {
+      "year": "1996",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 125.3
+    },
+    {
+      "year": "1996",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 102.1
+    },
+    {
+      "year": "1996",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 42.9
+    },
+    {
+      "year": "1996",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 8.1
+    },
+    {
+      "year": "1996",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.4
+    },
+    {
+      "year": "1997",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 47.5
+    },
+    {
+      "year": "1997",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 9
+    },
+    {
+      "year": "1997",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 62.2
+    },
+    {
+      "year": "1997",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 123.4
+    },
+    {
+      "year": "1997",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 100.8
+    },
+    {
+      "year": "1997",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 44
+    },
+    {
+      "year": "1997",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 8.5
+    },
+    {
+      "year": "1997",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.5
+    },
+    {
+      "year": "1998",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 46.1
+    },
+    {
+      "year": "1998",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 9.2
+    },
+    {
+      "year": "1998",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 59.5
+    },
+    {
+      "year": "1998",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 116.9
+    },
+    {
+      "year": "1998",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 100.3
+    },
+    {
+      "year": "1998",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 44.1
+    },
+    {
+      "year": "1998",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 8.8
+    },
+    {
+      "year": "1998",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.5
+    },
+    {
+      "year": "1999",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 46.9
+    },
+    {
+      "year": "1999",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 9.6
+    },
+    {
+      "year": "1999",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 61.3
+    },
+    {
+      "year": "1999",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 117
+    },
+    {
+      "year": "1999",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 102.3
+    },
+    {
+      "year": "1999",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 46.4
+    },
+    {
+      "year": "1999",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 9.2
+    },
+    {
+      "year": "1999",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.4
+    },
+    {
+      "year": "2000",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 46.6
+    },
+    {
+      "year": "2000",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 10
+    },
+    {
+      "year": "2000",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 60.4
+    },
+    {
+      "year": "2000",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 115.6
+    },
+    {
+      "year": "2000",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 102.7
+    },
+    {
+      "year": "2000",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 46.3
+    },
+    {
+      "year": "2000",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 9.3
+    },
+    {
+      "year": "2000",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.5
+    },
+    {
+      "year": "2001",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 46.5
+    },
+    {
+      "year": "2001",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 10.6
+    },
+    {
+      "year": "2001",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 59.7
+    },
+    {
+      "year": "2001",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 114.1
+    },
+    {
+      "year": "2001",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 101.9
+    },
+    {
+      "year": "2001",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 47.5
+    },
+    {
+      "year": "2001",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 9.7
+    },
+    {
+      "year": "2001",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.5
+    },
+    {
+      "year": "2002",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 46.3
+    },
+    {
+      "year": "2002",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 11.2
+    },
+    {
+      "year": "2002",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 57.2
+    },
+    {
+      "year": "2002",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 112.5
+    },
+    {
+      "year": "2002",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 102.9
+    },
+    {
+      "year": "2002",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 47.9
+    },
+    {
+      "year": "2002",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 9.8
+    },
+    {
+      "year": "2002",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.6
+    },
+    {
+      "year": "2003",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 47.5
+    },
+    {
+      "year": "2003",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 10.3
+    },
+    {
+      "year": "2003",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 57
+    },
+    {
+      "year": "2003",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 115.5
+    },
+    {
+      "year": "2003",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 106.9
+    },
+    {
+      "year": "2003",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 49.4
+    },
+    {
+      "year": "2003",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 10.8
+    },
+    {
+      "year": "2003",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.5
+    },
+    {
+      "year": "2004",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 48.7
+    },
+    {
+      "year": "2004",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 10.6
+    },
+    {
+      "year": "2004",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 58
+    },
+    {
+      "year": "2004",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 116.1
+    },
+    {
+      "year": "2004",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 111.5
+    },
+    {
+      "year": "2004",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 51.1
+    },
+    {
+      "year": "2004",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 11
+    },
+    {
+      "year": "2004",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.5
+    },
+    {
+      "year": "2005",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 49
+    },
+    {
+      "year": "2005",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 10.3
+    },
+    {
+      "year": "2005",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 57.4
+    },
+    {
+      "year": "2005",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 116.3
+    },
+    {
+      "year": "2005",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 112.9
+    },
+    {
+      "year": "2005",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 51.5
+    },
+    {
+      "year": "2005",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 10.7
+    },
+    {
+      "year": "2005",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.6
+    },
+    {
+      "year": "2006",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 50.1
+    },
+    {
+      "year": "2006",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 9.4
+    },
+    {
+      "year": "2006",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 58.4
+    },
+    {
+      "year": "2006",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 116.8
+    },
+    {
+      "year": "2006",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 117.9
+    },
+    {
+      "year": "2006",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 53
+    },
+    {
+      "year": "2006",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 11
+    },
+    {
+      "year": "2006",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.5
+    },
+    {
+      "year": "2007",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 50.1
+    },
+    {
+      "year": "2007",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 9.1
+    },
+    {
+      "year": "2007",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 58.8
+    },
+    {
+      "year": "2007",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 114.9
+    },
+    {
+      "year": "2007",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 117.1
+    },
+    {
+      "year": "2007",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 53.8
+    },
+    {
+      "year": "2007",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 11.4
+    },
+    {
+      "year": "2007",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.5
+    },
+    {
+      "year": "2008",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 50.8
+    },
+    {
+      "year": "2008",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 8.6
+    },
+    {
+      "year": "2008",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 59
+    },
+    {
+      "year": "2008",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 114.6
+    },
+    {
+      "year": "2008",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 119
+    },
+    {
+      "year": "2008",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 55.6
+    },
+    {
+      "year": "2008",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 11.4
+    },
+    {
+      "year": "2008",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.6
+    },
+    {
+      "year": "2009",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 51.6
+    },
+    {
+      "year": "2009",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 8.5
+    },
+    {
+      "year": "2009",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 59.4
+    },
+    {
+      "year": "2009",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 115.7
+    },
+    {
+      "year": "2009",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 119.5
+    },
+    {
+      "year": "2009",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 56.5
+    },
+    {
+      "year": "2009",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 11.9
+    },
+    {
+      "year": "2009",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.4
+    },
+    {
+      "year": "2010",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 52.2
+    },
+    {
+      "year": "2010",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 8.4
+    },
+    {
+      "year": "2010",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 57.1
+    },
+    {
+      "year": "2010",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 116.8
+    },
+    {
+      "year": "2010",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 120.3
+    },
+    {
+      "year": "2010",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 58.6
+    },
+    {
+      "year": "2010",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 11.6
+    },
+    {
+      "year": "2010",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.6
+    },
+    {
+      "year": "2011",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 51.4
+    },
+    {
+      "year": "2011",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 7.7
+    },
+    {
+      "year": "2011",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 54.8
+    },
+    {
+      "year": "2011",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 113.1
+    },
+    {
+      "year": "2011",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 118.4
+    },
+    {
+      "year": "2011",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 59
+    },
+    {
+      "year": "2011",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 12.1
+    },
+    {
+      "year": "2011",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.7
+    },
+    {
+      "year": "2012",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 51.1
+    },
+    {
+      "year": "2012",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 7.5
+    },
+    {
+      "year": "2012",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 53.7
+    },
+    {
+      "year": "2012",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 110.9
+    },
+    {
+      "year": "2012",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 116
+    },
+    {
+      "year": "2012",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 59.9
+    },
+    {
+      "year": "2012",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 12.5
+    },
+    {
+      "year": "2012",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.7
+    },
+    {
+      "year": "2013",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 50.1
+    },
+    {
+      "year": "2013",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 7.3
+    },
+    {
+      "year": "2013",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 50.7
+    },
+    {
+      "year": "2013",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 105.8
+    },
+    {
+      "year": "2013",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 114.5
+    },
+    {
+      "year": "2013",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 59.1
+    },
+    {
+      "year": "2013",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 12.5
+    },
+    {
+      "year": "2013",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.6
+    },
+    {
+      "year": "2014",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 49.5
+    },
+    {
+      "year": "2014",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 7.2
+    },
+    {
+      "year": "2014",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 49.5
+    },
+    {
+      "year": "2014",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 103.6
+    },
+    {
+      "year": "2014",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 111
+    },
+    {
+      "year": "2014",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 58.1
+    },
+    {
+      "year": "2014",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 12.3
+    },
+    {
+      "year": "2014",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.8
+    },
+    {
+      "year": "2015",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 48.2
+    },
+    {
+      "year": "2015",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 6.2
+    },
+    {
+      "year": "2015",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 46.4
+    },
+    {
+      "year": "2015",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 98
+    },
+    {
+      "year": "2015",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 109.8
+    },
+    {
+      "year": "2015",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 57.1
+    },
+    {
+      "year": "2015",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 12.2
+    },
+    {
+      "year": "2015",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.7
+    },
+    {
+      "year": "2016",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 46
+    },
+    {
+      "year": "2016",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 5.5
+    },
+    {
+      "year": "2016",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 43.3
+    },
+    {
+      "year": "2016",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 92.3
+    },
+    {
+      "year": "2016",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 102.1
+    },
+    {
+      "year": "2016",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 55.8
+    },
+    {
+      "year": "2016",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 14.1
+    },
+    {
+      "year": "2016",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.8
+    },
+    {
+      "year": "2017",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 44
+    },
+    {
+      "year": "2017",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 4.9
+    },
+    {
+      "year": "2017",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 39.4
+    },
+    {
+      "year": "2017",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 86.3
+    },
+    {
+      "year": "2017",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 99.8
+    },
+    {
+      "year": "2017",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 54
+    },
+    {
+      "year": "2017",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 13.3
+    },
+    {
+      "year": "2017",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.8
+    },
+    {
+      "year": "2018",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 41.8
+    },
+    {
+      "year": "2018",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 4.3
+    },
+    {
+      "year": "2018",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 36.1
+    },
+    {
+      "year": "2018",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 80.7
+    },
+    {
+      "year": "2018",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 94.5
+    },
+    {
+      "year": "2018",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 53.2
+    },
+    {
+      "year": "2018",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 12.7
+    },
+    {
+      "year": "2018",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.7
+    },
+    {
+      "year": "2019",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 40.1
+    },
+    {
+      "year": "2019",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 4.1
+    },
+    {
+      "year": "2019",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 33.8
+    },
+    {
+      "year": "2019",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 75.7
+    },
+    {
+      "year": "2019",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 91.7
+    },
+    {
+      "year": "2019",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 51.8
+    },
+    {
+      "year": "2019",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 12.3
+    },
+    {
+      "year": "2019",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 1
+    },
+    {
+      "year": "2020",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 40.8
+    },
+    {
+      "year": "2020",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 3.9
+    },
+    {
+      "year": "2020",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 32.5
+    },
+    {
+      "year": "2020",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 77
+    },
+    {
+      "year": "2020",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 95
+    },
+    {
+      "year": "2020",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 53.1
+    },
+    {
+      "year": "2020",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 12.5
+    },
+    {
+      "year": "2020",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 0.9
+    },
+    {
+      "year": "2021",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 43.4
+    },
+    {
+      "year": "2021",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 3.7
+    },
+    {
+      "year": "2021",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 30.8
+    },
+    {
+      "year": "2021",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 80.4
+    },
+    {
+      "year": "2021",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 103.7
+    },
+    {
+      "year": "2021",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 57.8
+    },
+    {
+      "year": "2021",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 14.7
+    },
+    {
+      "year": "2021",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 1
+    },
+    {
+      "year": "2022",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 39.1
+    },
+    {
+      "year": "2022",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 3.3
+    },
+    {
+      "year": "2022",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 28.3
+    },
+    {
+      "year": "2022",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 72.1
+    },
+    {
+      "year": "2022",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 91.8
+    },
+    {
+      "year": "2022",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 53.2
+    },
+    {
+      "year": "2022",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 13.9
+    },
+    {
+      "year": "2022",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 1.1
+    },
+    {
+      "year": "2023",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 37.2
+    },
+    {
+      "year": "2023",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 3.1
+    },
+    {
+      "year": "2023",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 26.9
+    },
+    {
+      "year": "2023",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 67.1
+    },
+    {
+      "year": "2023",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 89
+    },
+    {
+      "year": "2023",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 51.3
+    },
+    {
+      "year": "2023",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 13.4
+    },
+    {
+      "year": "2023",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 1.2
+    },
+    {
+      "year": "2024",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 36.9
+    },
+    {
+      "year": "2024",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 3
+    },
+    {
+      "year": "2024",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 26.1
+    },
+    {
+      "year": "2024",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 65.6
+    },
+    {
+      "year": "2024",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 88.9
+    },
+    {
+      "year": "2024",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 52.7
+    },
+    {
+      "year": "2024",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 13.7
+    },
+    {
+      "year": "2024",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 1.2
+    },
+    {
+      "year": "2025",
+      "ageGroup": "Yhteensä",
+      "measure": "Hedelmällisyysluku",
+      "value": 38.3
+    },
+    {
+      "year": "2025",
+      "ageGroup": "15 - 19",
+      "measure": "Hedelmällisyysluku",
+      "value": 2.3
+    },
+    {
+      "year": "2025",
+      "ageGroup": "20 - 24",
+      "measure": "Hedelmällisyysluku",
+      "value": 25.4
+    },
+    {
+      "year": "2025",
+      "ageGroup": "25 - 29",
+      "measure": "Hedelmällisyysluku",
+      "value": 67.7
+    },
+    {
+      "year": "2025",
+      "ageGroup": "30 - 34",
+      "measure": "Hedelmällisyysluku",
+      "value": 94.9
+    },
+    {
+      "year": "2025",
+      "ageGroup": "35 - 39",
+      "measure": "Hedelmällisyysluku",
+      "value": 56.6
+    },
+    {
+      "year": "2025",
+      "ageGroup": "40 - 44",
+      "measure": "Hedelmällisyysluku",
+      "value": 13.8
+    },
+    {
+      "year": "2025",
+      "ageGroup": "45 - 49",
+      "measure": "Hedelmällisyysluku",
+      "value": 1
+    }
+  ]
+}

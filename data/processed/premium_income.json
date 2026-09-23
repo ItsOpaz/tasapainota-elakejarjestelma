@@ -1,0 +1,89 @@
+{
+  "id": "premium_income",
+  "name": "Earnings-related pension premium income",
+  "unit": "million euros",
+  "source": "Finnish Centre for Pensions",
+  "sourceUrl": "https://tilastot.etk.fi/api/v1/fi/ETK/180tyoelakkeiden_rahoitus/20tilinpaatoslukuja/tp03_maksutulo.px",
+  "license": "CC BY 4.0",
+  "attribution": "Eläketurvakeskus (ETK)",
+  "retrieved": "2026-09-19",
+  "seriesType": "observed",
+  "values": [
+    {
+      "year": "2007",
+      "value": 19782.3
+    },
+    {
+      "year": "2008",
+      "value": 19807.5
+    },
+    {
+      "year": "2009",
+      "value": 20146.3
+    },
+    {
+      "year": "2010",
+      "value": 20809.6
+    },
+    {
+      "year": "2011",
+      "value": 21967
+    },
+    {
+      "year": "2012",
+      "value": 23212.2
+    },
+    {
+      "year": "2013",
+      "value": 23859
+    },
+    {
+      "year": "2014",
+      "value": 24496.9
+    },
+    {
+      "year": "2015",
+      "value": 24763
+    },
+    {
+      "year": "2016",
+      "value": 25380.6
+    },
+    {
+      "year": "2017",
+      "value": 25700.7
+    },
+    {
+      "year": "2018",
+      "value": 26437.8
+    },
+    {
+      "year": "2019",
+      "value": 27625
+    },
+    {
+      "year": "2020",
+      "value": 26896.7
+    },
+    {
+      "year": "2021",
+      "value": 29030.8
+    },
+    {
+      "year": "2022",
+      "value": 30439.6
+    },
+    {
+      "year": "2023",
+      "value": 31958.7
+    },
+    {
+      "year": "2024",
+      "value": 32979.3
+    },
+    {
+      "year": "2025",
+      "value": 33571
+    }
+  ]
+}

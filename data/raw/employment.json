@@ -1,0 +1,693 @@
+{
+  "provenance": {
+    "fetched_at": "2026-09-19T17:25:23.625949+00:00",
+    "source_id": "employment",
+    "provider": "statfin",
+    "metadata_url": "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/tyti/13aw.px",
+    "query_url": "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/tyti/13aw.px",
+    "configured_query": {
+      "Vuosi": "*",
+      "Sukupuoli": [
+        "Yhteensä"
+      ],
+      "Ikäluokka": "*",
+      "Osa-aikatyö": [
+        "Yhteensä"
+      ],
+      "Tiedot": "*"
+    },
+    "resolved_query": [
+      {
+        "code": "timeperiod_y",
+        "selection": {
+          "filter": "all",
+          "values": [
+            "*"
+          ]
+        }
+      },
+      {
+        "code": "sukupuoli_9_20180101",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "SSS"
+          ]
+        }
+      },
+      {
+        "code": "ikaryhma_19_20190101",
+        "selection": {
+          "filter": "all",
+          "values": [
+            "*"
+          ]
+        }
+      },
+      {
+        "code": "tyoaika_4_20180128",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "SSS"
+          ]
+        }
+      },
+      {
+        "code": "contentscode",
+        "selection": {
+          "filter": "all",
+          "values": [
+            "*"
+          ]
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Osa- tai kokoaikatyötä tekevät työlliset ja palkansaajat muuttujina Vuosi, Sukupuoli, Ikäluokka, Osa-aikatyö ja Tiedot",
+    "variables": [
+      {
+        "code": "timeperiod_y",
+        "text": "Vuosi",
+        "values": [
+          "2009",
+          "2010",
+          "2011",
+          "2012",
+          "2013",
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "valueTexts": [
+          "2009",
+          "2010",
+          "2011",
+          "2012",
+          "2013",
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "time": true
+      },
+      {
+        "code": "sukupuoli_9_20180101",
+        "text": "Sukupuoli",
+        "values": [
+          "SSS",
+          "1",
+          "2"
+        ],
+        "valueTexts": [
+          "Yhteensä",
+          "Miehet",
+          "Naiset"
+        ],
+        "elimination": true
+      },
+      {
+        "code": "ikaryhma_19_20190101",
+        "text": "Ikäluokka",
+        "values": [
+          "15-74",
+          "15-64",
+          "15-24",
+          "25-34",
+          "35-44",
+          "45-54",
+          "55-64",
+          "65-74"
+        ],
+        "valueTexts": [
+          "15 - 74",
+          "15 - 64",
+          "15 - 24",
+          "25 - 34",
+          "35 - 44",
+          "45 - 54",
+          "55 - 64",
+          "65 - 74"
+        ]
+      },
+      {
+        "code": "tyoaika_4_20180128",
+        "text": "Osa-aikatyö",
+        "values": [
+          "SSS",
+          "1",
+          "2"
+        ],
+        "valueTexts": [
+          "Yhteensä",
+          "Kokoaikatyö",
+          "Osa-aikatyö"
+        ],
+        "elimination": true
+      },
+      {
+        "code": "contentscode",
+        "text": "Tiedot",
+        "values": [
+          "tyti-Tyolliset",
+          "tyti-palkansaaja"
+        ],
+        "valueTexts": [
+          "Työlliset, 1000 henkilöä",
+          "Palkansaajat, 1000 henkilöä"
+        ]
+      }
+    ]
+  },
+  "data": {
+    "version": "2.0",
+    "class": "dataset",
+    "label": "Osa- tai kokoaikatyötä tekevät työlliset ja palkansaajat muuttujina Vuosi, Sukupuoli, Ikäluokka, Osa-aikatyö ja Tiedot",
+    "source": "Tilastokeskus, työvoimatutkimus",
+    "updated": "2026-01-27T06:00:00Z",
+    "note": [
+      "<A HREF='https://stat.fi/tilasto/dokumentaatio/tyti' TARGET=_blank>Tilaston dokumentaatio</A>",
+      ". tieto on puuttuva",
+      "tai tieto on liian epävarma esitettäväksi.",
+      "Osa-aikatyön määritelmä perustuu vastaajan omaan käsitykseen työn osa-aikaisuudesta.\r\nYhteensä-luokkaan sisältyvät myös ne tapaukset, joissa työsuhteen tyyppi ei ollut tiedossa.",
+      "Työvoimatutkimus on uudistettu vuoden 2021 alussa. Taulukko sisältää uuden estimointimenetelmän mukaisiksi takautuvasti korjatut aikasarjat, jotka eivät ole vertailukelpoisia aiempien vuosien tietojen kanssa. Tämä taulukko 13aw korvaa taulukon 11qm, joka on siirretty arkistokantaan."
+    ],
+    "role": {
+      "time": [
+        "timeperiod_y"
+      ],
+      "metric": [
+        "contentscode"
+      ]
+    },
+    "id": [
+      "timeperiod_y",
+      "sukupuoli_9_20180101",
+      "ikaryhma_19_20190101",
+      "tyoaika_4_20180128",
+      "contentscode"
+    ],
+    "size": [
+      17,
+      1,
+      8,
+      1,
+      2
+    ],
+    "dimension": {
+      "timeperiod_y": {
+        "label": "Vuosi",
+        "category": {
+          "index": {
+            "2009": 0,
+            "2010": 1,
+            "2011": 2,
+            "2012": 3,
+            "2013": 4,
+            "2014": 5,
+            "2015": 6,
+            "2016": 7,
+            "2017": 8,
+            "2018": 9,
+            "2019": 10,
+            "2020": 11,
+            "2021": 12,
+            "2022": 13,
+            "2023": 14,
+            "2024": 15,
+            "2025": 16
+          },
+          "label": {
+            "2009": "2009",
+            "2010": "2010",
+            "2011": "2011",
+            "2012": "2012",
+            "2013": "2013",
+            "2014": "2014",
+            "2015": "2015",
+            "2016": "2016",
+            "2017": "2017",
+            "2018": "2018",
+            "2019": "2019",
+            "2020": "2020",
+            "2021": "2021",
+            "2022": "2022",
+            "2023": "2023",
+            "2024": "2024",
+            "2025": "2025"
+          }
+        },
+        "extension": {
+          "elimination": false,
+          "show": "value"
+        },
+        "link": {
+          "describedby": [
+            {
+              "extension": {
+                "timeperiod_y": "SCALE-TYPE=None"
+              }
+            }
+          ]
+        }
+      },
+      "sukupuoli_9_20180101": {
+        "label": "Sukupuoli",
+        "category": {
+          "index": {
+            "SSS": 0
+          },
+          "label": {
+            "SSS": "Yhteensä"
+          }
+        },
+        "extension": {
+          "elimination": true,
+          "eliminationValueCode": "SSS",
+          "show": "value"
+        },
+        "link": {
+          "describedby": [
+            {
+              "extension": {
+                "sukupuoli_9_20180101": "SCALE-TYPE=nominal"
+              }
+            }
+          ]
+        }
+      },
+      "ikaryhma_19_20190101": {
+        "label": "Ikäluokka",
+        "category": {
+          "index": {
+            "15-74": 0,
+            "15-64": 1,
+            "15-24": 2,
+            "25-34": 3,
+            "35-44": 4,
+            "45-54": 5,
+            "55-64": 6,
+            "65-74": 7
+          },
+          "label": {
+            "15-74": "15 - 74",
+            "15-64": "15 - 64",
+            "15-24": "15 - 24",
+            "25-34": "25 - 34",
+            "35-44": "35 - 44",
+            "45-54": "45 - 54",
+            "55-64": "55 - 64",
+            "65-74": "65 - 74"
+          }
+        },
+        "extension": {
+          "elimination": false,
+          "show": "value"
+        },
+        "link": {
+          "describedby": [
+            {
+              "extension": {
+                "ikaryhma_19_20190101": "SCALE-TYPE=ordinal"
+              }
+            }
+          ]
+        }
+      },
+      "tyoaika_4_20180128": {
+        "label": "Osa-aikatyö",
+        "category": {
+          "index": {
+            "SSS": 0
+          },
+          "label": {
+            "SSS": "Yhteensä"
+          }
+        },
+        "extension": {
+          "elimination": true,
+          "eliminationValueCode": "SSS",
+          "show": "value"
+        },
+        "link": {
+          "describedby": [
+            {
+              "extension": {
+                "tyoaika_4_20180128": "SCALE-TYPE=nominal"
+              }
+            }
+          ]
+        }
+      },
+      "contentscode": {
+        "label": "Tiedot",
+        "category": {
+          "index": {
+            "tyti-Tyolliset": 0,
+            "tyti-palkansaaja": 1
+          },
+          "label": {
+            "tyti-Tyolliset": "Työlliset, 1000 henkilöä",
+            "tyti-palkansaaja": "Palkansaajat, 1000 henkilöä"
+          },
+          "unit": {
+            "tyti-Tyolliset": {
+              "base": "tuhatta henkilöä",
+              "decimals": 0
+            },
+            "tyti-palkansaaja": {
+              "base": "tuhatta henkilöä",
+              "decimals": 0
+            }
+          }
+        },
+        "extension": {
+          "elimination": false,
+          "show": "value"
+        }
+      }
+    },
+    "extension": {
+      "px": {
+        "tableid": "13aw",
+        "decimals": 0,
+        "official-statistics": true,
+        "aggregallowed": true,
+        "language": "fi",
+        "contents": "Osa- tai kokoaikatyötä tekevät työlliset ja palkansaajat",
+        "description": "13aw -- Osa- tai kokoaikatyötä tekevät työlliset ja palkansaajat sukupuolen ja iän mukaan, 2009-2025",
+        "descriptiondefault": false,
+        "heading": [
+          "contentscode"
+        ],
+        "stub": [
+          "timeperiod_y",
+          "sukupuoli_9_20180101",
+          "ikaryhma_19_20190101",
+          "tyoaika_4_20180128"
+        ],
+        "matrix": "13aw",
+        "subject-code": "tyti",
+        "subject-area": "Työvoimatutkimus"
+      },
+      "contact": [
+        {
+          "raw": "<A HREF='https://stat.fi/tilasto/tyti' TARGET=_blank>Tilaston kotisivu</A>"
+        }
+      ]
+    },
+    "value": [
+      2428,
+      2091,
+      2394,
+      2078,
+      250,
+      239,
+      521,
+      471,
+      569,
+      490,
+      627,
+      533,
+      427,
+      345,
+      34,
+      13,
+      2411,
+      2082,
+      2375,
+      2069,
+      245,
+      234,
+      519,
+      472,
+      552,
+      478,
+      620,
+      531,
+      438,
+      355,
+      37,
+      13,
+      2437,
+      2104,
+      2394,
+      2087,
+      254,
+      243,
+      522,
+      476,
+      555,
+      477,
+      623,
+      533,
+      440,
+      358,
+      44,
+      18,
+      2450,
+      2110,
+      2399,
+      2088,
+      264,
+      252,
+      517,
+      471,
+      552,
+      478,
+      622,
+      522,
+      445,
+      366,
+      51,
+      22,
+      2426,
+      2093,
+      2375,
+      2071,
+      261,
+      250,
+      513,
+      465,
+      539,
+      470,
+      618,
+      520,
+      444,
+      365,
+      51,
+      22,
+      2419,
+      2072,
+      2359,
+      2047,
+      261,
+      251,
+      510,
+      462,
+      537,
+      463,
+      612,
+      513,
+      439,
+      358,
+      60,
+      25,
+      2402,
+      2050,
+      2334,
+      2022,
+      249,
+      238,
+      510,
+      462,
+      535,
+      460,
+      600,
+      501,
+      439,
+      360,
+      68,
+      29,
+      2417,
+      2071,
+      2350,
+      2044,
+      256,
+      243,
+      514,
+      464,
+      541,
+      472,
+      591,
+      496,
+      449,
+      368,
+      67,
+      27,
+      2441,
+      2114,
+      2372,
+      2083,
+      260,
+      248,
+      517,
+      474,
+      552,
+      483,
+      590,
+      504,
+      454,
+      375,
+      69,
+      30,
+      2507,
+      2169,
+      2433,
+      2138,
+      262,
+      252,
+      533,
+      487,
+      581,
+      508,
+      585,
+      501,
+      472,
+      391,
+      74,
+      31,
+      2533,
+      2185,
+      2455,
+      2152,
+      263,
+      252,
+      540,
+      491,
+      593,
+      514,
+      578,
+      494,
+      481,
+      400,
+      78,
+      33,
+      2495,
+      2151,
+      2420,
+      2120,
+      241,
+      228,
+      536,
+      486,
+      593,
+      517,
+      567,
+      486,
+      484,
+      403,
+      75,
+      31,
+      2555,
+      2193,
+      2470,
+      2157,
+      259,
+      244,
+      550,
+      501,
+      603,
+      526,
+      564,
+      477,
+      494,
+      409,
+      85,
+      36,
+      2619,
+      2265,
+      2526,
+      2219,
+      273,
+      260,
+      561,
+      512,
+      616,
+      544,
+      564,
+      475,
+      513,
+      429,
+      93,
+      46,
+      2628,
+      2292,
+      2532,
+      2245,
+      274,
+      260,
+      558,
+      516,
+      624,
+      551,
+      560,
+      479,
+      516,
+      439,
+      96,
+      46,
+      2602,
+      2285,
+      2504,
+      2236,
+      262,
+      249,
+      551,
+      512,
+      616,
+      549,
+      560,
+      487,
+      514,
+      439,
+      98,
+      49,
+      2590,
+      2276,
+      2495,
+      2226,
+      260,
+      244,
+      542,
+      502,
+      614,
+      548,
+      567,
+      494,
+      512,
+      439,
+      96,
+      49
+    ]
+  }
+}

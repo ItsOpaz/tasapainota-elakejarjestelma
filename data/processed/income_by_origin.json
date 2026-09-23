@@ -1,0 +1,4213 @@
+{
+  "id": "income_by_origin",
+  "name": "Income level by origin",
+  "unit": "euros",
+  "source": "Statistics Finland",
+  "sourceUrl": "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/tjt/14ya.px",
+  "license": "CC BY 4.0",
+  "attribution": "Statistics Finland",
+  "retrieved": "2026-09-21",
+  "seriesType": "observed",
+  "values": [
+    {
+      "origin": "Yhteensä",
+      "year": "1995",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22345
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1995",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21541
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1995",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23322
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1995",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19237
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1996",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22698
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1996",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21663
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1996",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23775
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1996",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19530
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1997",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23795
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1997",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22661
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1997",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25003
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1997",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20227
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1998",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24566
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1998",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23390
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1998",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25848
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1998",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20735
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1999",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25716
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1999",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24438
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1999",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27131
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "1999",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21488
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2000",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26475
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2000",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25255
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2000",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27992
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2000",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21734
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2001",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26679
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2001",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25279
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2001",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28256
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2001",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21957
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2002",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27286
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2002",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25692
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2002",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28901
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2002",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22717
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2003",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28066
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2003",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26394
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2003",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29704
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2003",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23562
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2004",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29461
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2004",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27793
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2004",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31264
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2004",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24357
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2005",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29937
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2005",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28359
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2005",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31725
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2005",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24813
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2006",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30798
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2006",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29244
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2006",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32693
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2006",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25390
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2007",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32116
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2007",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30570
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2007",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34102
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2007",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26331
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2008",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32027
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2008",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30535
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2008",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33947
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2008",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26502
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2009",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32281
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2009",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30598
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2009",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34060
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2009",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27613
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2010",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33048
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2010",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31439
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2010",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34782
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2010",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28624
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2011",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33224
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2011",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31647
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2011",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34949
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2011",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28984
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2012",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32890
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2012",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31284
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2012",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34577
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2012",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28988
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2013",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32927
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2013",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31326
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2013",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34480
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2013",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29614
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2014",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32793
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2014",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30972
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2014",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34261
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2014",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30097
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2015",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33230
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2015",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31398
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2015",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34695
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2015",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30647
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2016",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33506
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2016",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31811
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2016",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35028
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2016",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30703
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2017",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34167
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2017",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32386
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2017",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35770
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2017",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31292
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2018",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34796
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2018",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33014
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2018",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 36525
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2018",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31641
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2019",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35145
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2019",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33169
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2019",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 36909
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2019",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32131
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2020",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35258
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2020",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33612
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2020",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 37005
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2020",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32064
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2021",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 36239
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2021",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34603
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2021",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 38155
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2021",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32663
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2022",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34880
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2022",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33419
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2022",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 36727
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2022",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31360
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2023",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33803
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2023",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32130
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2023",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35412
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2023",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31055
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2024",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34575
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2024",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32734
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2024",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 36022
+    },
+    {
+      "origin": "Yhteensä",
+      "year": "2024",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32368
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1995",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22429
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1995",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21647
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1995",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23419
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1995",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19243
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1996",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22790
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1996",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21782
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1996",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23880
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1996",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19544
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1997",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23905
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1997",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22806
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1997",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25128
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1997",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20245
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1998",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24689
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1998",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23559
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1998",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25987
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1998",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20755
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1999",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25852
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1999",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24627
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1999",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27285
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "1999",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21510
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2000",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26618
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2000",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25464
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2000",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28150
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2000",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21760
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2001",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26839
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2001",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25515
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2001",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28434
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2001",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21988
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2002",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27458
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2002",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25937
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2002",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29094
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2002",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22756
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2003",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28252
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2003",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26659
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2003",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29918
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2003",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23595
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2004",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29671
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2004",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28095
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2004",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31509
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2004",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24393
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2005",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30168
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2005",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28692
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2005",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31995
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2005",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24856
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2006",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31051
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2006",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29603
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2006",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32999
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2006",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25428
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2007",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32414
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2007",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30986
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2007",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34466
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2007",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26379
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2008",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32342
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2008",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30979
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2008",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34334
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2008",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26554
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2009",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32622
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2009",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31072
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2009",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34478
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2009",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27671
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2010",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33427
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2010",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31957
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2010",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35253
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2010",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28677
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2011",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33635
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2011",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32223
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2011",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35463
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2011",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29037
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2012",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33309
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2012",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31870
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2012",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35110
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2012",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29045
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2013",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33385
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2013",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31969
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2013",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35062
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2013",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29674
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2014",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33281
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2014",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31645
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2014",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34880
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2014",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30172
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2015",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33745
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2015",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32107
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2015",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35358
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2015",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30716
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2016",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34071
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2016",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32613
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2016",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35756
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2016",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30780
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2017",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34759
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2017",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33244
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2017",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 36538
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2017",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31374
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2018",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35402
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2018",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33935
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2018",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 37312
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2018",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31734
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2019",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35765
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2019",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34110
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2019",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 37721
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2019",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32233
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2020",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35882
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2020",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34595
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2020",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 37827
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2020",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32173
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2021",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 36893
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2021",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35701
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2021",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 39034
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2021",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32743
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2022",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35602
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2022",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34567
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2022",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 37707
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2022",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31489
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2023",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34655
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2023",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33431
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2023",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 36549
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2023",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31207
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2024",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35616
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2024",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 34268
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2024",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 37401
+    },
+    {
+      "origin": "Suomalaistaustaiset yhteensä",
+      "year": "2024",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32550
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1995",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 16953
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1995",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 14056
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1995",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17591
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1995",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18642
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1996",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17080
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1996",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 14069
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1996",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17870
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1996",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18290
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1997",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17615
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1997",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 14405
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1997",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18519
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1997",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18712
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1998",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18144
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1998",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 14637
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1998",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19188
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1998",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19067
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1999",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19094
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1999",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 15496
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1999",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20229
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "1999",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19726
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2000",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19925
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2000",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 16070
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2000",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21266
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2000",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19655
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2001",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19895
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2001",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 15910
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2001",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21289
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2001",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19540
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2002",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20424
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2002",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 16542
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2002",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21805
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2002",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19763
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2003",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20988
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2003",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 16979
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2003",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22299
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2003",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21103
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2004",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21890
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2004",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17568
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2004",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23310
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2004",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21726
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2005",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22210
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2005",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17779
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2005",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23656
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2005",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21783
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2006",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22947
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2006",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18516
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2006",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24333
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2006",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22683
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2007",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23638
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2007",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19083
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2007",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25059
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2007",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22978
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2008",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23817
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2008",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19327
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2008",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25227
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2008",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22814
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2009",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23999
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2009",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19631
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2009",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25324
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2009",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23637
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2010",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24506
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2010",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20392
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2010",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25685
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2010",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25041
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2011",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24667
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2011",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20433
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2011",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25866
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2011",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25461
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2012",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24855
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2012",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20948
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2012",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25993
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2012",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25309
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2013",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24779
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2013",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21000
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2013",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25853
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2013",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25747
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2014",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24669
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2014",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21056
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2014",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25728
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2014",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25408
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2015",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25097
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2015",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21694
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2015",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26073
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2015",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26322
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2016",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25212
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2016",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21778
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2016",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26229
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2016",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26223
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2017",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25965
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2017",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22448
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2017",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27050
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2017",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26657
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2018",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26850
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2018",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23079
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2018",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28098
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2018",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26590
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2019",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27462
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2019",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23703
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2019",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28735
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2019",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26847
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2020",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27930
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2020",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24356
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2020",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29195
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2020",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26707
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2021",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28994
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2021",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24778
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2021",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30348
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2021",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28924
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2022",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27520
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2022",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23979
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2022",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28779
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2022",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25679
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2023",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26097
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2023",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22767
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2023",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27238
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2023",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24866
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2024",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25974
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2024",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22781
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2024",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27005
+    },
+    {
+      "origin": "Ulkomaalaistaustaiset yhteensä",
+      "year": "2024",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25522
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1995",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 16707
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1995",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 13684
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1995",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17175
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1995",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18475
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1996",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 16872
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1996",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 13712
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1996",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17450
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1996",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18112
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1997",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17443
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1997",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 14037
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1997",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18105
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1997",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18440
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1998",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18015
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1998",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 14234
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1998",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18771
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1998",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18755
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1999",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19016
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1999",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 15143
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1999",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19815
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "1999",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19366
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2000",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19964
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2000",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 15960
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2000",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20880
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2000",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19275
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2001",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19943
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2001",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 15551
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2001",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20912
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2001",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19203
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2002",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20527
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2002",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 16227
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2002",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21473
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2002",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19367
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2003",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21152
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2003",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 16565
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2003",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22001
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2003",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20735
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2004",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22114
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2004",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17044
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2004",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23039
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2004",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21169
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2005",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22479
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2005",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17149
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2005",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23399
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2005",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21295
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2006",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23262
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2006",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17905
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2006",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24098
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2006",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22231
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2007",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23955
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2007",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18322
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2007",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24831
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2007",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22235
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2008",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24164
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2008",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18241
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2008",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25059
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2008",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22213
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2009",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24334
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2009",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18378
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2009",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25176
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2009",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22866
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2010",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24820
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2010",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19054
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2010",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25550
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2010",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24262
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2011",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25034
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2011",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18995
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2011",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25778
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2011",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24748
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2012",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25195
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2012",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19538
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2012",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25927
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2012",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24622
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2013",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25124
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2013",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19709
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2013",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25807
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2013",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24997
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2014",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25015
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2014",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19674
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2014",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25716
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2014",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24589
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2015",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25468
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2015",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20324
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2015",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26089
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2015",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25785
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2016",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25537
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2016",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19833
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2016",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26258
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2016",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25649
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2017",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26372
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2017",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20941
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2017",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27092
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2017",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26133
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2018",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27319
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2018",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21861
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2018",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28115
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2018",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26049
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2019",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27967
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2019",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22400
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2019",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28806
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2019",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26342
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2020",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28452
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2020",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23144
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2020",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29298
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2020",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26272
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2021",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29453
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2021",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23309
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2021",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30271
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2021",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28650
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2022",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27898
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2022",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21970
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2022",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28839
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2022",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25333
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2023",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26266
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2023",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20027
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2023",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27260
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2023",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24547
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2024",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26067
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2024",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19984
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2024",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27008
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt ulkomailla",
+      "year": "2024",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25198
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1995",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19064
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1995",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 15089
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1995",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24021
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1995",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20906
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1996",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18743
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1996",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 14909
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1996",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24824
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1996",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20724
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1997",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18935
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1997",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 15166
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1997",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26028
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1997",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22574
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1998",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19100
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1998",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 15370
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1998",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27536
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1998",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23553
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1999",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19640
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1999",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 16060
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1999",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29265
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "1999",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24665
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2000",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19663
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2000",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 16228
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2000",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30346
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2000",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24811
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2001",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19572
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2001",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 16389
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2001",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31122
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2001",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23984
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2002",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19762
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2002",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 16921
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2002",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31221
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2002",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24962
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2003",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19972
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2003",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 17417
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2003",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31420
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2003",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25801
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2004",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20540
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2004",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18068
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2004",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32229
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2004",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28750
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2005",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20608
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2005",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18322
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2005",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32853
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2005",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28058
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2006",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21095
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2006",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 18993
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2006",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33620
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2006",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 28290
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2007",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21771
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2007",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 19638
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2007",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 35081
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2007",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31973
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2008",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21771
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2008",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20095
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2008",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33254
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2008",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29573
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2009",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22054
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2009",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 20483
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2009",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32834
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2009",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31659
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2010",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22728
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2010",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21263
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2010",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32609
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2010",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32729
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2011",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22606
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2011",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21367
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2011",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 30195
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2011",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32178
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2012",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22961
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2012",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21881
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2012",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 29038
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2012",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31535
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2013",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22888
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2013",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21863
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2013",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27816
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2013",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32362
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2014",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22823
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2014",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 21967
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2014",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26201
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2014",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32817
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2015",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23159
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2015",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 22566
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2015",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25470
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2015",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32991
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2016",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23552
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2016",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23020
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2016",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25233
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2016",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32808
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2017",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23942
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2017",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23402
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2017",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25719
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2017",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32945
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2018",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24575
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2018",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 23833
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2018",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27598
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2018",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33511
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2019",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25037
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2019",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24504
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2019",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26780
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2019",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33716
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2020",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25475
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2020",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25087
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2020",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26550
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2020",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33091
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2021",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26843
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2021",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25637
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2021",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32215
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2021",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 33309
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2022",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25696
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2022",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25218
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2022",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 27354
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2022",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31665
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2023",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25224
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2023",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24771
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2023",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26715
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2023",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 31113
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2024",
+      "ageGroup": "Yhteensä",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 25479
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2024",
+      "ageGroup": "0-17",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 24997
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2024",
+      "ageGroup": "18-64",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 26930
+    },
+    {
+      "origin": "Ulkomaalaistaustainen, syntynyt Suomessa",
+      "year": "2024",
+      "ageGroup": "65-",
+      "measure": "Käytettävissä oleva rahatulo kulutusyksikköä kohden, keskiarvo",
+      "value": 32695
+    }
+  ]
+}

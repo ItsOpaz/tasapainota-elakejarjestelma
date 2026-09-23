@@ -1,0 +1,205 @@
+{
+  "provenance": {
+    "fetched_at": "2026-09-19T17:25:23.752595+00:00",
+    "source_id": "earnings",
+    "provider": "statfin",
+    "metadata_url": "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/ati/14uw.px",
+    "query_url": "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/ati/14uw.px",
+    "configured_query": {
+      "Vuosi": "*"
+    },
+    "resolved_query": [
+      {
+        "code": "timeperiod_y",
+        "selection": {
+          "filter": "all",
+          "values": [
+            "*"
+          ]
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Kokoaikaisten palkansaajien kuukausiansiot sektorin mukaan, vuositiedot muuttujina Sektori, Sukupuoli, Vuosi ja Tiedot",
+    "variables": [
+      {
+        "code": "tyonantajasekt_3_20190528",
+        "text": "Sektori",
+        "values": [
+          "SSS",
+          "11-12",
+          "13",
+          "1311",
+          "13111",
+          "13119",
+          "1313",
+          "13131",
+          "13132",
+          "15"
+        ],
+        "valueTexts": [
+          "Koko kansantalous",
+          "Yritykset sekä rahoitus- ja vakuutuslaitokset",
+          "Julkisyhteisöt",
+          "Valtionhallinto",
+          "Valtion budjettitalous",
+          "Muut valtionhallinnon yksiköt",
+          "Paikallishallinto",
+          "Paikallishallinto pl. hyvinvointialuehallinto",
+          "Hyvinvointialuehallinto",
+          "Kotitalouksia palvelevat voittoa tavoittelemattomat yhteisöt"
+        ],
+        "elimination": true
+      },
+      {
+        "code": "sukupuoli_9_20180101",
+        "text": "Sukupuoli",
+        "values": [
+          "SSS",
+          "1",
+          "2"
+        ],
+        "valueTexts": [
+          "Yhteensä",
+          "Miehet",
+          "Naiset"
+        ],
+        "elimination": true
+      },
+      {
+        "code": "timeperiod_y",
+        "text": "Vuosi",
+        "values": [
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "valueTexts": [
+          "2023",
+          "2024",
+          "2025*"
+        ],
+        "time": true
+      },
+      {
+        "code": "contentscode",
+        "text": "Tiedot",
+        "values": [
+          "Keskiansio"
+        ],
+        "valueTexts": [
+          "Kokoaikaisten palkansaajien kuukausiansiot"
+        ]
+      }
+    ]
+  },
+  "data": {
+    "version": "2.0",
+    "class": "dataset",
+    "label": "Kokoaikaisten palkansaajien kuukausiansiot sektorin mukaan, vuositiedot muuttujina Vuosi ja Tiedot",
+    "source": "Tilastokeskus, ansiotasoindeksi",
+    "updated": "2026-08-26T05:00:00Z",
+    "note": [
+      "<A HREF='https://stat.fi/tilasto/dokumentaatio/ati' TARGET=_blank>Tilaston dokumentaatio</A>",
+      "* Merkityt ovat ennakollisia lukuja\r\n14uw -- Kokoaikaisten palkansaajien kuukausiansiot sektorin mukaan, vuositiedot, 2023-2025*, Ansiotasoindeksi, Tilastokeskus"
+    ],
+    "role": {
+      "time": [
+        "timeperiod_y"
+      ],
+      "metric": [
+        "contentscode"
+      ]
+    },
+    "id": [
+      "timeperiod_y",
+      "contentscode"
+    ],
+    "size": [
+      3,
+      1
+    ],
+    "dimension": {
+      "timeperiod_y": {
+        "label": "Vuosi",
+        "note": [
+          "* ennakkotieto"
+        ],
+        "category": {
+          "index": {
+            "2023": 0,
+            "2024": 1,
+            "2025": 2
+          },
+          "label": {
+            "2023": "2023",
+            "2024": "2024",
+            "2025": "2025*"
+          },
+          "note": {
+            "2025": [
+              "* ennakkotieto"
+            ]
+          }
+        },
+        "extension": {
+          "elimination": false,
+          "show": "value"
+        }
+      },
+      "contentscode": {
+        "label": "Tiedot",
+        "category": {
+          "index": {
+            "Keskiansio": 0
+          },
+          "label": {
+            "Keskiansio": "Kokoaikaisten palkansaajien kuukausiansiot"
+          },
+          "unit": {
+            "Keskiansio": {
+              "base": "euroa/kuukausi",
+              "decimals": 0
+            }
+          }
+        },
+        "extension": {
+          "elimination": false,
+          "show": "value"
+        }
+      }
+    },
+    "extension": {
+      "px": {
+        "tableid": "14uw",
+        "decimals": 0,
+        "official-statistics": true,
+        "aggregallowed": true,
+        "language": "fi",
+        "contents": "Kokoaikaisten palkansaajien kuukausiansiot sektorin mukaan, vuositiedot",
+        "description": "14uw -- Kokoaikaisten palkansaajien kuukausiansiot sektorin mukaan, vuositiedot, 2023-2025*",
+        "descriptiondefault": false,
+        "heading": [
+          "contentscode"
+        ],
+        "stub": [
+          "timeperiod_y"
+        ],
+        "matrix": "14uw",
+        "subject-code": "ati",
+        "subject-area": "Ansiotasoindeksi"
+      },
+      "contact": [
+        {
+          "raw": "<A HREF='https://stat.fi/tilasto/ati' TARGET=_blank>Tilaston kotisivu</A>"
+        }
+      ]
+    },
+    "value": [
+      3929,
+      4057,
+      4186
+    ]
+  }
+}

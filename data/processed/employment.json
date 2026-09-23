@@ -1,0 +1,1917 @@
+{
+  "id": "employment",
+  "name": "Employment by age",
+  "unit": "persons",
+  "source": "Statistics Finland",
+  "sourceUrl": "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/tyti/13aw.px",
+  "license": "CC BY 4.0",
+  "attribution": "Statistics Finland",
+  "retrieved": "2026-09-19",
+  "seriesType": "observed",
+  "values": [
+    {
+      "year": "2009",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2428
+    },
+    {
+      "year": "2009",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2091
+    },
+    {
+      "year": "2009",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2394
+    },
+    {
+      "year": "2009",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2078
+    },
+    {
+      "year": "2009",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 250
+    },
+    {
+      "year": "2009",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 239
+    },
+    {
+      "year": "2009",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 521
+    },
+    {
+      "year": "2009",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 471
+    },
+    {
+      "year": "2009",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 569
+    },
+    {
+      "year": "2009",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 490
+    },
+    {
+      "year": "2009",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 627
+    },
+    {
+      "year": "2009",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 533
+    },
+    {
+      "year": "2009",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 427
+    },
+    {
+      "year": "2009",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 345
+    },
+    {
+      "year": "2009",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 34
+    },
+    {
+      "year": "2009",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 13
+    },
+    {
+      "year": "2010",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2411
+    },
+    {
+      "year": "2010",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2082
+    },
+    {
+      "year": "2010",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2375
+    },
+    {
+      "year": "2010",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2069
+    },
+    {
+      "year": "2010",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 245
+    },
+    {
+      "year": "2010",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 234
+    },
+    {
+      "year": "2010",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 519
+    },
+    {
+      "year": "2010",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 472
+    },
+    {
+      "year": "2010",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 552
+    },
+    {
+      "year": "2010",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 478
+    },
+    {
+      "year": "2010",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 620
+    },
+    {
+      "year": "2010",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 531
+    },
+    {
+      "year": "2010",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 438
+    },
+    {
+      "year": "2010",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 355
+    },
+    {
+      "year": "2010",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 37
+    },
+    {
+      "year": "2010",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 13
+    },
+    {
+      "year": "2011",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2437
+    },
+    {
+      "year": "2011",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2104
+    },
+    {
+      "year": "2011",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2394
+    },
+    {
+      "year": "2011",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2087
+    },
+    {
+      "year": "2011",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 254
+    },
+    {
+      "year": "2011",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 243
+    },
+    {
+      "year": "2011",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 522
+    },
+    {
+      "year": "2011",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 476
+    },
+    {
+      "year": "2011",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 555
+    },
+    {
+      "year": "2011",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 477
+    },
+    {
+      "year": "2011",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 623
+    },
+    {
+      "year": "2011",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 533
+    },
+    {
+      "year": "2011",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 440
+    },
+    {
+      "year": "2011",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 358
+    },
+    {
+      "year": "2011",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 44
+    },
+    {
+      "year": "2011",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 18
+    },
+    {
+      "year": "2012",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2450
+    },
+    {
+      "year": "2012",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2110
+    },
+    {
+      "year": "2012",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2399
+    },
+    {
+      "year": "2012",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2088
+    },
+    {
+      "year": "2012",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 264
+    },
+    {
+      "year": "2012",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 252
+    },
+    {
+      "year": "2012",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 517
+    },
+    {
+      "year": "2012",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 471
+    },
+    {
+      "year": "2012",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 552
+    },
+    {
+      "year": "2012",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 478
+    },
+    {
+      "year": "2012",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 622
+    },
+    {
+      "year": "2012",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 522
+    },
+    {
+      "year": "2012",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 445
+    },
+    {
+      "year": "2012",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 366
+    },
+    {
+      "year": "2012",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 51
+    },
+    {
+      "year": "2012",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 22
+    },
+    {
+      "year": "2013",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2426
+    },
+    {
+      "year": "2013",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2093
+    },
+    {
+      "year": "2013",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2375
+    },
+    {
+      "year": "2013",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2071
+    },
+    {
+      "year": "2013",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 261
+    },
+    {
+      "year": "2013",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 250
+    },
+    {
+      "year": "2013",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 513
+    },
+    {
+      "year": "2013",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 465
+    },
+    {
+      "year": "2013",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 539
+    },
+    {
+      "year": "2013",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 470
+    },
+    {
+      "year": "2013",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 618
+    },
+    {
+      "year": "2013",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 520
+    },
+    {
+      "year": "2013",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 444
+    },
+    {
+      "year": "2013",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 365
+    },
+    {
+      "year": "2013",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 51
+    },
+    {
+      "year": "2013",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 22
+    },
+    {
+      "year": "2014",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2419
+    },
+    {
+      "year": "2014",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2072
+    },
+    {
+      "year": "2014",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2359
+    },
+    {
+      "year": "2014",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2047
+    },
+    {
+      "year": "2014",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 261
+    },
+    {
+      "year": "2014",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 251
+    },
+    {
+      "year": "2014",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 510
+    },
+    {
+      "year": "2014",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 462
+    },
+    {
+      "year": "2014",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 537
+    },
+    {
+      "year": "2014",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 463
+    },
+    {
+      "year": "2014",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 612
+    },
+    {
+      "year": "2014",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 513
+    },
+    {
+      "year": "2014",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 439
+    },
+    {
+      "year": "2014",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 358
+    },
+    {
+      "year": "2014",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 60
+    },
+    {
+      "year": "2014",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 25
+    },
+    {
+      "year": "2015",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2402
+    },
+    {
+      "year": "2015",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2050
+    },
+    {
+      "year": "2015",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2334
+    },
+    {
+      "year": "2015",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2022
+    },
+    {
+      "year": "2015",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 249
+    },
+    {
+      "year": "2015",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 238
+    },
+    {
+      "year": "2015",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 510
+    },
+    {
+      "year": "2015",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 462
+    },
+    {
+      "year": "2015",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 535
+    },
+    {
+      "year": "2015",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 460
+    },
+    {
+      "year": "2015",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 600
+    },
+    {
+      "year": "2015",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 501
+    },
+    {
+      "year": "2015",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 439
+    },
+    {
+      "year": "2015",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 360
+    },
+    {
+      "year": "2015",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 68
+    },
+    {
+      "year": "2015",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 29
+    },
+    {
+      "year": "2016",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2417
+    },
+    {
+      "year": "2016",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2071
+    },
+    {
+      "year": "2016",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2350
+    },
+    {
+      "year": "2016",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2044
+    },
+    {
+      "year": "2016",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 256
+    },
+    {
+      "year": "2016",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 243
+    },
+    {
+      "year": "2016",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 514
+    },
+    {
+      "year": "2016",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 464
+    },
+    {
+      "year": "2016",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 541
+    },
+    {
+      "year": "2016",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 472
+    },
+    {
+      "year": "2016",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 591
+    },
+    {
+      "year": "2016",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 496
+    },
+    {
+      "year": "2016",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 449
+    },
+    {
+      "year": "2016",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 368
+    },
+    {
+      "year": "2016",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 67
+    },
+    {
+      "year": "2016",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 27
+    },
+    {
+      "year": "2017",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2441
+    },
+    {
+      "year": "2017",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2114
+    },
+    {
+      "year": "2017",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2372
+    },
+    {
+      "year": "2017",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2083
+    },
+    {
+      "year": "2017",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 260
+    },
+    {
+      "year": "2017",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 248
+    },
+    {
+      "year": "2017",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 517
+    },
+    {
+      "year": "2017",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 474
+    },
+    {
+      "year": "2017",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 552
+    },
+    {
+      "year": "2017",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 483
+    },
+    {
+      "year": "2017",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 590
+    },
+    {
+      "year": "2017",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 504
+    },
+    {
+      "year": "2017",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 454
+    },
+    {
+      "year": "2017",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 375
+    },
+    {
+      "year": "2017",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 69
+    },
+    {
+      "year": "2017",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 30
+    },
+    {
+      "year": "2018",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2507
+    },
+    {
+      "year": "2018",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2169
+    },
+    {
+      "year": "2018",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2433
+    },
+    {
+      "year": "2018",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2138
+    },
+    {
+      "year": "2018",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 262
+    },
+    {
+      "year": "2018",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 252
+    },
+    {
+      "year": "2018",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 533
+    },
+    {
+      "year": "2018",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 487
+    },
+    {
+      "year": "2018",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 581
+    },
+    {
+      "year": "2018",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 508
+    },
+    {
+      "year": "2018",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 585
+    },
+    {
+      "year": "2018",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 501
+    },
+    {
+      "year": "2018",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 472
+    },
+    {
+      "year": "2018",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 391
+    },
+    {
+      "year": "2018",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 74
+    },
+    {
+      "year": "2018",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 31
+    },
+    {
+      "year": "2019",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2533
+    },
+    {
+      "year": "2019",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2185
+    },
+    {
+      "year": "2019",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2455
+    },
+    {
+      "year": "2019",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2152
+    },
+    {
+      "year": "2019",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 263
+    },
+    {
+      "year": "2019",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 252
+    },
+    {
+      "year": "2019",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 540
+    },
+    {
+      "year": "2019",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 491
+    },
+    {
+      "year": "2019",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 593
+    },
+    {
+      "year": "2019",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 514
+    },
+    {
+      "year": "2019",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 578
+    },
+    {
+      "year": "2019",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 494
+    },
+    {
+      "year": "2019",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 481
+    },
+    {
+      "year": "2019",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 400
+    },
+    {
+      "year": "2019",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 78
+    },
+    {
+      "year": "2019",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 33
+    },
+    {
+      "year": "2020",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2495
+    },
+    {
+      "year": "2020",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2151
+    },
+    {
+      "year": "2020",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2420
+    },
+    {
+      "year": "2020",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2120
+    },
+    {
+      "year": "2020",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 241
+    },
+    {
+      "year": "2020",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 228
+    },
+    {
+      "year": "2020",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 536
+    },
+    {
+      "year": "2020",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 486
+    },
+    {
+      "year": "2020",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 593
+    },
+    {
+      "year": "2020",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 517
+    },
+    {
+      "year": "2020",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 567
+    },
+    {
+      "year": "2020",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 486
+    },
+    {
+      "year": "2020",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 484
+    },
+    {
+      "year": "2020",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 403
+    },
+    {
+      "year": "2020",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 75
+    },
+    {
+      "year": "2020",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 31
+    },
+    {
+      "year": "2021",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2555
+    },
+    {
+      "year": "2021",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2193
+    },
+    {
+      "year": "2021",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2470
+    },
+    {
+      "year": "2021",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2157
+    },
+    {
+      "year": "2021",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 259
+    },
+    {
+      "year": "2021",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 244
+    },
+    {
+      "year": "2021",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 550
+    },
+    {
+      "year": "2021",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 501
+    },
+    {
+      "year": "2021",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 603
+    },
+    {
+      "year": "2021",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 526
+    },
+    {
+      "year": "2021",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 564
+    },
+    {
+      "year": "2021",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 477
+    },
+    {
+      "year": "2021",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 494
+    },
+    {
+      "year": "2021",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 409
+    },
+    {
+      "year": "2021",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 85
+    },
+    {
+      "year": "2021",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 36
+    },
+    {
+      "year": "2022",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2619
+    },
+    {
+      "year": "2022",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2265
+    },
+    {
+      "year": "2022",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2526
+    },
+    {
+      "year": "2022",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2219
+    },
+    {
+      "year": "2022",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 273
+    },
+    {
+      "year": "2022",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 260
+    },
+    {
+      "year": "2022",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 561
+    },
+    {
+      "year": "2022",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 512
+    },
+    {
+      "year": "2022",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 616
+    },
+    {
+      "year": "2022",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 544
+    },
+    {
+      "year": "2022",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 564
+    },
+    {
+      "year": "2022",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 475
+    },
+    {
+      "year": "2022",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 513
+    },
+    {
+      "year": "2022",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 429
+    },
+    {
+      "year": "2022",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 93
+    },
+    {
+      "year": "2022",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 46
+    },
+    {
+      "year": "2023",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2628
+    },
+    {
+      "year": "2023",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2292
+    },
+    {
+      "year": "2023",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2532
+    },
+    {
+      "year": "2023",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2245
+    },
+    {
+      "year": "2023",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 274
+    },
+    {
+      "year": "2023",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 260
+    },
+    {
+      "year": "2023",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 558
+    },
+    {
+      "year": "2023",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 516
+    },
+    {
+      "year": "2023",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 624
+    },
+    {
+      "year": "2023",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 551
+    },
+    {
+      "year": "2023",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 560
+    },
+    {
+      "year": "2023",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 479
+    },
+    {
+      "year": "2023",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 516
+    },
+    {
+      "year": "2023",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 439
+    },
+    {
+      "year": "2023",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 96
+    },
+    {
+      "year": "2023",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 46
+    },
+    {
+      "year": "2024",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2602
+    },
+    {
+      "year": "2024",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2285
+    },
+    {
+      "year": "2024",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2504
+    },
+    {
+      "year": "2024",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2236
+    },
+    {
+      "year": "2024",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 262
+    },
+    {
+      "year": "2024",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 249
+    },
+    {
+      "year": "2024",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 551
+    },
+    {
+      "year": "2024",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 512
+    },
+    {
+      "year": "2024",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 616
+    },
+    {
+      "year": "2024",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 549
+    },
+    {
+      "year": "2024",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 560
+    },
+    {
+      "year": "2024",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 487
+    },
+    {
+      "year": "2024",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 514
+    },
+    {
+      "year": "2024",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 439
+    },
+    {
+      "year": "2024",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 98
+    },
+    {
+      "year": "2024",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 49
+    },
+    {
+      "year": "2025",
+      "ageGroup": "15 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2590
+    },
+    {
+      "year": "2025",
+      "ageGroup": "15 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2276
+    },
+    {
+      "year": "2025",
+      "ageGroup": "15 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2495
+    },
+    {
+      "year": "2025",
+      "ageGroup": "15 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 2226
+    },
+    {
+      "year": "2025",
+      "ageGroup": "15 - 24",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 260
+    },
+    {
+      "year": "2025",
+      "ageGroup": "15 - 24",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 244
+    },
+    {
+      "year": "2025",
+      "ageGroup": "25 - 34",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 542
+    },
+    {
+      "year": "2025",
+      "ageGroup": "25 - 34",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 502
+    },
+    {
+      "year": "2025",
+      "ageGroup": "35 - 44",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 614
+    },
+    {
+      "year": "2025",
+      "ageGroup": "35 - 44",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 548
+    },
+    {
+      "year": "2025",
+      "ageGroup": "45 - 54",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 567
+    },
+    {
+      "year": "2025",
+      "ageGroup": "45 - 54",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 494
+    },
+    {
+      "year": "2025",
+      "ageGroup": "55 - 64",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 512
+    },
+    {
+      "year": "2025",
+      "ageGroup": "55 - 64",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 439
+    },
+    {
+      "year": "2025",
+      "ageGroup": "65 - 74",
+      "measure": "Työlliset, 1000 henkilöä",
+      "sex": "combined",
+      "value": 96
+    },
+    {
+      "year": "2025",
+      "ageGroup": "65 - 74",
+      "measure": "Palkansaajat, 1000 henkilöä",
+      "sex": "combined",
+      "value": 49
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "earnings",
+  "name": "Average annual earnings",
+  "unit": "euros per year",
+  "source": "Statistics Finland",
+  "sourceUrl": "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/ati/14uw.px",
+  "license": "CC BY 4.0",
+  "attribution": "Statistics Finland",
+  "retrieved": "2026-09-19",
+  "seriesType": "observed",
+  "values": [
+    {
+      "year": "2023",
+      "value": 47148
+    },
+    {
+      "year": "2024",
+      "value": 48684
+    },
+    {
+      "year": "2025*",
+      "yearStatus": "provisional",
+      "value": 50232
+    }
+  ]
+}

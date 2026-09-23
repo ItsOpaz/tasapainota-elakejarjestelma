@@ -1,0 +1,89 @@
+{
+  "id": "investment_return",
+  "name": "Historical earnings-related pension investment return",
+  "unit": "percent",
+  "source": "Finnish Centre for Pensions",
+  "sourceUrl": "https://tilastot.etk.fi/api/v1/fi/ETK/180tyoelakkeiden_rahoitus/20tilinpaatoslukuja/tp04_sijoitustuotot.px",
+  "license": "CC BY 4.0",
+  "attribution": "Eläketurvakeskus (ETK)",
+  "retrieved": "2026-09-19",
+  "seriesType": "observed",
+  "values": [
+    {
+      "year": "2007",
+      "value": 5.1
+    },
+    {
+      "year": "2008",
+      "value": -16.5
+    },
+    {
+      "year": "2009",
+      "value": 14.9
+    },
+    {
+      "year": "2010",
+      "value": 11
+    },
+    {
+      "year": "2011",
+      "value": -2.7
+    },
+    {
+      "year": "2012",
+      "value": 9.8
+    },
+    {
+      "year": "2013",
+      "value": 7.9
+    },
+    {
+      "year": "2014",
+      "value": 7.3
+    },
+    {
+      "year": "2015",
+      "value": 4.9
+    },
+    {
+      "year": "2016",
+      "value": 5.9
+    },
+    {
+      "year": "2017",
+      "value": 7.4
+    },
+    {
+      "year": "2018",
+      "value": -2.2
+    },
+    {
+      "year": "2019",
+      "value": 12.5
+    },
+    {
+      "year": "2020",
+      "value": 4.7
+    },
+    {
+      "year": "2021",
+      "value": 15.6
+    },
+    {
+      "year": "2022",
+      "value": -5.9
+    },
+    {
+      "year": "2023",
+      "value": 6.3
+    },
+    {
+      "year": "2024",
+      "value": 9.4
+    },
+    {
+      "year": "2025",
+      "value": 7.3
+    }
+  ]
+}

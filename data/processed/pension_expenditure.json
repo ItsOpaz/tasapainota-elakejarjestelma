@@ -1,0 +1,173 @@
+{
+  "id": "pension_expenditure",
+  "name": "Earnings-related pension expenditure",
+  "unit": "million euros",
+  "source": "Finnish Centre for Pensions",
+  "sourceUrl": "https://tilastot.etk.fi/api/v1/fi/ETK/140elakemenot/emeno01_koko.px",
+  "license": "CC BY 4.0",
+  "attribution": "Eläketurvakeskus (ETK)",
+  "retrieved": "2026-09-19",
+  "seriesType": "observed",
+  "values": [
+    {
+      "year": "1986",
+      "value": 3686
+    },
+    {
+      "year": "1987",
+      "value": 4176
+    },
+    {
+      "year": "1988",
+      "value": 4652
+    },
+    {
+      "year": "1989",
+      "value": 5242
+    },
+    {
+      "year": "1990",
+      "value": 5902
+    },
+    {
+      "year": "1991",
+      "value": 6645
+    },
+    {
+      "year": "1992",
+      "value": 7361
+    },
+    {
+      "year": "1993",
+      "value": 7768
+    },
+    {
+      "year": "1994",
+      "value": 8130
+    },
+    {
+      "year": "1995",
+      "value": 8575
+    },
+    {
+      "year": "1996",
+      "value": 8987
+    },
+    {
+      "year": "1997",
+      "value": 9329
+    },
+    {
+      "year": "1998",
+      "value": 9860
+    },
+    {
+      "year": "1999",
+      "value": 10366
+    },
+    {
+      "year": "2000",
+      "value": 10886
+    },
+    {
+      "year": "2001",
+      "value": 11698
+    },
+    {
+      "year": "2002",
+      "value": 12502
+    },
+    {
+      "year": "2003",
+      "value": 13175
+    },
+    {
+      "year": "2004",
+      "value": 13757
+    },
+    {
+      "year": "2005",
+      "value": 14346
+    },
+    {
+      "year": "2006",
+      "value": 15079
+    },
+    {
+      "year": "2007",
+      "value": 15968
+    },
+    {
+      "year": "2008",
+      "value": 17009
+    },
+    {
+      "year": "2009",
+      "value": 18635
+    },
+    {
+      "year": "2010",
+      "value": 19526
+    },
+    {
+      "year": "2011",
+      "value": 20538
+    },
+    {
+      "year": "2012",
+      "value": 21989
+    },
+    {
+      "year": "2013",
+      "value": 23363
+    },
+    {
+      "year": "2014",
+      "value": 24440
+    },
+    {
+      "year": "2015",
+      "value": 25265
+    },
+    {
+      "year": "2016",
+      "value": 26035
+    },
+    {
+      "year": "2017",
+      "value": 27034
+    },
+    {
+      "year": "2018",
+      "value": 27865
+    },
+    {
+      "year": "2019",
+      "value": 28858
+    },
+    {
+      "year": "2020",
+      "value": 29671
+    },
+    {
+      "year": "2021",
+      "value": 30309
+    },
+    {
+      "year": "2022",
+      "value": 31400
+    },
+    {
+      "year": "2023",
+      "value": 34088
+    },
+    {
+      "year": "2024",
+      "value": 36377
+    },
+    {
+      "year": "2025",
+      "value": 37225
+    }
+  ]
+}

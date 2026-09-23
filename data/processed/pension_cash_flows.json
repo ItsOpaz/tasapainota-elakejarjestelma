@@ -1,0 +1,1058 @@
+{
+  "id": "pension_cash_flows",
+  "name": "Earnings-related pension system assets and cash flows",
+  "unit": "million euros",
+  "source": "Finnish Centre for Pensions",
+  "sourceUrl": "https://tilastot.etk.fi/api/v1/fi/ETK/180tyoelakkeiden_rahoitus/10rahavirrat/rahavirrat01_kaikki.px",
+  "license": "CC BY 4.0",
+  "attribution": "Eläketurvakeskus (ETK)",
+  "retrieved": "2026-09-19",
+  "seriesType": "observed",
+  "values": [
+    {
+      "year": "2007",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 115264.8
+    },
+    {
+      "year": "2007",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 15709
+    },
+    {
+      "year": "2007",
+      "cashFlow": "TR-osuus",
+      "value": 363.8
+    },
+    {
+      "year": "2007",
+      "cashFlow": "Siirrot",
+      "value": 46.1
+    },
+    {
+      "year": "2007",
+      "cashFlow": "Valtion osuus",
+      "value": 3690.3
+    },
+    {
+      "year": "2007",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -15749.7
+    },
+    {
+      "year": "2007",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -439.8
+    },
+    {
+      "year": "2007",
+      "cashFlow": "Verot",
+      "value": -17.2
+    },
+    {
+      "year": "2007",
+      "cashFlow": "Sijoitustuotto",
+      "value": 5943.5
+    },
+    {
+      "year": "2007",
+      "cashFlow": "Muu",
+      "value": -30.2
+    },
+    {
+      "year": "2007",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 124780.5
+    },
+    {
+      "year": "2008",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 124780.5
+    },
+    {
+      "year": "2008",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 16877.1
+    },
+    {
+      "year": "2008",
+      "cashFlow": "TR-osuus",
+      "value": 379.9
+    },
+    {
+      "year": "2008",
+      "cashFlow": "Siirrot",
+      "value": 31.3
+    },
+    {
+      "year": "2008",
+      "cashFlow": "Valtion osuus",
+      "value": 2552.7
+    },
+    {
+      "year": "2008",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -16875.9
+    },
+    {
+      "year": "2008",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -485.7
+    },
+    {
+      "year": "2008",
+      "cashFlow": "Verot",
+      "value": -18.3
+    },
+    {
+      "year": "2008",
+      "cashFlow": "Sijoitustuotto",
+      "value": -20136.9
+    },
+    {
+      "year": "2008",
+      "cashFlow": "Muu",
+      "value": 141.3
+    },
+    {
+      "year": "2008",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 107245.9
+    },
+    {
+      "year": "2009",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 107245.9
+    },
+    {
+      "year": "2009",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 16821.4
+    },
+    {
+      "year": "2009",
+      "cashFlow": "TR-osuus",
+      "value": 563.2
+    },
+    {
+      "year": "2009",
+      "cashFlow": "Siirrot",
+      "value": 12.6
+    },
+    {
+      "year": "2009",
+      "cashFlow": "Valtion osuus",
+      "value": 2758.3
+    },
+    {
+      "year": "2009",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -18462.5
+    },
+    {
+      "year": "2009",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -511.7
+    },
+    {
+      "year": "2009",
+      "cashFlow": "Verot",
+      "value": -11.9
+    },
+    {
+      "year": "2009",
+      "cashFlow": "Sijoitustuotto",
+      "value": 16038.7
+    },
+    {
+      "year": "2009",
+      "cashFlow": "Muu",
+      "value": -29
+    },
+    {
+      "year": "2009",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 124424.9
+    },
+    {
+      "year": "2010",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 124424.9
+    },
+    {
+      "year": "2010",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 17352.1
+    },
+    {
+      "year": "2010",
+      "cashFlow": "TR-osuus",
+      "value": 592.9
+    },
+    {
+      "year": "2010",
+      "cashFlow": "Siirrot",
+      "value": 5.2
+    },
+    {
+      "year": "2010",
+      "cashFlow": "Valtion osuus",
+      "value": 2864.3
+    },
+    {
+      "year": "2010",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -19397.8
+    },
+    {
+      "year": "2010",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -530.3
+    },
+    {
+      "year": "2010",
+      "cashFlow": "Verot",
+      "value": -17
+    },
+    {
+      "year": "2010",
+      "cashFlow": "Sijoitustuotto",
+      "value": 13667.1
+    },
+    {
+      "year": "2010",
+      "cashFlow": "Muu",
+      "value": -121.4
+    },
+    {
+      "year": "2010",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 138839.5
+    },
+    {
+      "year": "2011",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 138839.5
+    },
+    {
+      "year": "2011",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 18508.9
+    },
+    {
+      "year": "2011",
+      "cashFlow": "TR-osuus",
+      "value": 597.7
+    },
+    {
+      "year": "2011",
+      "cashFlow": "Siirrot",
+      "value": 2.2
+    },
+    {
+      "year": "2011",
+      "cashFlow": "Valtion osuus",
+      "value": 2890
+    },
+    {
+      "year": "2011",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -20482.7
+    },
+    {
+      "year": "2011",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -509.3
+    },
+    {
+      "year": "2011",
+      "cashFlow": "Verot",
+      "value": -14.9
+    },
+    {
+      "year": "2011",
+      "cashFlow": "Sijoitustuotto",
+      "value": -3661.6
+    },
+    {
+      "year": "2011",
+      "cashFlow": "Muu",
+      "value": 62.6
+    },
+    {
+      "year": "2011",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 136231.8
+    },
+    {
+      "year": "2012",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 136231.8
+    },
+    {
+      "year": "2012",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 19618.6
+    },
+    {
+      "year": "2012",
+      "cashFlow": "TR-osuus",
+      "value": 543.9
+    },
+    {
+      "year": "2012",
+      "cashFlow": "Siirrot",
+      "value": 14.8
+    },
+    {
+      "year": "2012",
+      "cashFlow": "Valtion osuus",
+      "value": 3031.6
+    },
+    {
+      "year": "2012",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -21748.6
+    },
+    {
+      "year": "2012",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -528.1
+    },
+    {
+      "year": "2012",
+      "cashFlow": "Verot",
+      "value": -10.3
+    },
+    {
+      "year": "2012",
+      "cashFlow": "Sijoitustuotto",
+      "value": 13080.6
+    },
+    {
+      "year": "2012",
+      "cashFlow": "Muu",
+      "value": -67.9
+    },
+    {
+      "year": "2012",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 150166.1
+    },
+    {
+      "year": "2013",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 150166.1
+    },
+    {
+      "year": "2013",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 19977.2
+    },
+    {
+      "year": "2013",
+      "cashFlow": "TR-osuus",
+      "value": 663.5
+    },
+    {
+      "year": "2013",
+      "cashFlow": "Siirrot",
+      "value": 2.2
+    },
+    {
+      "year": "2013",
+      "cashFlow": "Valtion osuus",
+      "value": 3218.3
+    },
+    {
+      "year": "2013",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -23278.9
+    },
+    {
+      "year": "2013",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -543
+    },
+    {
+      "year": "2013",
+      "cashFlow": "Verot",
+      "value": -19.6
+    },
+    {
+      "year": "2013",
+      "cashFlow": "Sijoitustuotto",
+      "value": 11769.7
+    },
+    {
+      "year": "2013",
+      "cashFlow": "Muu",
+      "value": 241.6
+    },
+    {
+      "year": "2013",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 162196.9
+    },
+    {
+      "year": "2014",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 162196.9
+    },
+    {
+      "year": "2014",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 20375.6
+    },
+    {
+      "year": "2014",
+      "cashFlow": "TR-osuus",
+      "value": 788.4
+    },
+    {
+      "year": "2014",
+      "cashFlow": "Siirrot",
+      "value": 1
+    },
+    {
+      "year": "2014",
+      "cashFlow": "Valtion osuus",
+      "value": 3322.6
+    },
+    {
+      "year": "2014",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -24397.3
+    },
+    {
+      "year": "2014",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -525.4
+    },
+    {
+      "year": "2014",
+      "cashFlow": "Verot",
+      "value": -18
+    },
+    {
+      "year": "2014",
+      "cashFlow": "Sijoitustuotto",
+      "value": 11889.6
+    },
+    {
+      "year": "2014",
+      "cashFlow": "Muu",
+      "value": 65.2
+    },
+    {
+      "year": "2014",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 173698.5
+    },
+    {
+      "year": "2015",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 173698.5
+    },
+    {
+      "year": "2015",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 20883.3
+    },
+    {
+      "year": "2015",
+      "cashFlow": "TR-osuus",
+      "value": 974.7
+    },
+    {
+      "year": "2015",
+      "cashFlow": "Siirrot",
+      "value": 0
+    },
+    {
+      "year": "2015",
+      "cashFlow": "Valtion osuus",
+      "value": 2909.9
+    },
+    {
+      "year": "2015",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -25267.4
+    },
+    {
+      "year": "2015",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -520
+    },
+    {
+      "year": "2015",
+      "cashFlow": "Verot",
+      "value": -23.7
+    },
+    {
+      "year": "2015",
+      "cashFlow": "Sijoitustuotto",
+      "value": 8492.2
+    },
+    {
+      "year": "2015",
+      "cashFlow": "Muu",
+      "value": 45.5
+    },
+    {
+      "year": "2015",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 181192.8
+    },
+    {
+      "year": "2016",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 181192.8
+    },
+    {
+      "year": "2016",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 21044
+    },
+    {
+      "year": "2016",
+      "cashFlow": "TR-osuus",
+      "value": 813.3
+    },
+    {
+      "year": "2016",
+      "cashFlow": "Siirrot",
+      "value": 0
+    },
+    {
+      "year": "2016",
+      "cashFlow": "Valtion osuus",
+      "value": 3514
+    },
+    {
+      "year": "2016",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -26026.9
+    },
+    {
+      "year": "2016",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -508.5
+    },
+    {
+      "year": "2016",
+      "cashFlow": "Verot",
+      "value": -26.6
+    },
+    {
+      "year": "2016",
+      "cashFlow": "Sijoitustuotto",
+      "value": 10607.7
+    },
+    {
+      "year": "2016",
+      "cashFlow": "Muu",
+      "value": 180.5
+    },
+    {
+      "year": "2016",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 190790.1
+    },
+    {
+      "year": "2017",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 190790.1
+    },
+    {
+      "year": "2017",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 21294.3
+    },
+    {
+      "year": "2017",
+      "cashFlow": "TR-osuus",
+      "value": 760
+    },
+    {
+      "year": "2017",
+      "cashFlow": "Siirrot",
+      "value": 0
+    },
+    {
+      "year": "2017",
+      "cashFlow": "Valtion osuus",
+      "value": 3654.6
+    },
+    {
+      "year": "2017",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -27029.1
+    },
+    {
+      "year": "2017",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -505.5
+    },
+    {
+      "year": "2017",
+      "cashFlow": "Verot",
+      "value": -26.7
+    },
+    {
+      "year": "2017",
+      "cashFlow": "Sijoitustuotto",
+      "value": 13903.8
+    },
+    {
+      "year": "2017",
+      "cashFlow": "Muu",
+      "value": 203
+    },
+    {
+      "year": "2017",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 203044.4
+    },
+    {
+      "year": "2018",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 203044.4
+    },
+    {
+      "year": "2018",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 22085.7
+    },
+    {
+      "year": "2018",
+      "cashFlow": "TR-osuus",
+      "value": 572
+    },
+    {
+      "year": "2018",
+      "cashFlow": "Siirrot",
+      "value": 0
+    },
+    {
+      "year": "2018",
+      "cashFlow": "Valtion osuus",
+      "value": 3787
+    },
+    {
+      "year": "2018",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -27804.5
+    },
+    {
+      "year": "2018",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -505.3
+    },
+    {
+      "year": "2018",
+      "cashFlow": "Verot",
+      "value": -30.8
+    },
+    {
+      "year": "2018",
+      "cashFlow": "Sijoitustuotto",
+      "value": -4247.3
+    },
+    {
+      "year": "2018",
+      "cashFlow": "Muu",
+      "value": -78.8
+    },
+    {
+      "year": "2018",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 196822.4
+    },
+    {
+      "year": "2019",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 196822.4
+    },
+    {
+      "year": "2019",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 23150
+    },
+    {
+      "year": "2019",
+      "cashFlow": "TR-osuus",
+      "value": 585.7
+    },
+    {
+      "year": "2019",
+      "cashFlow": "Siirrot",
+      "value": 0
+    },
+    {
+      "year": "2019",
+      "cashFlow": "Valtion osuus",
+      "value": 3898.2
+    },
+    {
+      "year": "2019",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -28991.5
+    },
+    {
+      "year": "2019",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -502.2
+    },
+    {
+      "year": "2019",
+      "cashFlow": "Verot",
+      "value": -28.9
+    },
+    {
+      "year": "2019",
+      "cashFlow": "Sijoitustuotto",
+      "value": 23852.3
+    },
+    {
+      "year": "2019",
+      "cashFlow": "Muu",
+      "value": 11.6
+    },
+    {
+      "year": "2019",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 218797.5
+    },
+    {
+      "year": "2020",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 218797.5
+    },
+    {
+      "year": "2020",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 21982.9
+    },
+    {
+      "year": "2020",
+      "cashFlow": "TR-osuus",
+      "value": 873
+    },
+    {
+      "year": "2020",
+      "cashFlow": "Siirrot",
+      "value": 0
+    },
+    {
+      "year": "2020",
+      "cashFlow": "Valtion osuus",
+      "value": 4051.8
+    },
+    {
+      "year": "2020",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -29897.7
+    },
+    {
+      "year": "2020",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -449
+    },
+    {
+      "year": "2020",
+      "cashFlow": "Verot",
+      "value": -9.2
+    },
+    {
+      "year": "2020",
+      "cashFlow": "Sijoitustuotto",
+      "value": 9978.2
+    },
+    {
+      "year": "2020",
+      "cashFlow": "Muu",
+      "value": 372.6
+    },
+    {
+      "year": "2020",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 225700
+    },
+    {
+      "year": "2021",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 225700
+    },
+    {
+      "year": "2021",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 24071.3
+    },
+    {
+      "year": "2021",
+      "cashFlow": "TR-osuus",
+      "value": 914.3
+    },
+    {
+      "year": "2021",
+      "cashFlow": "Siirrot",
+      "value": 0.6
+    },
+    {
+      "year": "2021",
+      "cashFlow": "Valtion osuus",
+      "value": 4058
+    },
+    {
+      "year": "2021",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -30510.9
+    },
+    {
+      "year": "2021",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -484.2
+    },
+    {
+      "year": "2021",
+      "cashFlow": "Verot",
+      "value": -21
+    },
+    {
+      "year": "2021",
+      "cashFlow": "Sijoitustuotto",
+      "value": 34897.8
+    },
+    {
+      "year": "2021",
+      "cashFlow": "Muu",
+      "value": 126.9
+    },
+    {
+      "year": "2021",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 258752.8
+    },
+    {
+      "year": "2022",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 258752.8
+    },
+    {
+      "year": "2022",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 25688.1
+    },
+    {
+      "year": "2022",
+      "cashFlow": "TR-osuus",
+      "value": 628.8
+    },
+    {
+      "year": "2022",
+      "cashFlow": "Siirrot",
+      "value": -0.8
+    },
+    {
+      "year": "2022",
+      "cashFlow": "Valtion osuus",
+      "value": 4138.9
+    },
+    {
+      "year": "2022",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -31426.6
+    },
+    {
+      "year": "2022",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -454.9
+    },
+    {
+      "year": "2022",
+      "cashFlow": "Verot",
+      "value": -21.7
+    },
+    {
+      "year": "2022",
+      "cashFlow": "Sijoitustuotto",
+      "value": -14849.6
+    },
+    {
+      "year": "2022",
+      "cashFlow": "Muu",
+      "value": -51.9
+    },
+    {
+      "year": "2022",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 242403
+    },
+    {
+      "year": "2023",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 242403
+    },
+    {
+      "year": "2023",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 26870.6
+    },
+    {
+      "year": "2023",
+      "cashFlow": "TR-osuus",
+      "value": 574.6
+    },
+    {
+      "year": "2023",
+      "cashFlow": "Siirrot",
+      "value": 0
+    },
+    {
+      "year": "2023",
+      "cashFlow": "Valtion osuus",
+      "value": 4533
+    },
+    {
+      "year": "2023",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -34014
+    },
+    {
+      "year": "2023",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -440.2
+    },
+    {
+      "year": "2023",
+      "cashFlow": "Verot",
+      "value": -18.5
+    },
+    {
+      "year": "2023",
+      "cashFlow": "Sijoitustuotto",
+      "value": 15028.9
+    },
+    {
+      "year": "2023",
+      "cashFlow": "Muu",
+      "value": -22.2
+    },
+    {
+      "year": "2023",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 254915.2
+    },
+    {
+      "year": "2024",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 254915.2
+    },
+    {
+      "year": "2024",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 27539.3
+    },
+    {
+      "year": "2024",
+      "cashFlow": "TR-osuus",
+      "value": 732.3
+    },
+    {
+      "year": "2024",
+      "cashFlow": "Siirrot",
+      "value": 0
+    },
+    {
+      "year": "2024",
+      "cashFlow": "Valtion osuus",
+      "value": 4731.5
+    },
+    {
+      "year": "2024",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -36259.4
+    },
+    {
+      "year": "2024",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -431.4
+    },
+    {
+      "year": "2024",
+      "cashFlow": "Verot",
+      "value": -35.9
+    },
+    {
+      "year": "2024",
+      "cashFlow": "Sijoitustuotto",
+      "value": 23426.7
+    },
+    {
+      "year": "2024",
+      "cashFlow": "Muu",
+      "value": -217.5
+    },
+    {
+      "year": "2024",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 274400.7
+    },
+    {
+      "year": "2025",
+      "cashFlow": "Eläkevarat 1.1.",
+      "value": 274400.7
+    },
+    {
+      "year": "2025",
+      "cashFlow": "Vakuutusmaksut",
+      "value": 28155.2
+    },
+    {
+      "year": "2025",
+      "cashFlow": "TR-osuus",
+      "value": 661.8
+    },
+    {
+      "year": "2025",
+      "cashFlow": "Siirrot",
+      "value": 0.2
+    },
+    {
+      "year": "2025",
+      "cashFlow": "Valtion osuus",
+      "value": 4781.6
+    },
+    {
+      "year": "2025",
+      "cashFlow": "Maksetut eläkkeet",
+      "value": -37354.5
+    },
+    {
+      "year": "2025",
+      "cashFlow": "Kokonaisliikekulut",
+      "value": -438.2
+    },
+    {
+      "year": "2025",
+      "cashFlow": "Verot",
+      "value": -31.8
+    },
+    {
+      "year": "2025",
+      "cashFlow": "Sijoitustuotto",
+      "value": 19850.8
+    },
+    {
+      "year": "2025",
+      "cashFlow": "Muu",
+      "value": 82.4
+    },
+    {
+      "year": "2025",
+      "cashFlow": "Eläkevarat 31.12.",
+      "value": 290108.2
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "pension_assets",
+  "name": "Earnings-related pension assets",
+  "unit": "million euros",
+  "source": "Finnish Centre for Pensions",
+  "sourceUrl": "https://tilastot.etk.fi/api/v1/fi/ETK/180tyoelakkeiden_rahoitus/20tilinpaatoslukuja/tp08_elakevarat.px",
+  "license": "CC BY 4.0",
+  "attribution": "Eläketurvakeskus (ETK)",
+  "retrieved": "2026-09-19",
+  "seriesType": "observed",
+  "values": [
+    {
+      "year": "2007",
+      "value": 124780.5
+    },
+    {
+      "year": "2008",
+      "value": 107245.9
+    },
+    {
+      "year": "2009",
+      "value": 124424.9
+    },
+    {
+      "year": "2010",
+      "value": 138839.5
+    },
+    {
+      "year": "2011",
+      "value": 136231.8
+    },
+    {
+      "year": "2012",
+      "value": 150166.1
+    },
+    {
+      "year": "2013",
+      "value": 162196.9
+    },
+    {
+      "year": "2014",
+      "value": 173698.5
+    },
+    {
+      "year": "2015",
+      "value": 181192.8
+    },
+    {
+      "year": "2016",
+      "value": 190790.1
+    },
+    {
+      "year": "2017",
+      "value": 203044.4
+    },
+    {
+      "year": "2018",
+      "value": 196822.4
+    },
+    {
+      "year": "2019",
+      "value": 218797.4
+    },
+    {
+      "year": "2020",
+      "value": 225700
+    },
+    {
+      "year": "2021",
+      "value": 258752.8
+    },
+    {
+      "year": "2022",
+      "value": 242403
+    },
+    {
+      "year": "2023",
+      "value": 254915.2
+    },
+    {
+      "year": "2024",
+      "value": 274400.7
+    },
+    {
+      "year": "2025",
+      "value": 290108.2
+    }
+  ]
+}

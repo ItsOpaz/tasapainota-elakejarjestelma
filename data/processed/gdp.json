@@ -1,0 +1,321 @@
+{
+  "id": "gdp",
+  "name": "Gross domestic product",
+  "unit": "million euros",
+  "source": "Statistics Finland",
+  "sourceUrl": "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/ntp/15a9.px",
+  "license": "CC BY 4.0",
+  "attribution": "Statistics Finland",
+  "retrieved": "2026-09-19",
+  "seriesType": "observed",
+  "values": [
+    {
+      "year": "1975",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 18143
+    },
+    {
+      "year": "1976",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 20594
+    },
+    {
+      "year": "1977",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 22614
+    },
+    {
+      "year": "1978",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 25052
+    },
+    {
+      "year": "1979",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 29060
+    },
+    {
+      "year": "1980",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 33660
+    },
+    {
+      "year": "1981",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 38061
+    },
+    {
+      "year": "1982",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 42792
+    },
+    {
+      "year": "1983",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 47736
+    },
+    {
+      "year": "1984",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 53442
+    },
+    {
+      "year": "1985",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 58225
+    },
+    {
+      "year": "1986",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 62676
+    },
+    {
+      "year": "1987",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 67694
+    },
+    {
+      "year": "1988",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 76709
+    },
+    {
+      "year": "1989",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 85876
+    },
+    {
+      "year": "1990",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 90964
+    },
+    {
+      "year": "1991",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 86913
+    },
+    {
+      "year": "1992",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 84786
+    },
+    {
+      "year": "1993",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 85610
+    },
+    {
+      "year": "1994",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 90646
+    },
+    {
+      "year": "1995",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 98454
+    },
+    {
+      "year": "1996",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 101977
+    },
+    {
+      "year": "1997",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 110764
+    },
+    {
+      "year": "1998",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 120431
+    },
+    {
+      "year": "1999",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 126888
+    },
+    {
+      "year": "2000",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 136386
+    },
+    {
+      "year": "2001",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 144613
+    },
+    {
+      "year": "2002",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 148440
+    },
+    {
+      "year": "2003",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 151714
+    },
+    {
+      "year": "2004",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 158741
+    },
+    {
+      "year": "2005",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 164666
+    },
+    {
+      "year": "2006",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 172861
+    },
+    {
+      "year": "2007",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 187059
+    },
+    {
+      "year": "2008",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 194253
+    },
+    {
+      "year": "2009",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 181735
+    },
+    {
+      "year": "2010",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 188147
+    },
+    {
+      "year": "2011",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 197655
+    },
+    {
+      "year": "2012",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 200378
+    },
+    {
+      "year": "2013",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 203497
+    },
+    {
+      "year": "2014",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 205855
+    },
+    {
+      "year": "2015",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 210192
+    },
+    {
+      "year": "2016",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 215717
+    },
+    {
+      "year": "2017",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 224706
+    },
+    {
+      "year": "2018",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 231905
+    },
+    {
+      "year": "2019",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 238518
+    },
+    {
+      "year": "2020",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 236387
+    },
+    {
+      "year": "2021",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 248764
+    },
+    {
+      "year": "2022",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 265669
+    },
+    {
+      "year": "2023",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 272735
+    },
+    {
+      "year": "2024*",
+      "yearStatus": "provisional",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 276151
+    },
+    {
+      "year": "2025*",
+      "yearStatus": "provisional",
+      "measure": "B1GMH Bruttokansantuote markkinahintaan",
+      "priceBasis": "Käyvin hinnoin, miljoonaa euroa",
+      "value": 281783
+    }
+  ]
+}

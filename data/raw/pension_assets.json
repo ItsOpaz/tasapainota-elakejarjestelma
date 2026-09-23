@@ -1,0 +1,270 @@
+{
+  "provenance": {
+    "fetched_at": "2026-09-19T17:25:24.389937+00:00",
+    "source_id": "pension_assets",
+    "provider": "etk",
+    "metadata_url": "https://tilastot.etk.fi/api/v1/fi/ETK/180tyoelakkeiden_rahoitus/20tilinpaatoslukuja/tp08_elakevarat.px",
+    "query_url": "https://tilastot.etk.fi/api/v1/fi/ETK/180tyoelakkeiden_rahoitus/20tilinpaatoslukuja/tp08_elakevarat.px",
+    "configured_query": {
+      "Vuosi": "*",
+      "Varat": [
+        "Eläkevarat"
+      ],
+      "Eläkelaki (Vastuulaitos)": [
+        "Yhteensä"
+      ]
+    },
+    "resolved_query": [
+      {
+        "code": "Vuosi",
+        "selection": {
+          "filter": "all",
+          "values": [
+            "*"
+          ]
+        }
+      },
+      {
+        "code": "Varat",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "201"
+          ]
+        }
+      },
+      {
+        "code": "Eläkelaki (Vastuulaitos)",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "721"
+          ]
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Eläkevarat, milj. euroa, %",
+    "variables": [
+      {
+        "code": "Vuosi",
+        "text": "Vuosi",
+        "values": [
+          "2007",
+          "2008",
+          "2009",
+          "2010",
+          "2011",
+          "2012",
+          "2013",
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "valueTexts": [
+          "2007",
+          "2008",
+          "2009",
+          "2010",
+          "2011",
+          "2012",
+          "2013",
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "time": true
+      },
+      {
+        "code": "Varat",
+        "text": "Varat",
+        "values": [
+          "201",
+          "202",
+          "203",
+          "204",
+          "205",
+          "206"
+        ],
+        "valueTexts": [
+          "Eläkevarat",
+          "Sijoitusomaisuus",
+          "Korkosijoitukset %",
+          "Osakesijoitukset %",
+          "Kiinteistösijoitukset %",
+          "Muut sijoitukset %"
+        ]
+      },
+      {
+        "code": "Eläkelaki (Vastuulaitos)",
+        "text": "Eläkelaki (Vastuulaitos)",
+        "values": [
+          "701",
+          "702",
+          "703",
+          "704",
+          "713",
+          "715",
+          "716",
+          "717",
+          "718",
+          "719",
+          "720",
+          "721"
+        ],
+        "valueTexts": [
+          "TyEL yhtiöt",
+          "TyEL säätiöt",
+          "TyEL kassat",
+          "TyEL yhteensä",
+          "YEL yhteensä",
+          "MEL",
+          "MYEL",
+          "Kunnat",
+          "Valtio",
+          "Kirkko",
+          "Muut",
+          "Yhteensä"
+        ]
+      }
+    ]
+  },
+  "data": {
+    "class": "dataset",
+    "label": "Eläkevarat, milj. euroa, % muuttujina Vuosi, Varat ja Eläkelaki (Vastuulaitos)",
+    "source": "Eläketurvakeskus",
+    "updated": "9999-12-31T21:59:59Z",
+    "id": [
+      "Vuosi",
+      "Varat",
+      "Eläkelaki (Vastuulaitos)"
+    ],
+    "size": [
+      19,
+      1,
+      1
+    ],
+    "dimension": {
+      "Vuosi": {
+        "label": "Vuosi",
+        "category": {
+          "index": {
+            "2007": 0,
+            "2008": 1,
+            "2009": 2,
+            "2010": 3,
+            "2011": 4,
+            "2012": 5,
+            "2013": 6,
+            "2014": 7,
+            "2015": 8,
+            "2016": 9,
+            "2017": 10,
+            "2018": 11,
+            "2019": 12,
+            "2020": 13,
+            "2021": 14,
+            "2022": 15,
+            "2023": 16,
+            "2024": 17,
+            "2025": 18
+          },
+          "label": {
+            "2007": "2007",
+            "2008": "2008",
+            "2009": "2009",
+            "2010": "2010",
+            "2011": "2011",
+            "2012": "2012",
+            "2013": "2013",
+            "2014": "2014",
+            "2015": "2015",
+            "2016": "2016",
+            "2017": "2017",
+            "2018": "2018",
+            "2019": "2019",
+            "2020": "2020",
+            "2021": "2021",
+            "2022": "2022",
+            "2023": "2023",
+            "2024": "2024",
+            "2025": "2025"
+          }
+        }
+      },
+      "Varat": {
+        "label": "Varat",
+        "category": {
+          "index": {
+            "201": 0
+          },
+          "label": {
+            "201": "Eläkevarat"
+          }
+        }
+      },
+      "Eläkelaki (Vastuulaitos)": {
+        "label": "Eläkelaki (Vastuulaitos)",
+        "category": {
+          "index": {
+            "721": 0
+          },
+          "label": {
+            "721": "Yhteensä"
+          }
+        }
+      }
+    },
+    "value": [
+      124780.5,
+      107245.9,
+      124424.9,
+      138839.5,
+      136231.8,
+      150166.1,
+      162196.9,
+      173698.5,
+      181192.8,
+      190790.1,
+      203044.4,
+      196822.4,
+      218797.4,
+      225700,
+      258752.8,
+      242403,
+      254915.2,
+      274400.7,
+      290108.2
+    ],
+    "role": {
+      "time": [
+        "Vuosi"
+      ]
+    },
+    "version": "2.0",
+    "extension": {
+      "px": {
+        "decimals": 1
+      }
+    }
+  }
+}
